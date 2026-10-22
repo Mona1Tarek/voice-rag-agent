@@ -20,3 +20,6 @@ evaluation/results/*
 Thumbs.db
 .vscode/
 .idea/
+
+# Additional files to ignore
+documents 

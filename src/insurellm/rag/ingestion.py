@@ -457,13 +457,11 @@ def load_documents() -> list[Document]:
     if not documents:
         raise ValueError(
             f"No documents were loaded from {DATA_DIR}. "
-            "Check the ingestion warnings and errors."
         )
 
     if report.files_failed:
         logger.warning(
-            "Ingestion completed with %d failed file(s). "
-            "Review the errors before building the index.",
+            "Ingestion completed with %d failed file(s). ",
             report.files_failed,
         )
 
