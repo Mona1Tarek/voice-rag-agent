@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments and secrets
+.venv/
+.uv-cache/
+.env
+
+# Generated data and evaluation output
+data/**/*.index
+evaluation/results/*
+!evaluation/results/.gitkeep
+
+# OS and editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
