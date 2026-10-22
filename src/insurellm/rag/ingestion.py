@@ -7,6 +7,7 @@ from dataclasses import dataclass, field
 from pathlib import Path
 
 from langchain_core.documents import Document
+import pdfplumber
 from pypdf import PdfReader
 
 
@@ -63,10 +64,27 @@ def clean_text(text: str) -> str:
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
+def clean_markdown(text: str) -> str:
+    """Clean Markdown without touching leading indentation."""
+    text = text.replace("\x00", "")
+    text = "\n".join(line.rstrip() for line in text.splitlines())
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
 
 def source_path(file_path: Path) -> str:
     """Return a project-relative source path."""
     return file_path.relative_to(PROJECT_ROOT).as_posix()
+
+
+def normalize_cell(value: str | None) -> str:
+    """Normalize whitespace without changing a table cell's meaning."""
+    return re.sub(r"\s+", " ", value or "").strip()
+
+
+def normalize_header(value: str | None) -> str:
+    """Normalize a table header for use as a field name."""
+    return normalize_cell(value).lower()
 
 
 def load_pdfs(
@@ -134,6 +152,120 @@ def load_pdfs(
     return documents
 
 
+def load_tabular_pdf(
+    directory: Path,
+    report: IngestionReport,
+) -> list[Document]:
+    """Extract each employee PDF table into one Document per data row."""
+    documents = []
+    files = sorted(directory.glob("*.pdf"))
+    report.files_discovered += len(files)
+
+    for file_path in files:
+        file_documents = []
+
+        try:
+            with pdfplumber.open(file_path) as pdf:
+                for page_number, page in enumerate(pdf.pages, start=1):
+                    tables = page.extract_tables()
+
+                    if not tables:
+                        report.add_warning(
+                            f"No table extracted from "
+                            f"{source_path(file_path)}, page {page_number}"
+                        )
+                        continue
+
+                    for table_index, table in enumerate(tables, start=1):
+                        if not table or len(table) < 2:
+                            report.add_warning(
+                                f"Empty or header-only table in "
+                                f"{source_path(file_path)}, page {page_number}, "
+                                f"table {table_index}"
+                            )
+                            continue
+
+                        headers = [
+                            normalize_header(cell) for cell in table[0]
+                        ]
+
+                        if (
+                            any(not header for header in headers)
+                            or len(headers) != len(set(headers))
+                        ):
+                            report.add_warning(
+                                f"Invalid or duplicate headers in "
+                                f"{source_path(file_path)}, page {page_number}, "
+                                f"table {table_index}; table skipped"
+                            )
+                            continue
+
+                        for row_number, row in enumerate(table[1:], start=1):
+                            if len(row) != len(headers):
+                                report.add_warning(
+                                    f"Malformed row {row_number} in "
+                                    f"{source_path(file_path)}, "
+                                    f"page {page_number}, table {table_index}; "
+                                    f"row skipped"
+                                )
+                                continue
+
+                            values = [normalize_cell(cell) for cell in row]
+
+                            if not any(values):
+                                report.add_warning(
+                                    f"Empty row in {source_path(file_path)}, "
+                                    f"page {page_number}, table {table_index}; "
+                                    f"row skipped"
+                                )
+                                continue
+
+                            record = dict(zip(headers, values))
+                            content = "\n".join(
+                                f"{header}: {value}"
+                                for header, value in record.items()
+                                if value
+                            )
+
+                            if not content:
+                                report.add_warning(
+                                    f"Row {row_number} in "
+                                    f"{source_path(file_path)}, "
+                                    f"page {page_number}, table {table_index} "
+                                    f"has no values; row skipped"
+                                )
+                                continue
+
+                            file_documents.append(
+                                Document(
+                                    page_content=content,
+                                    metadata={
+                                        "source": source_path(file_path),
+                                        "doc_type": "employee_record",
+                                        "language": "en",
+                                        "page": page_number,
+                                        "record_id": (
+                                            f"{file_path.stem}:"
+                                            f"page_{page_number}:"
+                                            f"table_{table_index}:"
+                                            f"row_{row_number}"
+                                        ),
+                                    },
+                                )
+                            )
+
+        except Exception as exc:
+            # Keep this file's documents out if extraction fails partway
+            # through. Other tabular PDFs will still be processed.
+            report.add_failure(file_path, exc)
+            continue
+
+        report.files_processed += 1
+        documents.extend(file_documents)
+
+    return documents
+
+
 def load_markdown(
     directory: Path,
     report: IngestionReport,
@@ -145,7 +277,7 @@ def load_markdown(
 
     for file_path in files:
         try:
-            text = clean_text(file_path.read_text(encoding="utf-8"))
+            text = clean_markdown(file_path.read_text(encoding="utf-8"))
 
             if not text:
                 report.add_warning(
@@ -294,6 +426,7 @@ def load_documents() -> list[Document]:
     required_directories = [
         DATA_DIR / "company",
         DATA_DIR / "contracts",
+        DATA_DIR / "employees",
         DATA_DIR / "products",
     ]
 
@@ -314,6 +447,7 @@ def load_documents() -> list[Document]:
     documents = [
         *load_pdfs(DATA_DIR / "company", report),
         *load_markdown(DATA_DIR / "contracts", report),
+        *load_tabular_pdf(DATA_DIR / "employees", report),
         *load_csvs(DATA_DIR / "products", report),
     ]
 
@@ -355,9 +489,10 @@ if __name__ == "__main__":
 
     for document in loaded_documents:
         print(
-            f"\nSource: {document.metadata['source']}"
-            f"\nType: {document.metadata['doc_type']}"
-            f"\nPage: {document.metadata.get('page', 'N/A')}"
-            f"\nCharacters: {len(document.page_content)}"
-            f"\nPreview: {document.page_content[:180]!r}"
+            f"\nsource: {document.metadata['source']}"
+            f"\ntype: {document.metadata['doc_type']}"
+            f"\npage: {document.metadata.get('page', 'N/A')}"
+            f"\ncharacters: {len(document.page_content)}"
+            f"\npreview: {document.page_content[:180]!r}"
+            f"\nrecord_id: {document.metadata.get('record_id', 'N/A')}"
         )
