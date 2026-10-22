@@ -14,7 +14,7 @@ from pypdf import PdfReader
 logger = logging.getLogger(__name__)
 
 # Project root: the directory containing data/
-PROJECT_ROOT = Path(__file__).resolve().parents[3]
+PROJECT_ROOT = Path(__file__).resolve().parents[4]
 DATA_DIR = PROJECT_ROOT / "data"
 
 
