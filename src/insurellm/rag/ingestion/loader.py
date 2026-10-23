@@ -2,7 +2,6 @@
 import csv
 import logging
 import re
-import sys
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -189,10 +188,8 @@ def load_tabular_pdf(
                             normalize_header(cell) for cell in table[0]
                         ]
 
-                        if (
-                            any(not header for header in headers)
-                            or len(headers) != len(set(headers))
-                        ):
+                        if (any(not header for header in headers)
+                            or len(headers) != len(set(headers))):
                             report.add_warning(
                                 f"Invalid or duplicate headers in "
                                 f"{source_path(file_path)}, page {page_number}, "
@@ -379,8 +376,7 @@ def load_csvs(
                         continue
 
                     product_name = row["product_name"].strip()
-                    product_group = row["product_group"].strip()
-
+                    
                     if not product_name:
                         report.add_warning(
                             f"CSV row {row_number} has no product_name in "
@@ -399,12 +395,6 @@ def load_csvs(
                                     f"{file_path.stem}:row_{row_number}"
                                 ),
                                 "row_number": row_number,
-                                "product": product_name,
-                                **(
-                                    {"product_group": product_group}
-                                    if product_group
-                                    else {}
-                                ),
                             },
                         )
                     )
@@ -466,31 +456,3 @@ def load_documents() -> list[Document]:
         )
 
     return documents
-
-
-if __name__ == "__main__":
-    logging.basicConfig(
-        level=logging.INFO,
-        format="%(levelname)s: %(message)s",
-    )
-
-    if hasattr(sys.stdout, "reconfigure"):
-        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
-
-    try:
-        loaded_documents = load_documents()
-    except (FileNotFoundError, ValueError) as exc:
-        logger.error("%s", exc)
-        raise SystemExit(1) from exc
-
-    print(f"\nTotal Documents: {len(loaded_documents)}")
-
-    for document in loaded_documents:
-        print(
-            f"\nsource: {document.metadata['source']}"
-            f"\ntype: {document.metadata['doc_type']}"
-            f"\npage: {document.metadata.get('page', 'N/A')}"
-            f"\ncharacters: {len(document.page_content)}"
-            f"\npreview: {document.page_content[:180]!r}"
-            f"\nrecord_id: {document.metadata.get('record_id', 'N/A')}"
-        )
