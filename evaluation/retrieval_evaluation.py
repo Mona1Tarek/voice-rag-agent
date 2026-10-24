@@ -16,7 +16,7 @@ from insurellm.rag.embeddings import (
     embed_documents,
     embed_query,
     get_embedding_model_name,
-    get_embeddings,
+    get_embeddings_model,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -59,7 +59,7 @@ def main():
         raise ValueError("Duplicate document IDs found in the corpus.")
 
     model_name = args.model or get_embedding_model_name()
-    model = get_embeddings(model_name)
+    model = get_embeddings_model(model_name)
 
     # Embed each document once.
     # document_vectors = embed_documents(model, [doc.page_content for doc in documents])
