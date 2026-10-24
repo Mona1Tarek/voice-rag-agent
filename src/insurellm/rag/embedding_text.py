@@ -1,7 +1,5 @@
 """Prepare the text that gets embedded."""
-
 from pathlib import Path
-
 from langchain_core.documents import Document
 
 
