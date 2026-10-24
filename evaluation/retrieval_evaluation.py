@@ -9,9 +9,10 @@ from pathlib import Path
 from ranx import Qrels, Run, evaluate
 from sentence_transformers.util import cos_sim
 
-from insurellm.rag.ingestion.chunker import chunk_documents, get_document_id
-from insurellm.rag.ingestion.loader import load_documents
-from insurellm.rag.rag import (
+from insurellm.ingestion.chunker import chunk_documents, get_document_id
+from insurellm.ingestion.loader import load_documents
+from insurellm.rag.embedding_text import build_embedding_text
+from insurellm.rag.embeddings import (
     embed_documents,
     embed_query,
     get_embedding_model_name,
@@ -41,7 +42,6 @@ def format_metrics(metrics):
         f"MRR@5: {metrics['mrr@5']:.4f}",
     ]
 
-
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--top-k", type=int, default=5)
@@ -62,9 +62,8 @@ def main():
     model = get_embeddings(model_name)
 
     # Embed each document once.
-    document_vectors = embed_documents(
-        model, [doc.page_content for doc in documents]
-    )
+    # document_vectors = embed_documents(model, [doc.page_content for doc in documents])
+    document_vectors = embed_documents(model, [build_embedding_text(doc) for doc in documents])
 
     qrels_data = {}
     run_data = {}
