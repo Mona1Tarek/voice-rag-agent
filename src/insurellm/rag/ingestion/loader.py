@@ -134,7 +134,7 @@ def load_pdfs(
                         page_content=text,
                         metadata={
                             "source": source_path(file_path),
-                            "doc_type": "company",
+                            "doc_type": f"{directory.name}",
                             "language": "ar",
                             "page": page_number,
                         },
@@ -238,13 +238,13 @@ def load_tabular_pdf(
                                     page_content=content,
                                     metadata={
                                         "source": source_path(file_path),
-                                        "doc_type": "employee_record",
+                                        "doc_type": f"{directory.name}",
                                         "language": "en",
                                         "page": page_number,
                                         "record_id": (
-                                            f"{file_path.stem}:"
-                                            f"page_{page_number}:"
-                                            f"table_{table_index}:"
+                                            f"{directory.name}/"
+                                            f"{file_path.stem}/"
+                                            f"page_{page_number}/"
                                             f"row_{row_number}"
                                         ),
                                     },
@@ -288,7 +288,7 @@ def load_markdown(
                     page_content=text,
                     metadata={
                         "source": source_path(file_path),
-                        "doc_type": "contract",
+                        "doc_type": f"{directory.name}",
                         "language": "en",
                     },
                 )
@@ -376,6 +376,7 @@ def load_csvs(
                         continue
 
                     product_name = row["product_name"].strip()
+                    product_group = row["product_group"].strip()
                     
                     if not product_name:
                         report.add_warning(
@@ -389,12 +390,20 @@ def load_csvs(
                             page_content="\n".join(fields),
                             metadata={
                                 "source": source_path(file_path),
-                                "doc_type": "product",
+                                "doc_type": f"{directory.name}",
                                 "language": "en",
-                                "record_id": (
-                                    f"{file_path.stem}:row_{row_number}"
-                                ),
                                 "row_number": row_number,
+                                "product": product_name,
+                                **(
+                                    {"product_group": product_group}
+                                    if product_group
+                                    else {}
+                                ),
+                                "record_id": (
+                                    f"{directory.name}/"
+                                    f"{file_path.stem}/"
+                                    f"row_{row_number}"
+                                ),
                             },
                         )
                     )
