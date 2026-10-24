@@ -1,5 +1,5 @@
-from insurellm.rag.ingestion.chunker import chunk_documents
-from insurellm.rag.ingestion.loader import load_documents
+from insurellm.ingestion.chunker import chunk_documents
+from insurellm.ingestion.loader import load_documents
 
 # Step 1: Load files into Documents
 documents = load_documents()
@@ -11,4 +11,4 @@ print(f"Documents loaded: {len(documents)}")
 print(f"Chunks created: {len(chunks)}")
 
 print("=== Sample Chunk ===")
-print(chunks[0]) 
+print(chunks[21]) 
