@@ -10,10 +10,8 @@ __pycache__/
 .uv-cache/
 .env
 
-# Generated data and evaluation output
+# Generated data
 data/**/*.index
-evaluation/results/*
-!evaluation/results/.gitkeep
 
 # OS and editors
 .DS_Store
