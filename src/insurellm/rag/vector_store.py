@@ -42,7 +42,7 @@ def get_vector_store(
     model_name = model_name or get_embedding_model_name()
     embeddings = embeddings or SentenceTransformerEmbeddings(model_name)
     
-    path = Path(os.getenv("QDRANT_PATH", "./data/qdrant"))
+    path = Path(os.getenv("QDRANT_PATH", "./vectordb/qdrant"))
     path.mkdir(parents=True, exist_ok=True)
     
     client = QdrantClient(path=str(path))
