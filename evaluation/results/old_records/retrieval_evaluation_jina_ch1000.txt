@@ -1,0 +1,53 @@
+Retrieval Evaluation
+--------------------
+Total Questions: 50
+Embedding Model: jinaai/jina-embeddings-v5-text-nano
+Top K: 5
+
+Overall
+Hit Rate@1: 46.00%
+Hit Rate@3: 64.00%
+Hit Rate@5: 78.00%
+MRR@5: 0.5700
+
+Language: ar
+Hit Rate@1: 40.91%
+Hit Rate@3: 54.55%
+Hit Rate@5: 68.18%
+MRR@5: 0.5045
+
+Scenario: ar_question__ar_document
+Hit Rate@1: 40.00%
+Hit Rate@3: 60.00%
+Hit Rate@5: 70.00%
+MRR@5: 0.5200
+
+Language: en
+Hit Rate@1: 50.00%
+Hit Rate@3: 71.43%
+Hit Rate@5: 85.71%
+MRR@5: 0.6214
+
+Scenario: en_question__en_contract
+Hit Rate@1: 20.00%
+Hit Rate@3: 50.00%
+Hit Rate@5: 80.00%
+MRR@5: 0.4033
+
+Scenario: ar_question__en_document
+Hit Rate@1: 41.67%
+Hit Rate@3: 50.00%
+Hit Rate@5: 66.67%
+MRR@5: 0.4917
+
+Scenario: en_question__ar_document
+Hit Rate@1: 50.00%
+Hit Rate@3: 62.50%
+Hit Rate@5: 75.00%
+MRR@5: 0.5667
+
+Scenario: en_question__en_product_or_employee
+Hit Rate@1: 80.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 0.8833

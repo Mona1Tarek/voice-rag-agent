@@ -1,0 +1,84 @@
+Qdrant Retrieval Evaluation
+===========================
+Total Questions: 68
+Embedding Model: jinaai/jina-embeddings-v5-text-nano
+Top K: 5
+
+Overall Retrieval Metrics
+Hit Rate@1: 67.65%
+Hit Rate@3: 80.88%
+Hit Rate@5: 89.71%
+MRR@5: 0.7593
+
+Retrieval Latency (ms)
+Mean: 181.42
+Median: 176.45
+P95: 237.61
+Min: 135.14
+Max: 273.32
+
+Language: ar
+Hit Rate@1: 63.64%
+Hit Rate@3: 75.76%
+Hit Rate@5: 81.82%
+MRR@5: 0.7106
+
+Language: en
+Hit Rate@1: 71.43%
+Hit Rate@3: 85.71%
+Hit Rate@5: 97.14%
+MRR@5: 0.8052
+
+Arabic Query Evaluation
+=======================
+
+Company (Arabic document)
+Hit Rate@1: 50.00%
+Hit Rate@3: 64.29%
+Hit Rate@5: 71.43%
+MRR@5: 0.5857
+
+Employees
+Hit Rate@1: 100.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 1.0000
+
+Products
+Hit Rate@1: 20.00%
+Hit Rate@3: 40.00%
+Hit Rate@5: 60.00%
+MRR@5: 0.3500
+
+Contracts
+Hit Rate@1: 90.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 0.9500
+
+English Query Evaluation
+========================
+
+Company (Arabic document)
+Hit Rate@1: 66.67%
+Hit Rate@3: 73.33%
+Hit Rate@5: 93.33%
+MRR@5: 0.7433
+
+Employees
+Hit Rate@1: 100.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 1.0000
+
+Products
+Hit Rate@1: 75.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 0.8333
+
+Contracts
+Hit Rate@1: 60.00%
+Hit Rate@3: 90.00%
+Hit Rate@5: 100.00%
+MRR@5: 0.7700

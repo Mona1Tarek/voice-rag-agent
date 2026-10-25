@@ -1,0 +1,77 @@
+Retrieval Evaluation
+--------------------
+Total Questions: 68
+Embedding Model: BAAI/bge-m3
+Top K: 5
+
+Overall
+Hit Rate@1: 52.94%
+Hit Rate@3: 69.12%
+Hit Rate@5: 76.47%
+MRR@5: 0.6199
+
+Language: ar
+Hit Rate@1: 60.61%
+Hit Rate@3: 69.70%
+Hit Rate@5: 78.79%
+MRR@5: 0.6626
+
+Language: en
+Hit Rate@1: 45.71%
+Hit Rate@3: 68.57%
+Hit Rate@5: 74.29%
+MRR@5: 0.5795
+
+Arabic Query Evaluation
+=======================
+
+Company (Arabic document)
+Hit Rate@1: 50.00%
+Hit Rate@3: 64.29%
+Hit Rate@5: 71.43%
+MRR@5: 0.5738
+
+Employees
+Hit Rate@1: 100.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 1.0000
+
+Products
+Hit Rate@1: 100.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 1.0000
+
+Contracts
+Hit Rate@1: 40.00%
+Hit Rate@3: 50.00%
+Hit Rate@5: 70.00%
+MRR@5: 0.4833
+
+English Query Evaluation
+========================
+
+Company (Arabic document)
+Hit Rate@1: 20.00%
+Hit Rate@3: 53.33%
+Hit Rate@5: 60.00%
+MRR@5: 0.3722
+
+Employees
+Hit Rate@1: 100.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 1.0000
+
+Products
+Hit Rate@1: 75.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 0.8750
+
+Contracts
+Hit Rate@1: 40.00%
+Hit Rate@3: 60.00%
+Hit Rate@5: 70.00%
+MRR@5: 0.5200

@@ -1,0 +1,54 @@
+Retrieval Evaluation
+--------------------
+Total Questions: 50
+Embedding Model: BAAI/bge-m3
+Top K: 5
+
+Hit Rate@1: 60.00%
+Hit Rate@3: 76.00%
+Hit Rate@5: 78.00%
+MRR@5: 0.6807
+
+Results by Query Language:
+ar
+Hit Rate@1: 68.18%
+Hit Rate@3: 77.27%
+Hit Rate@5: 77.27%
+MRR@5: 0.7197
+
+en
+Hit Rate@1: 53.57%
+Hit Rate@3: 75.00%
+Hit Rate@5: 78.57%
+MRR@5: 0.6500
+
+Results by Scenario:
+ar_question__ar_document
+Hit Rate@1: 50.00%
+Hit Rate@3: 70.00%
+Hit Rate@5: 70.00%
+MRR@5: 0.5833
+
+ar_question__en_document
+Hit Rate@1: 83.33%
+Hit Rate@3: 83.33%
+Hit Rate@5: 83.33%
+MRR@5: 0.8333
+
+en_question__ar_document
+Hit Rate@1: 25.00%
+Hit Rate@3: 62.50%
+Hit Rate@5: 62.50%
+MRR@5: 0.4375
+
+en_question__en_contract
+Hit Rate@1: 40.00%
+Hit Rate@3: 60.00%
+Hit Rate@5: 70.00%
+MRR@5: 0.5200
+
+en_question__en_product_or_employee
+Hit Rate@1: 90.00%
+Hit Rate@3: 100.00%
+Hit Rate@5: 100.00%
+MRR@5: 0.9500
