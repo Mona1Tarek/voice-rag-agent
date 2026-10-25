@@ -10,8 +10,10 @@ __pycache__/
 .uv-cache/
 .env
 
-# Generated data
+# Generated data and Observability traces
 data/**/*.index
+observability/tracing_output/*
+!observability/tracing_output/.gitkeep
 
 # OS and editors
 .DS_Store
