@@ -15,9 +15,9 @@ from insurellm.rag.embeddings import SentenceTransformerEmbeddings, get_embeddin
 from insurellm.rag.retrieval import retrieve_documents
 from insurellm.rag.vector_store import get_vector_store
 
-ROOT = Path(__file__).resolve().parents[1]
-QUESTIONS_PATH = ROOT / "evaluation" / "questions.jsonl"
-RESULTS_DIR = ROOT / "evaluation" / "results"
+EVALUATION_DIR = Path(__file__).resolve().parent
+QUESTIONS_PATH = EVALUATION_DIR / "questions.jsonl"
+RESULTS_DIR = EVALUATION_DIR / "results"
 
 METRICS = ["hit_rate@1", "hit_rate@3", "hit_rate@5", "mrr@5"]
 
