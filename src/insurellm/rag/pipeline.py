@@ -2,15 +2,8 @@ from __future__ import annotations
 import re, time
 from typing import Any
 from insurellm.llm.client import LLMClient
+from insurellm.llm.prompt import get_prompt
 from insurellm.rag.retrieval import retrieve_documents
-
-SYSTEM_PROMPT = """You are an Insurellm document-grounded assistant.
-Use only the supplied context; never guess or use outside knowledge.
-If the context does not contain enough evidence, say the provided documents
-do not specify the answer. Answer in the language of the question; use natural
-Arabic for Arabic questions. Cite factual claims with exact chunk IDs in square
-brackets, e.g. [company/overview_ar/page_2/chunk_1]. Never invent citation IDs.
-Be concise and directly answer the question."""
 
 def build_messages(question: str, retrieved: list[tuple[Any, float]]) -> list[dict[str, str]]:
     parts = []
@@ -20,7 +13,7 @@ def build_messages(question: str, retrieved: list[tuple[Any, float]]) -> list[di
         parts.append(f"[CHUNK_ID: {cid}]\n[SOURCE: {md.get('source', 'unknown')}]\n{doc.page_content}")
     context = "\n\n---\n\n".join(parts) if parts else "(No documents retrieved.)"
     return [
-        {"role": "system", "content": SYSTEM_PROMPT},
+        {"role": "system", "content": get_prompt()},
         {"role": "user", "content": f"Question:\n{question}\n\nRetrieved context:\n{context}"},
     ]
 
