@@ -10,10 +10,8 @@ __pycache__/
 .uv-cache/
 .env
 
-# Generated data and Observability traces
+# Generated data and evaluation results
 data/**/*.index
-observability/tracing_output/*
-!observability/tracing_output/.gitkeep
 evaluation/generation/results/*
 
 
