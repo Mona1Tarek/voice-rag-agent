@@ -7,7 +7,7 @@ from insurellm.rag.pipeline import generate_answer
 from evaluation.generation.evaluators import citation_metrics, citation_id_validity, abstention_heuristic, lexical_overlap
 from evaluation.generation.metrics import summarize
 
-from insurellm.rag.retrieval import get_vector_store
+from insurellm.rag.vector_store import get_vector_store
 from insurellm.rag.embeddings import (
     SentenceTransformerEmbeddings,
     get_embedding_model_name,
