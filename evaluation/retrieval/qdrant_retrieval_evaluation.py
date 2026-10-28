@@ -95,8 +95,6 @@ def main():
             question=question["question"],
             top_k=args.top_k,
             vector_store=vector_store,
-            embeddings=embeddings,
-            model_name=model_name,
         )
         latency_ms = (time.perf_counter() - start) * 1000
         latencies_ms.append(latency_ms)
