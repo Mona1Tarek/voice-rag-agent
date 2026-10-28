@@ -35,11 +35,11 @@ class LLMResult:
 class LLMClient:
     """Client for OpenAI-compatible provider APIs (e.g. Groq/OpenRouter)."""
     def __init__(self) -> None:
-        self.provider = os.getenv("LLM_PROVIDER", "groq")
-        self.model = os.getenv("LLM_MODEL", "openai/gpt-oss-20b")
-        key = os.getenv("LLM_API_KEY") or os.getenv("GROQ_API_KEY")
+        self.provider = os.getenv("LLM_PROVIDER")
+        self.model = os.getenv("LLM_MODEL")
+        key = os.getenv("LLM_API_KEY") 
         if not key:
-            raise ValueError("Set LLM_API_KEY (or GROQ_API_KEY) in .env")
+            raise ValueError("Set LLM_API_KEY in .env")
         self.client = OpenAI(
             api_key=key,
             base_url=os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1"),
