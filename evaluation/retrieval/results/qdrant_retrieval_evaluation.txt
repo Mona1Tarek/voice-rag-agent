@@ -11,11 +11,11 @@ Hit Rate@5: 89.71%
 MRR@5: 0.7593
 
 Retrieval Latency (ms)
-Mean: 180.12
-Median: 164.15
-P95: 260.06
-Min: 123.57
-Max: 311.66
+Mean: 173.31
+Median: 164.12
+P95: 224.22
+Min: 133.48
+Max: 234.55
 
 Language: ar
 Hit Rate@1: 63.64%
