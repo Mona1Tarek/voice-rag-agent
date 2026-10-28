@@ -32,23 +32,28 @@ class LLMResult:
             return None
         return self.output_tokens / (self.generation_duration_ms / 1000)
 
+
 class LLMClient:
     """Client for OpenAI-compatible provider APIs (e.g. Groq/OpenRouter)."""
     def __init__(self) -> None:
         self.provider = os.getenv("LLM_PROVIDER")
         self.model = os.getenv("LLM_MODEL")
+        
         key = os.getenv("LLM_API_KEY") 
         if not key:
             raise ValueError("Set LLM_API_KEY in .env")
+        
         self.client = OpenAI(
             api_key=key,
             base_url=os.getenv("LLM_BASE_URL", "https://api.groq.com/openai/v1"),
             timeout=float(os.getenv("LLM_TIMEOUT_SECONDS", "60")),
             max_retries=int(os.getenv("LLM_MAX_RETRIES", "0")),
         )
+        
         self.temperature = float(os.getenv("LLM_TEMPERATURE", "0.2"))
         self.max_tokens = int(os.getenv("LLM_MAX_OUTPUT_TOKENS", "500"))
         self.stream_usage = os.getenv("LLM_STREAM_USAGE", "false").lower() == "true"
+
 
     def generate(self, messages: list[dict[str, str]], *, stream: bool = True) -> LLMResult:
         start = time.perf_counter()
@@ -58,16 +63,25 @@ class LLMClient:
         finish = None
         headers: dict[str, str] = {}
         status = 200
+        
         try:
+            # dictionary containing the arguments that will be sent to the model
             params: dict[str, Any] = dict(
-                model=self.model, messages=messages, temperature=self.temperature,
-                max_tokens=self.max_tokens, stream=stream,
+                model=self.model, 
+                messages=messages, 
+                temperature=self.temperature,
+                max_tokens=self.max_tokens, 
+                stream=stream,
             )
+            
             if stream and self.stream_usage:
                 params["stream_options"] = {"include_usage": True}
+                
             raw = self.client.chat.completions.with_raw_response.create(**params)
+            
             headers = _headers(raw.headers)
             response = raw.parse()
+            
             if stream:
                 for event in response:
                     now = time.perf_counter()
@@ -89,14 +103,24 @@ class LLMClient:
                 usage = response.usage
                 finish = response.choices[0].finish_reason
                 ttft, gen_ms = None, None
+                
             return LLMResult(
-                text, self.provider, self.model, (end-start)*1000, ttft, gen_ms,
-                _usage(usage, "prompt_tokens"), _usage(usage, "completion_tokens"),
-                _usage(usage, "total_tokens"), finish, status, headers,
+                text, 
+                self.provider, 
+                self.model, 
+                (end-start)*1000, 
+                ttft, 
+                gen_ms,
+                _usage(usage, "prompt_tokens"), 
+                _usage(usage, "completion_tokens"),
+                _usage(usage, "total_tokens"), 
+                finish, status, headers,
             )
+            
         except Exception as exc:
             response = getattr(exc, "response", None)
             status = getattr(response, "status_code", None)
+            
             return LLMResult(
                 "", self.provider, self.model, (time.perf_counter()-start)*1000,
                 (first_token-start)*1000 if first_token else None, None,
