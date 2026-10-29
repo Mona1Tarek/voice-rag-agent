@@ -5,6 +5,8 @@ from typing import Any
 from langchain_qdrant import QdrantVectorStore
 from insurellm.llm.client import LLMClient
 from insurellm.llm.prompt import get_prompt
+from insurellm.observability.tracing import observation
+from insurellm.rag.embeddings import get_embedding_model_name
 from insurellm.rag.retrieval import retrieve_documents
 
 def build_messages(question: str, retrieved: list[tuple[Any, float]]) -> list[dict[str, str]]:
@@ -29,11 +31,35 @@ def generate_answer(
 ) -> dict[str, Any]:
     start = time.perf_counter()
 
-    retrieved = retrieve_documents(
-        question,
-        top_k=top_k,
-        vector_store=vector_store,
-    )
+    with observation(
+        as_type="retriever",
+        name="qdrant-retrieval",
+        input={"question": question, "top_k": top_k},
+    ) as span:
+        retrieved = retrieve_documents(
+            question,
+            top_k=top_k,
+            vector_store=vector_store,
+        )
+
+        span.update(
+            output={
+                "retrieved_count": len(retrieved),
+                "results": [
+                    {
+                        "chunk_id": (
+                            doc.metadata.get("chunk_id")
+                            or doc.metadata.get("record_id")
+                        ),
+                        "source": doc.metadata.get("source"),
+                        "score": float(score),
+                        "text_preview": doc.page_content[:200],
+                    }
+                    for doc, score in retrieved
+                ],
+            },
+            metadata={"embedding_model": get_embedding_model_name()},
+        )
 
     retrieval_ms = (time.perf_counter() - start) * 1000
     messages = build_messages(question, retrieved)
