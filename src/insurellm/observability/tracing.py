@@ -1,5 +1,7 @@
+
 import os
 from contextlib import contextmanager
+from typing import Any
 
 from opentelemetry.sdk.trace import TracerProvider
 from livekit.agents.telemetry import set_tracer_provider
@@ -28,7 +30,14 @@ def setup_langfuse(metadata=None):
 
 
 @contextmanager
-def observation(*, name: str, as_type: str = "span", input=None, metadata=None):
+def observation(
+    *,
+    name: str,
+    as_type: str = "span",
+    input: Any = None,
+    metadata: dict | None = None,
+    **kwargs,
+):
     langfuse = get_client()
 
     with langfuse.start_as_current_observation(
@@ -36,9 +45,36 @@ def observation(*, name: str, as_type: str = "span", input=None, metadata=None):
         name=name,
         input=input,
         metadata=metadata,
+        **kwargs,
     ) as span:
         try:
             yield span
         except Exception as exc:
             span.update(level="ERROR", status_message=str(exc))
             raise
+
+
+def record_observation(
+    *,
+    name: str,
+    input: Any = None,
+    output: Any = None,
+    metadata: dict | None = None,
+    level: str = "DEFAULT",
+    status_message: str | None = None,
+) -> None:
+    """Record a completed event as a standalone Langfuse span."""
+    langfuse = get_client()
+
+    with langfuse.start_as_current_observation(
+        name=name,
+        as_type="span",
+        input=input,
+        metadata=metadata,
+    ) as span:
+        update = {"level": level}
+        if output is not None:
+            update["output"] = output
+        if status_message is not None:
+            update["status_message"] = status_message
+        span.update(**update)
