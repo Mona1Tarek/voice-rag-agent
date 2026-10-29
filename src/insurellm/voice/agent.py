@@ -7,7 +7,6 @@ import os
 
 from dotenv import load_dotenv
 from livekit import agents
-from livekit.agents import inference
 from livekit.agents import (
     Agent,
     AgentServer,
@@ -15,15 +14,19 @@ from livekit.agents import (
     RunContext,
     TurnHandlingOptions,
     function_tool,
+    inference,
 )
-from livekit.plugins import silero
+from livekit.plugins import silero, elevenlabs, munsit, gladia
 
+from insurellm.llm.client import LLMClient
 from insurellm.rag.pipeline import generate_answer
 from insurellm.rag.vector_store import get_vector_store
-from insurellm.llm.client import LLMClient
+from insurellm.observability.tracing import setup_langfuse
+from insurellm.observability.voice_metrics import attach_component_metrics
 
 
 load_dotenv()
+setup_langfuse(metadata={"service.name": "insurellm-voice-agent"})
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("insurellm.voice")
@@ -34,7 +37,7 @@ def required_env(name: str) -> str:
     value = os.getenv(name)
     if not value:
         raise RuntimeError(
-            f"Missing {name} in .env. Configure your LiveKit Inference model."
+            f"Missing {name} in .env. Configure the LiveKit Inference model."
         )
     return value
 
@@ -93,7 +96,7 @@ class InsurellmVoiceAgent(Agent):
             citations = result.get("generated_citations", [])
             retrieved = result.get("retrieved_documents", [])
 
-            # Keep RAG evidence visible for debugging and evaluation.
+            # RAG evidence for debugging and evaluation.
             logger.info("RAG answer: %s", answer)
             logger.info("Generated citations: %s", citations)
             logger.info("Retrieved documents: %d", len(retrieved))
@@ -139,23 +142,71 @@ async def entrypoint(ctx: agents.JobContext) -> None:
 
     llm_client = await asyncio.to_thread(LLMClient)
     vector_store = await asyncio.to_thread(get_vector_store)
-    
-    session = AgentSession(
-        stt=required_env("LIVEKIT_STT_MODEL"),
-        llm=required_env("LIVEKIT_LLM_MODEL"),
-        tts=required_env("LIVEKIT_TTS_MODEL"),
-        vad=silero.VAD.load(),
-        turn_handling=TurnHandlingOptions(
-            turn_detection=inference.TurnDetector(),
-        ),
-    )
 
+    stt_model_id = required_env("LIVEKIT_STT_MODEL")
+    llm_model_id = required_env("LIVEKIT_LLM_MODEL")
+    tts_model_id = required_env("LIVEKIT_TTS_MODEL")
+
+    stt_component = inference.STT(model=stt_model_id)
+    llm_component = inference.LLM(model=llm_model_id)    
+    tts_component = inference.TTS(model=tts_model_id, voice="Ara")   #good
+
+    #--------------------------------- Tracing ----------------------------------------
+    room_name = ctx.room.name
+
+    attach_component_metrics(
+        stt_component,
+        component="stt",
+        model=stt_model_id,
+        room_name=room_name,
+    )
+    attach_component_metrics(
+        llm_component,
+        component="llm",
+        model=llm_model_id,
+        room_name=room_name,
+    )
+    attach_component_metrics(
+        tts_component,
+        component="tts",
+        model=tts_model_id,
+        room_name=room_name,
+    )
+    #----------------------------------------------------------------------------------------
+    session = AgentSession(
+        stt=stt_component,
+        llm=llm_component,
+        tts=tts_component,
+        vad=silero.VAD.load(),
+        turn_handling = TurnHandlingOptions(
+            turn_detection=inference.TurnDetector(),
+            interruption={
+                "enabled": True,
+                "mode": "vad",
+                "min_duration": 0.25,
+                "min_words": 0,
+                "discard_audio_if_uninterruptible": True,
+                "false_interruption_timeout": 2.0,
+                "resume_false_interruption": True,
+            },
+            endpointing={
+                "mode": "fixed",      
+                "min_delay": 0.3,
+                "max_delay": 3.0,
+            },
+            # preemptive_generation={
+            #     "enabled": True,          
+            #     "preemptive_tts": True,
+            # },
+        )
+    )
+    
     await session.start(
         room=ctx.room,
         agent=InsurellmVoiceAgent(
             vector_store=vector_store,
             llm_client=llm_client,
-            ),
+        ),
     )
 
     await session.generate_reply(
