@@ -146,11 +146,12 @@ async def entrypoint(ctx: agents.JobContext) -> None:
     stt_model_id = required_env("LIVEKIT_STT_MODEL")
     llm_model_id = required_env("LIVEKIT_LLM_MODEL")
     tts_model_id = required_env("LIVEKIT_TTS_MODEL")
-
-    stt_component = inference.STT(model=stt_model_id)
+    tts_voice = required_env("LIVEKIT_TTS_VOICE")
+    
+    stt_component = munsit.STT(model=stt_model_id)
     llm_component = inference.LLM(model=llm_model_id)    
-    tts_component = inference.TTS(model=tts_model_id, voice="Ara")   #good
-
+    tts_component = inference.TTS(model=tts_model_id, voice=tts_voice)   
+    
     #--------------------------------- Tracing ----------------------------------------
     room_name = ctx.room.name
 
@@ -211,8 +212,9 @@ async def entrypoint(ctx: agents.JobContext) -> None:
 
     await session.generate_reply(
         instructions=(
-            "Greet the user briefly. Introduce yourself as the Insurellm "
-            "voice assistant and ask how you can help."
+            "Greet the user briefly in natural Egyptian Arabic. "
+            "Introduce yourself as the Insurellm voice assistant "
+            "and ask how you can help. Keep the greeting short and friendly."
         )
     )
 
