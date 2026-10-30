@@ -463,7 +463,6 @@ Copy-Item .env.example .env
 
 Add the required API credentials and configuration values to `.env`. Refer to `.env.example` and `src/insurellm/config.py` for the environment variables used by the project.
 
-**Do not commit `.env` or expose API keys.**
 
 ### 4. Build the vector index
 
