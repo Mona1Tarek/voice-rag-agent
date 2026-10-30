@@ -1,0 +1,521 @@
+{
+  "query_id": "q75",
+  "question": "What is the monthly API call limit in the Healthllm Professional tier?",
+  "query_language": "en",
+  "scenario": "en_question__unanswerable_product",
+  "is_answerable": false,
+  "reference_answer": "The provided documents don't mention a monthly API call limit for the Healthllm Professional tier, so I can't tell you what it is.",
+  "reference_citations": [
+    "products/insurellm_insurance_lines_products",
+    "contracts/Contract with Advantage Medical Coverage for Healthllm"
+  ],
+  "answer": "The provided documents do not specify a monthly API call limit for the Healthllm Professional tier. The available information indicates that the Professional tier is priced at $15,000/month and supports up to 50,000 covered members, but it does not define specific API usage caps. While a contract with United Healthcare Alliance mentions \"Unlimited API calls,\" that agreement is for the Enterprise Tier, not the Professional Tier.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "contracts/Contract with United Healthcare Alliance for Healthllm/chunk_6",
+      "source": "data/contracts/Contract with United Healthcare Alliance for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.5350214883209464,
+      "text": "6. **Complete API Access:** Unlimited API calls supporting:\n   - Real-time integration with United's core systems\n   - Provider portal and directory synchronization\n   - Claims clearinghouse EDI transactions (837, 835, 834, 270/271)\n   - Pharmacy benefit manager (PBM) integration\n   - Health Information Exchange (HIE) connectivity\n   - Data warehouse bidirectional sync\n   - Third-party vendor integrations (lab systems, imaging centers, etc.)"
+    },
+    {
+      "chunk_id": "contracts/Contract with Harmony Health Plans for Healthllm/chunk_1",
+      "source": "data/contracts/Contract with Harmony Health Plans for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.49865125525739173,
+      "text": "1. **Agreement Effective Date**: This contract is effective as of January 25, 2025.\n2. **Duration**: This agreement will remain in effect for a term of 24 months, concluding on January 24, 2027.\n3. **Subscription Type**: Harmony Health Plans agrees to subscribe to the **Professional Tier** of Healthllm, at a cost of $15,000/month, totaling $360,000 for the duration of this contract.\n4. **Member Coverage**: Professional Tier supports up to 50,000 covered members. Harmony currently covers 38,000 members across 3 states.\n5. **Payment Terms**: Payments are due on the 5th of each month via wire transfer. Late payments incur a 2% monthly penalty.\n6. **User Licenses**: Contract includes 60 named user licenses. Additional licenses available at $150/month per user."
+    },
+    {
+      "chunk_id": "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_0",
+      "source": "data/contracts/Contract with Advantage Medical Coverage for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.48641925225340643,
+      "text": "# Contract with Advantage Medical Coverage for Healthllm\n\n**Contract Date:** April 18, 2025\n**Contract Number:** HL-2025-0124\n\n---\n\n## Terms\n\n1. **Parties Involved**: This contract is entered into between Insurellm, Inc. (\"Provider\") and Advantage Medical Coverage (\"Client\").\n\n2. **License Grant**: Insurellm grants Advantage Medical Coverage a non-exclusive, non-transferable license to use the Healthllm Professional Tier platform.\n\n3. **Payment Terms**: Advantage Medical Coverage agrees to make monthly payments of $15,000 for the duration of this 18-month contract, totaling $270,000. Payments due on the 10th of each month via wire transfer.\n\n4. **Member Coverage**: Professional Tier supports up to 50,000 covered members. Advantage currently covers 32,000 members in 2 states."
+    },
+    {
+      "chunk_id": "products/insurellm_insurance_lines_products/row_5",
+      "source": "data/products/insurellm_insurance_lines_products.csv",
+      "doc_type": "products",
+      "language": "en",
+      "score": 0.46153451432782894,
+      "text": "product_name: Healthllm\nproduct_group: Insurance Lines\ninsurance_focus: Health insurance\ntarget_customers: Health insurers, from regional plans to national carriers and health systems\nsummary: Comprehensive health insurance platform combining AI and healthcare data analytics across plan design, enrollment, claims and member engagement.\nkey_features: Intelligent Plan Design | Real-Time Eligibility Verification | AI-Driven Claims Adjudication | Predictive Healthcare Analytics | Provider Network Management | Member Engagement Platform | Medication Management | Regulatory Compliance Engine\nnum_features: 8\npricing_tiers: Essential: $8,000/month (regional plans, core capabilities) | Professional: $15,000/month (larger insurers, advanced analytics, predictive modeling) | Enterprise: custom (national carriers, multi-state support, dedicated infrastructure, premium support)\nstarting_price_usd_per_month: 8000\nhas_custom_enterprise_pricing: Yes\nroadmap: Q1 2025: v1.0 with claims, eligibility, member portal | Q3 2025: predictive analytics module | Q1 2026: advanced AI claims adjudication with fraud detection | Q3 2026: social determinants of health integration | Q1 2027: value-based care tools | Q3 2027: global expansion"
+    },
+    {
+      "chunk_id": "contracts/Contract with United Healthcare Alliance for Healthllm/chunk_1",
+      "source": "data/contracts/Contract with United Healthcare Alliance for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.45795060861579395,
+      "text": "3. **Payment:** United Healthcare Alliance shall pay custom Enterprise Tier pricing of $52,000 per month for months 1-12, $56,000 per month for months 13-24, $60,000 per month for months 25-36, and $64,000 per month for months 37-48, totaling $2,784,000 over the contract term.\n\n4. **Service Level Agreement:** Insurellm guarantees 99.95% uptime measured monthly, with financial credits: 7% monthly credit for each hour of unplanned downtime exceeding the SLA, maximum 50% monthly credit.\n\n5. **Confidentiality:** Both parties agree to maintain the highest level of confidentiality regarding AI algorithms, predictive models, member PHI, provider contracts, and strategic initiatives."
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "contracts/Contract with United Healthcare Alliance for Healthllm/chunk_6",
+    "contracts/Contract with Harmony Health Plans for Healthllm/chunk_1",
+    "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_0",
+    "products/insurellm_insurance_lines_products/row_5",
+    "contracts/Contract with United Healthcare Alliance for Healthllm/chunk_1"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": true,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": null
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 436.3658999999984,
+  "llm_latency_ms": 1122.5767999999903,
+  "end_to_end_latency_ms": 1558.9426999999887,
+  "ttft_ms": 926.9006000000104,
+  "generation_duration_ms": 195.67619999997987,
+  "input_tokens": 1600,
+  "output_tokens": 90,
+  "total_tokens": 1690,
+  "output_tokens_per_second": 459.943518935922,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "6229",
+    "x-ratelimit-reset-tokens": "13.282s",
+    "x-request-id": "req_01m5yp4hmpe4fammrxa7ap0qpe"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:42:16.850623+00:00"
+}
+{
+  "query_id": "q65",
+  "question": "الشركة بتوظف في إيه في قسم المبيعات ونجاح العملاء؟",
+  "query_language": "ar",
+  "scenario": "egyptian_arabic_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "تعلن الشركة عن أربع وظائف في قسم المبيعات ونجاح العملاء: مدير حسابات (Account Executive)، وممثل تطوير مبيعات (Sales Development Representative)، ومدير نجاح العملاء (Customer Success Manager)، ومهندس حلول (Solutions Engineer).",
+  "reference_citations": [
+    "company/careers_ar/page_4/chunk_0",
+    "company/careers_ar/page_4/chunk_1"
+  ],
+  "answer": "في قسم المبيعات ونجاح العملاء، توظف الشركة في الوظائف التالية:\n\n1. **مدير حسابات (Account Executive)**:\n   - الموقع: نيويورك، شيكاغو، أو أوستن.\n   - المسؤوليات: إدارة دورة المبيعات B2B لعملاء المؤسسات، بناء علاقات مع شركات التأمين، وتحقيق أهداف الإيرادات وتنمية النطاق المسؤول عنه.\n   - الخبرة المطلوبة: 3 سنوات فأكثر في مبيعات B2B، ويُفضّل في مجال SaaS.\n\n2. **ممثل تطوير مبيعات (Sales Development Representative)**:\n   - الموقع: أوستن (عن بُعد).\n   - المسؤوليات: توليد عملاء محتملين مؤهلين لفريق المبيعات، التواصل مع العملاء المحتملين، والبحث عن الحسابات المستهدفة وتحديدها.\n   - الخبرة المطلوبة: يُفضّل خبرة سنة فأكثر كـ SDR/BDR.\n\n3. **مدير نجاح العملاء (Customer Success Manager)**:\n   - الموقع: سان فرانسيسكو أو نيويورك.\n   - المسؤوليات: ضمان رضا العملاء والاحتفاظ بهم، دفع تبني المنتج والتوسع، والعمل كمستشار موثوق للعملاء.\n   - الخبرة المطلوبة: سنتان فأكثر في نجاح العملاء في مجال SaaS.\n\n4. **مهندس حلول (Solutions Engineer)**:\n   - الموقع: عن بُعد.\n   - المسؤوليات: تقديم الخبرة التقنية أثناء عملية البيع (مثل إجراء العروض التوضيحية للمنتج وإثباتات المفهوم POCs)، ودعم التنفيذ والتكامل.\n   - الخبرة المطلوبة: 3 سنوات فأكثر في الدعم التقني قبل البيع.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/careers_ar/page_4/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.590549656440339,
+      "text": "التواصل مع العملاء المحتملين\nالبحث عن الحسابات المستهدفة وتحديدها\nيُفضّل خبرة سنة فأكثر كـ SDR/BDR\n( مدير نجاح العملاءCustomer Success Manager) | San Francisco, CA / New York, NY\nضمان رضا العملاء والاحتفاظ بهم\nدفع تبني المنتج والتوسع\nالعمل كمستشار موثوق للعملاء\nخبرة سنتين فأكثر في نجاح العملاء في مجال SaaS\n( مهندس حلولSolutions Engineer) عن بُعد| \nتقديم الخبرة التقنية أثناء عملية البيع\n(إجراء العروض التوضيحية للمنتج وإثباتات المفهوم POCs)\nدعم التنفيذ والتكامل\n سنوات فأكثر في الدعم التقني قبل البيع 3 خبرة\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n4"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_4/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4629378751856834,
+      "text": "( مصمم تجربة وواجهة المستخدمUX/UI Designer) عن بُعد| \nتصميم تجارب المستخدم لمنصات التأمين لدينا\nإجراء أبحاث المستخدمين واختبارات قابلية الاستخدام\nإنشاء أنظمة التصميم والنماذج الأولية\n سنوات فأكثر في التصميم، ويُفضّل مجال التأمين أو التقنية المالية 3 خبرة\nالمبيعات ونجاح العملاء\n(مدير حسابات Account Executive) | New York, NY / Chicago, IL / Austin, TX\n إدارة دورة مبيعاتB2B لعملاء المؤسسات\nبناء علاقات مع شركات التأمين\nتحقيق أهداف الإيرادات وتنمية النطاق المسؤول عنه\n سنوات فأكثر في مبيعات 3 خبرةB2B ، ويُفضّل SaaS\n( ممثل تطوير مبيعاتSales Development Representative) | Austin, TX عن بُعد /\nتوليد عملاء محتملين مؤهلين لفريق المبيعات\nالتواصل مع العملاء المحتملين\nالبحث عن الحسابات المستهدفة وتحديدها\nيُفضّل خبرة سنة فأكثر كـ SDR/BDR"
+    },
+    {
+      "chunk_id": "company/culture_ar/page_1/chunk_1",
+      "source": "data/company/culture_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4470794198111609,
+      "text": "هوس خدمة العميل\n كل قرار. نفهم احتياجات عملائنا فهماً عميقاً ونعمل بلا كلل لتجاوز توقعاتهم.نجاح عملائنا هو نجاحنا\n.يخص المنتج وكل ميزة وكل تفاعل يسترشد بالالتزام بتقديم قيمة استثنائية وبناء شراكات دائمة\nالنزاهة والشفافية\n من منتجاتنا إلى عملياتنا الداخلية، نؤمن بأن الثقة تُكتسب.نعمل بصدق وانفتاح في كل ما نقوم به \n.بالسلوك الأخلاقي المتسق والتواصل الواضح والمساءلة على جميع مستويات المؤسسة \nالتميز التعاوني\n نعزز ثقافة تُقدَّر فيها وجهات النظر المتنوعة، وتُتبادل فيها المعرفة بحرية، ويتمكن.نحقق المزيد معاً\n نحتفل بالانتصارات الجماعية ونساند بعضنا في .فيها كل عضو في الفريق من تقديم مواهبه الفريدة \n.مواجهة التحديات\n1"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.44522513497593574,
+      "text": ".العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:\nهوس خدمة العميل عملية عميل نشطة تغطي سلسلة القيمة الكاملة32 عملك يؤثر مباشرة في :\nللتأمين\nالنزاهة والشفافية نبني الثقة بالسلوك الأخلاقي والتواصل المفتوح :\nالتميز التعاوني وجهات النظر المتنوعة والعمل الجماعي هما أساس نجاحنا:\nما نقدمه\nرواتب تنافسية مع مشاركة في الأسهم \nتأمين صحي وسني وبصري شامل\nترتيبات عمل مرنة وإجازات سخية\nبرامج للتطوير المهني والإرشاد\nمسارات واضحة للتقدم الوظيفي\nأحدث التقنيات والأدوات\nبيئة عمل شاملة ومتنوعة\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n1"
+    },
+    {
+      "chunk_id": "contracts/Contract with ConnectInsure Agency for Markellm/chunk_5",
+      "source": "data/contracts/Contract with ConnectInsure Agency for Markellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.3604758616002012,
+      "text": "4. **Lead Management Portal**: Comprehensive tools for:\n   - Real-time lead notifications (SMS, email, push)\n   - Lead routing to specific agents based on specialty\n   - Follow-up task management and CRM integration\n   - Lead status tracking (contacted, quoted, sold, declined)\n   - Performance analytics by agent and product line\n\n5. **Data Insights**: Analytics dashboard providing:\n   - Lead volume trends and forecasting\n   - Conversion rate analysis\n   - Cost per acquisition metrics\n   - Competitive benchmarking (anonymized)\n   - Consumer behavior insights\n   - Product mix recommendations"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/careers_ar/page_4/chunk_1",
+    "company/careers_ar/page_4/chunk_0",
+    "company/culture_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_1",
+    "contracts/Contract with ConnectInsure Agency for Markellm/chunk_5"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.7931034482758621
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 312.480800000003,
+  "llm_latency_ms": 1102.7778000000126,
+  "end_to_end_latency_ms": 1415.2586000000156,
+  "ttft_ms": 366.02049999999053,
+  "generation_duration_ms": 736.757300000022,
+  "input_tokens": 1486,
+  "output_tokens": 347,
+  "total_tokens": 1833,
+  "output_tokens_per_second": 470.98277818216343,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "998",
+    "x-ratelimit-reset-requests": "2m52.8s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "4788",
+    "x-ratelimit-reset-tokens": "24.09s",
+    "x-request-id": "req_01m5yp4jj9egh8ys1286h5mxer"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:42:18.268134+00:00"
+}
+{
+  "query_id": "q13",
+  "question": "صباح الخير ازيك؟",
+  "query_language": "ar",
+  "scenario": "ar_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "صباح الخير! أنا بخير، شكراً. How can I assist you today?",
+  "reference_citations": [
+    "company/careers_ar/page_4/chunk_0",
+    "company/careers_ar/page_4/chunk_1"
+  ],
+  "answer": "صباح الخير! أنا بخير، شكراً لسؤالك. كيف يمكنني مساعدتك اليوم؟",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.18885758158289437,
+      "text": ".العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:\nهوس خدمة العميل عملية عميل نشطة تغطي سلسلة القيمة الكاملة32 عملك يؤثر مباشرة في :\nللتأمين\nالنزاهة والشفافية نبني الثقة بالسلوك الأخلاقي والتواصل المفتوح :\nالتميز التعاوني وجهات النظر المتنوعة والعمل الجماعي هما أساس نجاحنا:\nما نقدمه\nرواتب تنافسية مع مشاركة في الأسهم \nتأمين صحي وسني وبصري شامل\nترتيبات عمل مرنة وإجازات سخية\nبرامج للتطوير المهني والإرشاد\nمسارات واضحة للتقدم الوظيفي\nأحدث التقنيات والأدوات\nبيئة عمل شاملة ومتنوعة\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n1"
+    },
+    {
+      "chunk_id": "contracts/Contract with BrightWay Solutions for Markellm/chunk_3",
+      "source": "data/contracts/Contract with BrightWay Solutions for Markellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.17902752717525705,
+      "text": "### Support\n1. **Dedicated Customer Support:**\n   BrightWay Solutions will have access to a dedicated support team from Insurellm during standard business hours (9 AM - 7 PM EST).\n\n2. **Additional Support Services:**\n   Technical support for integration and maintenance will be available. An optional premium support package can be purchased for $49.99/month, which includes 24/7 support and advanced troubleshooting.\n\n3. **Training and Onboarding:**\n   Insurellm agrees to provide one free training session on how to utilize the Markellm platform effectively for BrightWay Solutions’ team upon contract signing.\n\n### Signatures\nBy signing below, both parties agree to the terms and conditions outlined in this Contract."
+    },
+    {
+      "chunk_id": "contracts/Contract with Belvedere Insurance for Markellm/chunk_4",
+      "source": "data/contracts/Contract with Belvedere Insurance for Markellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.1544168970591343,
+      "text": "## Support\n1. **Technical Support**: Technical support will be available from 9 AM to 7 PM EST, Monday through Friday via email and phone.\n2. **Response Times**: Insurellm agrees to respond to all support queries within 24 business hours. Emergency support will be prioritized throughout the contract period.\n3. **Training**: Insurellm will offer a comprehensive training session for the Client’s staff upon beginning the service to ensure effective utilization of the features.\n\n## Acceptance\nBy signing below, the parties agree to the terms of this Agreement.\n\n**Insurellm, Inc.**\nSignature: ______________________\nName: [Authorized Signatory]\nTitle: [Title]\nDate: ______________________"
+    },
+    {
+      "chunk_id": "contracts/Contract with Heritage Life Assurance for Lifellm/chunk_4",
+      "source": "data/contracts/Contract with Heritage Life Assurance for Lifellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.15048260897807098,
+      "text": "3. **Updates**: Monthly platform enhancements and security patches. Maintenance windows: Sunday 1 AM - 5 AM EST.\n\n4. **Account Management**: Named customer success manager with quarterly business reviews.\n\n---\n\n**Signatures:**\n\n**Insurellm, Inc.**\nMichael Torres, Chief Revenue Officer\nDate: February 12, 2025\n\n**Heritage Life Assurance**\nMelissa Zhang, VP of Operations\nDate: February 12, 2025\n\n---\n\nThis contract enables Heritage Life Assurance to leverage Lifellm's AI technology for modernized life insurance underwriting and administration."
+    },
+    {
+      "chunk_id": "contracts/Contract with BrightWay Solutions for Markellm/chunk_0",
+      "source": "data/contracts/Contract with BrightWay Solutions for Markellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.1462104443047021,
+      "text": "# Contract with BrightWay Solutions for Markellm\n\n**Contract Date:** October 5, 2023\n**Contract ID:** INS-2023-0092\n\n### Terms\nThis contract (“Contract”) is made between Insurellm, a company incorporated in the United States, and BrightWay Solutions, a technology provider specializing in insurance services.\n\n1. **Scope of Services:**\n   Insurellm shall provide BrightWay Solutions access to the Markellm platform under the agreed pricing structure for a duration of one year from the effective date.\n\n2. **Payment Terms:**\n   BrightWay Solutions agrees to pay an initial setup fee of $1,000 for integration services, followed by the Basic Listing Fee of $199 per month for featured listing on Markellm. Payment shall be made within 30 days of invoice."
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/careers_ar/page_1/chunk_1",
+    "contracts/Contract with BrightWay Solutions for Markellm/chunk_3",
+    "contracts/Contract with Belvedere Insurance for Markellm/chunk_4",
+    "contracts/Contract with Heritage Life Assurance for Lifellm/chunk_4",
+    "contracts/Contract with BrightWay Solutions for Markellm/chunk_0"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.45454545454545453
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 218.7836999999604,
+  "llm_latency_ms": 494.213200000047,
+  "end_to_end_latency_ms": 712.9969000000074,
+  "ttft_ms": 461.16130000001476,
+  "generation_duration_ms": 33.05190000003222,
+  "input_tokens": 1400,
+  "output_tokens": 22,
+  "total_tokens": 1422,
+  "output_tokens_per_second": 665.6198282089246,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "997",
+    "x-ratelimit-reset-requests": "4m19.2s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "3214",
+    "x-ratelimit-reset-tokens": "35.894s",
+    "x-request-id": "req_01m5yp4kv8ez2sr955q6g3vvmj"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:42:18.982248+00:00"
+}
+{
+  "query_id": "q39",
+  "question": "How does Insurellm describe its value of collaborative excellence?",
+  "query_language": "en",
+  "scenario": "en_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "Insurellm describes collaborative excellence as achieving more together. It fosters a culture that values diverse perspectives, shares knowledge freely and lets every team member contribute their unique talents, while celebrating collective wins and supporting one another through challenges.",
+  "reference_citations": [
+    "company/culture_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_1"
+  ],
+  "answer": "Insurellm describes its value of collaborative excellence by stating that it believes leading solutions stem from curiosity and collaboration.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/culture_ar/page_1/chunk_0",
+      "source": "data/company/culture_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5999832774765362,
+      "text": "ثقافةInsurellm\nالرؤية\n.إحداث ثورة في قطاع التأمين من خلال تقنيات مبتكرة تجعل التأمين متاحاً وشفافاً وسهلاً للجميع \nالرسالة\nنمكسّنن مقدمي خدمات التأمين والمستهلكين بحلول برمجية متطورة تبسسّنط الإجراءات وتحسّن تجربة \n ومن خلال الجمع بين الخبرة العميقة في القطاع .العملاء وتبني علاقات هادفة في سوق التأمين \n.والابتكار التقني، نبني مستقبل التأمين\nالقيم الأساسية\nالابتكار أولاً \n نشجع فريقنا على التجربة وخوض المخاطر.نتحدى الوضع القائم ونتبنى الحلول الإبداعية للمشكلات\n ونؤمن بأن الحلول الرائدة تنبع من الفضول والتعاون.المحسوبة ودفع حدود الممكن في تقنيات التأمين \n.والاستعداد للتعلم من النجاحات والإخفاقات على حد سواء\nهوس خدمة العميل\n كل قرار. نفهم احتياجات عملائنا فهماً عميقاً ونعمل بلا كلل لتجاوز توقعاتهم.نجاح عملائنا هو نجاحنا"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5869675207624712,
+      "text": "الوظائف في Insurellm\n لىلماذا تنضم إInsurellm؟\nفي Insurellm، تطورنا2015 فمنذ تأسيسنا عام. لا نكتفي ببناء البرمجيات، بل نحدث ثورة في قطاع كامل \n عقداً نشطاً32 موظفاً موهوباً يديرون32 من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تضم\n.عبر جميع خطوط منتجاتنا الثمانية\n للتركيز على النمو المستدام2023-2022 ، أعدنا الهيكلة استراتيجياً في 2020 موظف في 200 بعد أن بلغنا\n واليوم نحن فريق متماسك من.والتميز التشغيلي وبناء ثقافة عمل عن بُعد أولاً بمستوى عالمي \nالمحترفين المتميزين يحققون أثراً يفوق حجمهم بفضل الأتمتة والذكاء الاصطناعي والتركيز الاستراتيجي\nعلى عملاء المؤسسات ذوي القيمة العالية، من شركات التأمين الإقليمية إلى شركاء إعادة التأمين\n.العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_0",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5521628555531652,
+      "text": "عنInsurellm\n أسسAvery Lancaster شركةInsurellm كشركة ناشئة في مجال تقنيات التأمين، بهدف 2015 عام\n وكان أول منتجاتها .إحداث تغيير جذري في قطاع يحتاج إلى منتجات مبتكرة Markellm، السوق الإلكتروني\n.الذي يربط المستهلكين بمقدمي خدمات التأمين\nشهدت الشركة نمواً سريعاً في سنواتها الخمس الأولى، إذ وسّعت محفظة منتجاتها لتشمل Carllm\n و)بوابة تأمين السيارات(Homellm و)بوابة تأمين المنازل (Rellm.)منصة إعادة التأمين للمؤسسات (\n بلغت 2020 وبحلول عامInsurellm. مكتباً في أنحاء الولايات المتحدة 12 موظف و200 ذروة نموها بـ\n بهدف التركيز على الربحية والنمو2023-2022 غير أن الشركة خضعت لإعادة هيكلة استراتيجية في \n وشملت هذه الخطوة دمج مواقع المكاتب وتطبيق استراتيجية العمل عن بُعد أولاً وتبسيط .المستدام\n، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5491519484821943,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5467549568221186,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/culture_ar/page_1/chunk_0",
+    "company/careers_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "company/overview_ar/page_1/chunk_0"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.1891891891891892
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 257.57069999997384,
+  "llm_latency_ms": 473.91449999997803,
+  "end_to_end_latency_ms": 731.4851999999519,
+  "ttft_ms": 421.15339999998014,
+  "generation_duration_ms": 52.761099999997896,
+  "input_tokens": 1773,
+  "output_tokens": 24,
+  "total_tokens": 1797,
+  "output_tokens_per_second": 454.8805843699422,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "1509",
+    "x-ratelimit-reset-tokens": "50.657s",
+    "x-request-id": "req_01m5yp4mjjeacts7r4w8fhq1tx"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:42:19.716070+00:00"
+}
+{
+  "query_id": "q74",
+  "question": "What is the street address of Insurellm's San Francisco headquarters?",
+  "query_language": "en",
+  "scenario": "en_question__unanswerable_company",
+  "is_answerable": false,
+  "reference_answer": "I couldn't find the street address of Insurellm's San Francisco headquarters in the provided documents, so I can't provide it.",
+  "reference_citations": [
+    "company/about_ar",
+    "company/overview_ar"
+  ],
+  "answer": "",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.627171468099414,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5960871030741508,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "contracts/Contract with Stellar Insurance Co. for Rellm/chunk_0",
+      "source": "data/contracts/Contract with Stellar Insurance Co. for Rellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.5230952315434358,
+      "text": "# Contract with Stellar Insurance Co. for Rellm\n\n## Terms\nThis contract is made between **Insurellm**, located at 123 Innovation Lane, San Francisco, CA, and **Stellar Insurance Co.**, located at 456 Galaxy Road, Chicago, IL. The effective date of this agreement is **January 1, 2024**.\n\n### Duration\nThe initial term of this agreement shall be for **12 months**, commencing from the effective date. The contract will automatically renew for successive **12-month periods** unless either party provides written notice of non-renewal at least **30 days** prior to the expiration of the current term."
+    },
+    {
+      "chunk_id": "contracts/Contract with Pinnacle Insurance Co. for Homellm/chunk_0",
+      "source": "data/contracts/Contract with Pinnacle Insurance Co. for Homellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.517536475413417,
+      "text": "# Contract with Pinnacle Insurance Co. for Homellm\n\n## Terms\nThis contract (\"Contract\") is entered into as of this 1st day of January 2024 (\"Effective Date\") by and between Insurellm (\"Provider\"), a Delaware corporation with its principal place of business at 1234 Innovation Drive, San Francisco, CA 94105, and Pinnacle Insurance Co. (\"Client\"), a Texas corporation with its principal place of business at 4567 Protection Plaza, Houston, TX 77001."
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_0",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5113005438659204,
+      "text": "عنInsurellm\n أسسAvery Lancaster شركةInsurellm كشركة ناشئة في مجال تقنيات التأمين، بهدف 2015 عام\n وكان أول منتجاتها .إحداث تغيير جذري في قطاع يحتاج إلى منتجات مبتكرة Markellm، السوق الإلكتروني\n.الذي يربط المستهلكين بمقدمي خدمات التأمين\nشهدت الشركة نمواً سريعاً في سنواتها الخمس الأولى، إذ وسّعت محفظة منتجاتها لتشمل Carllm\n و)بوابة تأمين السيارات(Homellm و)بوابة تأمين المنازل (Rellm.)منصة إعادة التأمين للمؤسسات (\n بلغت 2020 وبحلول عامInsurellm. مكتباً في أنحاء الولايات المتحدة 12 موظف و200 ذروة نموها بـ\n بهدف التركيز على الربحية والنمو2023-2022 غير أن الشركة خضعت لإعادة هيكلة استراتيجية في \n وشملت هذه الخطوة دمج مواقع المكاتب وتطبيق استراتيجية العمل عن بُعد أولاً وتبسيط .المستدام\n، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/overview_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "contracts/Contract with Stellar Insurance Co. for Rellm/chunk_0",
+    "contracts/Contract with Pinnacle Insurance Co. for Homellm/chunk_0",
+    "company/about_ar/page_1/chunk_0"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": false,
+    "reference_lexical_overlap_diagnostic": null
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 241.33559999995668,
+  "llm_latency_ms": 195.3093999999851,
+  "end_to_end_latency_ms": 436.6449999999418,
+  "ttft_ms": null,
+  "generation_duration_ms": null,
+  "input_tokens": null,
+  "output_tokens": null,
+  "total_tokens": null,
+  "output_tokens_per_second": null,
+  "finish_reason": null,
+  "http_status_code": 429,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "1745",
+    "x-ratelimit-reset-tokens": "49.98s",
+    "retry-after": "4",
+    "x-request-id": "req_01m5yp4n87e4zrjgz62kwjk610"
+  },
+  "error": "RateLimitError: Error code: 429 - Rate limit reached for model `qwen/qwen3.8-27b` in organization `org_01ktknw1heekka1g3ezdgwrpef` service tier `on_demand` on input tokens per minute (ITPM): Limit 7000, Used 5831, Requested 1588. Please try again in 3.591428571s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing",
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:42:20.152804+00:00"
+}

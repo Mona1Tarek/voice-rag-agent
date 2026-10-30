@@ -10,9 +10,8 @@ __pycache__/
 .uv-cache/
 .env
 
-# Generated data and evaluation results
+# Generated data 
 data/**/*.index
-evaluation/generation/results/*
 
 
 # OS and editors

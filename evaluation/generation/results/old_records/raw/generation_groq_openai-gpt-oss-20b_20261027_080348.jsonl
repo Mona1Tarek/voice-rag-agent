@@ -1,0 +1,415 @@
+{
+  "query_id": "q1",
+  "question": "شركة Insurellm اتأسست إمتى؟",
+  "query_language": "ar",
+  "scenario": "ar_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "تأسست شركة Insurellm في عام 2015.",
+  "reference_citations": [
+    "company/about_ar/page_1/chunk_0",
+    "company/overview_ar/page_1/chunk_0",
+    "company/careers_ar/page_1/chunk_0"
+  ],
+  "answer": "تأسست شركة Insurellm في عام 2015.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_0",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.7695434596483939,
+      "text": "عنInsurellm\n أسسAvery Lancaster شركةInsurellm كشركة ناشئة في مجال تقنيات التأمين، بهدف 2015 عام\n وكان أول منتجاتها .إحداث تغيير جذري في قطاع يحتاج إلى منتجات مبتكرة Markellm، السوق الإلكتروني\n.الذي يربط المستهلكين بمقدمي خدمات التأمين\nشهدت الشركة نمواً سريعاً في سنواتها الخمس الأولى، إذ وسّعت محفظة منتجاتها لتشمل Carllm\n و)بوابة تأمين السيارات(Homellm و)بوابة تأمين المنازل (Rellm.)منصة إعادة التأمين للمؤسسات (\n بلغت 2020 وبحلول عامInsurellm. مكتباً في أنحاء الولايات المتحدة 12 موظف و200 ذروة نموها بـ\n بهدف التركيز على الربحية والنمو2023-2022 غير أن الشركة خضعت لإعادة هيكلة استراتيجية في \n وشملت هذه الخطوة دمج مواقع المكاتب وتطبيق استراتيجية العمل عن بُعد أولاً وتبسيط .المستدام\n، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من"
+    },
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.7368060839233634,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6846672258459061,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.675112154500416,
+      "text": "الوظائف في Insurellm\n لىلماذا تنضم إInsurellm؟\nفي Insurellm، تطورنا2015 فمنذ تأسيسنا عام. لا نكتفي ببناء البرمجيات، بل نحدث ثورة في قطاع كامل \n عقداً نشطاً32 موظفاً موهوباً يديرون32 من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تضم\n.عبر جميع خطوط منتجاتنا الثمانية\n للتركيز على النمو المستدام2023-2022 ، أعدنا الهيكلة استراتيجياً في 2020 موظف في 200 بعد أن بلغنا\n واليوم نحن فريق متماسك من.والتميز التشغيلي وبناء ثقافة عمل عن بُعد أولاً بمستوى عالمي \nالمحترفين المتميزين يحققون أثراً يفوق حجمهم بفضل الأتمتة والذكاء الاصطناعي والتركيز الاستراتيجي\nعلى عملاء المؤسسات ذوي القيمة العالية، من شركات التأمين الإقليمية إلى شركاء إعادة التأمين\n.العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_2",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6202790818743142,
+      "text": "تجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7 \nللمؤسسات\nحصلت Lifellm عملاء في التأمين على الحياة، من مزودين إقليميين صغار إلى شركات وطنية 6 لى ع\nكبرى\nفازت Healthllm عقود لخطط صحية تشمل شركات تأمين إقليمية وتحالفات رعاية صحية متعددة6 بـ\nالولايات\n(وبالإضافة إلى النمو المستمر في خطوط المنتجات الأصلية Carllm وHomellm وMarkellm وRellm،)\nتخدم Insurellm اليوم عملاء يتراوحون بين شركات التأمين الإقليمية وشركاء إعادة التأمين العالميين،\n.مما يبرهن على قدرة الشركة على المنافسة على امتداد سلسلة القيمة الكاملة للتأمين\n• \n• \n• \n• \n1"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/about_ar/page_1/chunk_0",
+    "company/overview_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_2"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 1.0
+  },
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "retrieval_latency_ms": 240.11980000068434,
+  "llm_latency_ms": 1360.9752000011213,
+  "end_to_end_latency_ms": 1601.0950000018056,
+  "ttft_ms": 1340.1216000020213,
+  "generation_duration_ms": 20.85359999909997,
+  "input_tokens": 1735,
+  "output_tokens": 133,
+  "total_tokens": 1868,
+  "output_tokens_per_second": 6377.795680637406,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "998",
+    "x-ratelimit-reset-requests": "2m52.8s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "5891",
+    "x-ratelimit-reset-tokens": "15.817s",
+    "x-request-id": "req_01m5xvwy0yeysa49vcpwjx8gaa"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T05:03:45.885196+00:00"
+}
+{
+  "query_id": "q2",
+  "question": "مين اللي أسس شركة Insurellm؟",
+  "query_language": "ar",
+  "scenario": "ar_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "مؤسس شركة Insurellm هو Avery Lancaster.",
+  "reference_citations": [
+    "company/about_ar/page_1/chunk_0"
+  ],
+  "answer": "أفيري لانكستر.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.7864395911929865,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_0",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.770604212192922,
+      "text": "عنInsurellm\n أسسAvery Lancaster شركةInsurellm كشركة ناشئة في مجال تقنيات التأمين، بهدف 2015 عام\n وكان أول منتجاتها .إحداث تغيير جذري في قطاع يحتاج إلى منتجات مبتكرة Markellm، السوق الإلكتروني\n.الذي يربط المستهلكين بمقدمي خدمات التأمين\nشهدت الشركة نمواً سريعاً في سنواتها الخمس الأولى، إذ وسّعت محفظة منتجاتها لتشمل Carllm\n و)بوابة تأمين السيارات(Homellm و)بوابة تأمين المنازل (Rellm.)منصة إعادة التأمين للمؤسسات (\n بلغت 2020 وبحلول عامInsurellm. مكتباً في أنحاء الولايات المتحدة 12 موظف و200 ذروة نموها بـ\n بهدف التركيز على الربحية والنمو2023-2022 غير أن الشركة خضعت لإعادة هيكلة استراتيجية في \n وشملت هذه الخطوة دمج مواقع المكاتب وتطبيق استراتيجية العمل عن بُعد أولاً وتبسيط .المستدام\n، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.7086213992192454,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6777361341507826,
+      "text": "الوظائف في Insurellm\n لىلماذا تنضم إInsurellm؟\nفي Insurellm، تطورنا2015 فمنذ تأسيسنا عام. لا نكتفي ببناء البرمجيات، بل نحدث ثورة في قطاع كامل \n عقداً نشطاً32 موظفاً موهوباً يديرون32 من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تضم\n.عبر جميع خطوط منتجاتنا الثمانية\n للتركيز على النمو المستدام2023-2022 ، أعدنا الهيكلة استراتيجياً في 2020 موظف في 200 بعد أن بلغنا\n واليوم نحن فريق متماسك من.والتميز التشغيلي وبناء ثقافة عمل عن بُعد أولاً بمستوى عالمي \nالمحترفين المتميزين يحققون أثراً يفوق حجمهم بفضل الأتمتة والذكاء الاصطناعي والتركيز الاستراتيجي\nعلى عملاء المؤسسات ذوي القيمة العالية، من شركات التأمين الإقليمية إلى شركاء إعادة التأمين\n.العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_2",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6411576366004854,
+      "text": "تجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7 \nللمؤسسات\nحصلت Lifellm عملاء في التأمين على الحياة، من مزودين إقليميين صغار إلى شركات وطنية 6 لى ع\nكبرى\nفازت Healthllm عقود لخطط صحية تشمل شركات تأمين إقليمية وتحالفات رعاية صحية متعددة6 بـ\nالولايات\n(وبالإضافة إلى النمو المستمر في خطوط المنتجات الأصلية Carllm وHomellm وMarkellm وRellm،)\nتخدم Insurellm اليوم عملاء يتراوحون بين شركات التأمين الإقليمية وشركاء إعادة التأمين العالميين،\n.مما يبرهن على قدرة الشركة على المنافسة على امتداد سلسلة القيمة الكاملة للتأمين\n• \n• \n• \n• \n1"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/overview_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_2"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.0
+  },
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "retrieval_latency_ms": 196.0940999997547,
+  "llm_latency_ms": 477.2947000019485,
+  "end_to_end_latency_ms": 673.3888000017032,
+  "ttft_ms": 467.6595000019006,
+  "generation_duration_ms": 9.635200000047917,
+  "input_tokens": 1734,
+  "output_tokens": 111,
+  "total_tokens": 1845,
+  "output_tokens_per_second": 11520.259050092161,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "997",
+    "x-ratelimit-reset-requests": "4m19.2s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "4145",
+    "x-ratelimit-reset-tokens": "28.912s",
+    "x-request-id": "req_01m5xvwyxgepqt3pz6dzq364wv"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T05:03:46.559738+00:00"
+}
+{
+  "query_id": "q3",
+  "question": "إيه رؤية شركة Insurellm؟",
+  "query_language": "ar",
+  "scenario": "ar_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "رؤية شركة Insurellm هي إحداث ثورة في قطاع التأمين من خلال تقنيات مبتكرة تجعل التأمين متاحاً وشفافاً وسهلاً للجميع.",
+  "reference_citations": [
+    "company/culture_ar/page_1/chunk_0"
+  ],
+  "answer": "رؤية شركة Insurellm هي تحقيق نمو مستدام والتميز التشغيلي.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.7653867609449294,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_0",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.7552360389901347,
+      "text": "عنInsurellm\n أسسAvery Lancaster شركةInsurellm كشركة ناشئة في مجال تقنيات التأمين، بهدف 2015 عام\n وكان أول منتجاتها .إحداث تغيير جذري في قطاع يحتاج إلى منتجات مبتكرة Markellm، السوق الإلكتروني\n.الذي يربط المستهلكين بمقدمي خدمات التأمين\nشهدت الشركة نمواً سريعاً في سنواتها الخمس الأولى، إذ وسّعت محفظة منتجاتها لتشمل Carllm\n و)بوابة تأمين السيارات(Homellm و)بوابة تأمين المنازل (Rellm.)منصة إعادة التأمين للمؤسسات (\n بلغت 2020 وبحلول عامInsurellm. مكتباً في أنحاء الولايات المتحدة 12 موظف و200 ذروة نموها بـ\n بهدف التركيز على الربحية والنمو2023-2022 غير أن الشركة خضعت لإعادة هيكلة استراتيجية في \n وشملت هذه الخطوة دمج مواقع المكاتب وتطبيق استراتيجية العمل عن بُعد أولاً وتبسيط .المستدام\n، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.7060505758622696,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6924165102963998,
+      "text": "الوظائف في Insurellm\n لىلماذا تنضم إInsurellm؟\nفي Insurellm، تطورنا2015 فمنذ تأسيسنا عام. لا نكتفي ببناء البرمجيات، بل نحدث ثورة في قطاع كامل \n عقداً نشطاً32 موظفاً موهوباً يديرون32 من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تضم\n.عبر جميع خطوط منتجاتنا الثمانية\n للتركيز على النمو المستدام2023-2022 ، أعدنا الهيكلة استراتيجياً في 2020 موظف في 200 بعد أن بلغنا\n واليوم نحن فريق متماسك من.والتميز التشغيلي وبناء ثقافة عمل عن بُعد أولاً بمستوى عالمي \nالمحترفين المتميزين يحققون أثراً يفوق حجمهم بفضل الأتمتة والذكاء الاصطناعي والتركيز الاستراتيجي\nعلى عملاء المؤسسات ذوي القيمة العالية، من شركات التأمين الإقليمية إلى شركاء إعادة التأمين\n.العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_2",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6710494002245923,
+      "text": "تجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7 \nللمؤسسات\nحصلت Lifellm عملاء في التأمين على الحياة، من مزودين إقليميين صغار إلى شركات وطنية 6 لى ع\nكبرى\nفازت Healthllm عقود لخطط صحية تشمل شركات تأمين إقليمية وتحالفات رعاية صحية متعددة6 بـ\nالولايات\n(وبالإضافة إلى النمو المستمر في خطوط المنتجات الأصلية Carllm وHomellm وMarkellm وRellm،)\nتخدم Insurellm اليوم عملاء يتراوحون بين شركات التأمين الإقليمية وشركاء إعادة التأمين العالميين،\n.مما يبرهن على قدرة الشركة على المنافسة على امتداد سلسلة القيمة الكاملة للتأمين\n• \n• \n• \n• \n1"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/overview_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_2"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.2222222222222222
+  },
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "retrieval_latency_ms": 187.42150000252877,
+  "llm_latency_ms": 1022.382800001651,
+  "end_to_end_latency_ms": 1209.8043000041798,
+  "ttft_ms": 1001.8644999981916,
+  "generation_duration_ms": 20.518300003459444,
+  "input_tokens": 1733,
+  "output_tokens": 416,
+  "total_tokens": 2149,
+  "output_tokens_per_second": 20274.584148290123,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "2646",
+    "x-ratelimit-reset-tokens": "40.155s",
+    "x-request-id": "req_01m5xvwzjfepz8xnrbynwyxys9"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T05:03:47.769490+00:00"
+}
+{
+  "query_id": "q4",
+  "question": "يعني إيه قيمة النزاهة والشفافية في ثقافة الشركة؟",
+  "query_language": "ar",
+  "scenario": "ar_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "في ثقافة Insurellm، تعني النزاهة والشفافية أن تعمل الشركة بصدق وانفتاح في كل ما تقوم به، من منتجاتها إلى عملياتها الداخلية. وتؤمن الشركة بأن الثقة تُكتسب بالسلوك الأخلاقي المتسق والتواصل الواضح والمساءلة على جميع مستويات المؤسسة.",
+  "reference_citations": [
+    "company/culture_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_1"
+  ],
+  "answer": "قيمة النزاهة والشفافية في ثقافة الشركة تعني بناء الثقة من خلال العمل بصدق وانفتاح، مع سلوك أخلاقي متسق، تواصل واضح، ومساءلة على جميع مستويات المؤسسة.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/culture_ar/page_1/chunk_1",
+      "source": "data/company/culture_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5075050475164937,
+      "text": "هوس خدمة العميل\n كل قرار. نفهم احتياجات عملائنا فهماً عميقاً ونعمل بلا كلل لتجاوز توقعاتهم.نجاح عملائنا هو نجاحنا\n.يخص المنتج وكل ميزة وكل تفاعل يسترشد بالالتزام بتقديم قيمة استثنائية وبناء شراكات دائمة\nالنزاهة والشفافية\n من منتجاتنا إلى عملياتنا الداخلية، نؤمن بأن الثقة تُكتسب.نعمل بصدق وانفتاح في كل ما نقوم به \n.بالسلوك الأخلاقي المتسق والتواصل الواضح والمساءلة على جميع مستويات المؤسسة \nالتميز التعاوني\n نعزز ثقافة تُقدَّر فيها وجهات النظر المتنوعة، وتُتبادل فيها المعرفة بحرية، ويتمكن.نحقق المزيد معاً\n نحتفل بالانتصارات الجماعية ونساند بعضنا في .فيها كل عضو في الفريق من تقديم مواهبه الفريدة \n.مواجهة التحديات\n1"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4882910267980765,
+      "text": ".العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:\nهوس خدمة العميل عملية عميل نشطة تغطي سلسلة القيمة الكاملة32 عملك يؤثر مباشرة في :\nللتأمين\nالنزاهة والشفافية نبني الثقة بالسلوك الأخلاقي والتواصل المفتوح :\nالتميز التعاوني وجهات النظر المتنوعة والعمل الجماعي هما أساس نجاحنا:\nما نقدمه\nرواتب تنافسية مع مشاركة في الأسهم \nتأمين صحي وسني وبصري شامل\nترتيبات عمل مرنة وإجازات سخية\nبرامج للتطوير المهني والإرشاد\nمسارات واضحة للتقدم الوظيفي\nأحدث التقنيات والأدوات\nبيئة عمل شاملة ومتنوعة\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n1"
+    },
+    {
+      "chunk_id": "company/culture_ar/page_1/chunk_0",
+      "source": "data/company/culture_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.3401395676738611,
+      "text": "ثقافةInsurellm\nالرؤية\n.إحداث ثورة في قطاع التأمين من خلال تقنيات مبتكرة تجعل التأمين متاحاً وشفافاً وسهلاً للجميع \nالرسالة\nنمكسّنن مقدمي خدمات التأمين والمستهلكين بحلول برمجية متطورة تبسسّنط الإجراءات وتحسّن تجربة \n ومن خلال الجمع بين الخبرة العميقة في القطاع .العملاء وتبني علاقات هادفة في سوق التأمين \n.والابتكار التقني، نبني مستقبل التأمين\nالقيم الأساسية\nالابتكار أولاً \n نشجع فريقنا على التجربة وخوض المخاطر.نتحدى الوضع القائم ونتبنى الحلول الإبداعية للمشكلات\n ونؤمن بأن الحلول الرائدة تنبع من الفضول والتعاون.المحسوبة ودفع حدود الممكن في تقنيات التأمين \n.والاستعداد للتعلم من النجاحات والإخفاقات على حد سواء\nهوس خدمة العميل\n كل قرار. نفهم احتياجات عملائنا فهماً عميقاً ونعمل بلا كلل لتجاوز توقعاتهم.نجاح عملائنا هو نجاحنا"
+    },
+    {
+      "chunk_id": "company/culture_ar/page_2/chunk_1",
+      "source": "data/company/culture_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.2612205319753562,
+      "text": "النمو والتطوير برامج شاملة للتطوير المهني وفرص للإرشاد ومسارات واضحة للتقدم الوظيفي:\nحرية الابتكار الوصول إلى أحدث التقنيات والاستقلالية لتجربة الأفكار الجديدة:\nتوازن العمل والحياة ترتيبات عمل مرنة وإجازات سخية وثقافة تحترم الوقت الشخصي:\nمكافآت تنافسية رواتب رائدة في السوق ومشاركة في الأسهم ومزايا شاملة وحوافز أداء :\nبيئة شاملة للجميع فريق متنوع يُسمع فيه كل صوت وتقود فيه وجهات النظر المختلفة إلى حلول:\nأفضل\nرسالة ذات هدف كن جزءاً من جعل التأمين أكثر إتاحة وإنصافاً للجميع:\n.انضم إلينا في إحداث تغيير جذري في القطاع وبناء تقنيات ذات قيمة حقيقية \n• \n• \n• \n• \n• \n• \n• \n2"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.23799330462589074,
+      "text": "الوظائف في Insurellm\n لىلماذا تنضم إInsurellm؟\nفي Insurellm، تطورنا2015 فمنذ تأسيسنا عام. لا نكتفي ببناء البرمجيات، بل نحدث ثورة في قطاع كامل \n عقداً نشطاً32 موظفاً موهوباً يديرون32 من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تضم\n.عبر جميع خطوط منتجاتنا الثمانية\n للتركيز على النمو المستدام2023-2022 ، أعدنا الهيكلة استراتيجياً في 2020 موظف في 200 بعد أن بلغنا\n واليوم نحن فريق متماسك من.والتميز التشغيلي وبناء ثقافة عمل عن بُعد أولاً بمستوى عالمي \nالمحترفين المتميزين يحققون أثراً يفوق حجمهم بفضل الأتمتة والذكاء الاصطناعي والتركيز الاستراتيجي\nعلى عملاء المؤسسات ذوي القيمة العالية، من شركات التأمين الإقليمية إلى شركاء إعادة التأمين\n.العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/culture_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_1",
+    "company/culture_ar/page_1/chunk_0",
+    "company/culture_ar/page_2/chunk_1",
+    "company/careers_ar/page_1/chunk_0"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.4
+  },
+  "provider": "groq",
+  "model": "openai/gpt-oss-20b",
+  "retrieval_latency_ms": 189.88660000104574,
+  "llm_latency_ms": 857.278799998312,
+  "end_to_end_latency_ms": 1047.1653999993578,
+  "ttft_ms": 803.0419999995502,
+  "generation_duration_ms": 54.23679999876185,
+  "input_tokens": 1611,
+  "output_tokens": 225,
+  "total_tokens": 1836,
+  "output_tokens_per_second": 4148.47483636823,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "995",
+    "x-ratelimit-reset-requests": "7m12s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "779",
+    "x-ratelimit-reset-tokens": "54.157s",
+    "x-request-id": "req_01m5xvx0r7em0rmxj779n828x8"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T05:03:48.818019+00:00"
+}

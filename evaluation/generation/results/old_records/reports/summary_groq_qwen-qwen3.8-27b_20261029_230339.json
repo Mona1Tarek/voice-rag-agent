@@ -1,0 +1,93 @@
+{
+  "num_questions": 4,
+  "successful_requests": 4,
+  "request_success_rate": 1.0,
+  "error_count": 0,
+  "end_to_end_latency_ms": {
+    "count": 4,
+    "mean": 2514.317099999971,
+    "median": 1884.0092999962508,
+    "p95": 5358.413000001747
+  },
+  "retrieval_latency_ms": {
+    "count": 4,
+    "mean": 318.84707499921205,
+    "median": 304.50679999921704,
+    "p95": 428.7311000007321
+  },
+  "llm_latency_ms": {
+    "count": 4,
+    "mean": 2195.470025000759,
+    "median": 1583.1103999989864,
+    "p95": 5113.553600000159
+  },
+  "ttft_ms": {
+    "count": 4,
+    "mean": 2068.053074999625,
+    "median": 1537.1683499979554,
+    "p95": 4762.525600002846
+  },
+  "generation_duration_ms": {
+    "count": 4,
+    "mean": 127.41695000113396,
+    "median": 74.3454500043299,
+    "p95": 351.0279999973136
+  },
+  "output_tokens_per_second": {
+    "count": 4,
+    "mean": 919.3009936052501,
+    "median": 430.79333327045754,
+    "p95": 2613.3542405448775
+  },
+  "input_tokens": {
+    "count": 4,
+    "mean": 1688.0,
+    "median": 1723.0,
+    "p95": 1870.0
+  },
+  "output_tokens": {
+    "count": 4,
+    "mean": 40.25,
+    "median": 32.0,
+    "p95": 71.0
+  },
+  "total_tokens": {
+    "count": 4,
+    "mean": 1728.25,
+    "median": 1750.5,
+    "p95": 1941.0
+  },
+  "citation_precision": {
+    "count": 4,
+    "mean": 0.25,
+    "median": 0.0,
+    "p95": 1.0
+  },
+  "citation_recall": {
+    "count": 4,
+    "mean": 0.25,
+    "median": 0.0,
+    "p95": 1.0
+  },
+  "citation_f1": {
+    "count": 4,
+    "mean": 0.25,
+    "median": 0.0,
+    "p95": 1.0
+  },
+  "citation_id_validity": {
+    "count": 3,
+    "mean": 0.3333333333333333,
+    "median": 0.0,
+    "p95": 1.0
+  },
+  "abstention_heuristic_match_rate": 1.0,
+  "quality_note": "Correctness, faithfulness, semantic citation support, and language quality require human review or a separately validated judge.",
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "dataset": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\generation_questions.jsonl",
+  "top_k": 5,
+  "streaming": true,
+  "raw_results_file": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\results\\raw\\generation_groq_qwen-qwen3.8-27b_20261029_230339.jsonl",
+  "generated_at_utc": "2026-10-29T20:03:39.093057+00:00"
+}

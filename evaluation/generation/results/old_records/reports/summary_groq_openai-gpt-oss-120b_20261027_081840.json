@@ -1,0 +1,93 @@
+{
+  "num_questions": 4,
+  "successful_requests": 4,
+  "request_success_rate": 1.0,
+  "error_count": 0,
+  "end_to_end_latency_ms": {
+    "count": 4,
+    "mean": 1130.487625000569,
+    "median": 1131.2519000020984,
+    "p95": 1367.450199999439
+  },
+  "retrieval_latency_ms": {
+    "count": 4,
+    "mean": 154.26005000063014,
+    "median": 143.4994999999617,
+    "p95": 201.2581000017235
+  },
+  "llm_latency_ms": {
+    "count": 4,
+    "mean": 976.227574999939,
+    "median": 966.2313000007998,
+    "p95": 1224.64570000011
+  },
+  "ttft_ms": {
+    "count": 4,
+    "mean": 902.9651250011739,
+    "median": 908.936050002012,
+    "p95": 1081.7923000031442
+  },
+  "generation_duration_ms": {
+    "count": 4,
+    "mean": 73.26244999876508,
+    "median": 57.29524999878777,
+    "p95": 142.8533999969659
+  },
+  "output_tokens_per_second": {
+    "count": 4,
+    "mean": 2689.3890732005875,
+    "median": 2711.864693612826,
+    "p95": 3373.7755521896092
+  },
+  "input_tokens": {
+    "count": 4,
+    "mean": 1703.25,
+    "median": 1733.5,
+    "p95": 1735.0
+  },
+  "output_tokens": {
+    "count": 4,
+    "mean": 184.75,
+    "median": 186.5,
+    "p95": 280.0
+  },
+  "total_tokens": {
+    "count": 4,
+    "mean": 1888.0,
+    "median": 1869.0,
+    "p95": 1994.0
+  },
+  "citation_precision": {
+    "count": 4,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "citation_recall": {
+    "count": 4,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "citation_f1": {
+    "count": 4,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "citation_id_validity": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "p95": null
+  },
+  "abstention_heuristic_match_rate": 1.0,
+  "quality_note": "Correctness, faithfulness, semantic citation support, and language quality require human review or a separately validated judge.",
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "dataset": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\generation_questions.jsonl",
+  "top_k": 5,
+  "streaming": true,
+  "raw_results_file": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\results\\raw\\generation_groq_openai-gpt-oss-120b_20261027_081840.jsonl",
+  "generated_at_utc": "2026-10-27T05:18:40.938354+00:00"
+}

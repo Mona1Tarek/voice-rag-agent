@@ -1,0 +1,413 @@
+{
+  "query_id": "q34",
+  "question": "How many employees and offices did Insurellm have at its 2020 peak?",
+  "query_language": "en",
+  "scenario": "en_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "At its 2020 peak, Insurellm had 200 employees and 12 offices across the United States.",
+  "reference_citations": [
+    "company/about_ar/page_1/chunk_0"
+  ],
+  "answer": "At its 2020 peak, Insurellm had 200 employees and 12 offices across the United States.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6715148312546279,
+      "text": "الوظائف في Insurellm\n لىلماذا تنضم إInsurellm؟\nفي Insurellm، تطورنا2015 فمنذ تأسيسنا عام. لا نكتفي ببناء البرمجيات، بل نحدث ثورة في قطاع كامل \n عقداً نشطاً32 موظفاً موهوباً يديرون32 من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تضم\n.عبر جميع خطوط منتجاتنا الثمانية\n للتركيز على النمو المستدام2023-2022 ، أعدنا الهيكلة استراتيجياً في 2020 موظف في 200 بعد أن بلغنا\n واليوم نحن فريق متماسك من.والتميز التشغيلي وبناء ثقافة عمل عن بُعد أولاً بمستوى عالمي \nالمحترفين المتميزين يحققون أثراً يفوق حجمهم بفضل الأتمتة والذكاء الاصطناعي والتركيز الاستراتيجي\nعلى عملاء المؤسسات ذوي القيمة العالية، من شركات التأمين الإقليمية إلى شركاء إعادة التأمين\n.العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6396645362965959,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6269103000645562,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_0",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6085579409185515,
+      "text": "عنInsurellm\n أسسAvery Lancaster شركةInsurellm كشركة ناشئة في مجال تقنيات التأمين، بهدف 2015 عام\n وكان أول منتجاتها .إحداث تغيير جذري في قطاع يحتاج إلى منتجات مبتكرة Markellm، السوق الإلكتروني\n.الذي يربط المستهلكين بمقدمي خدمات التأمين\nشهدت الشركة نمواً سريعاً في سنواتها الخمس الأولى، إذ وسّعت محفظة منتجاتها لتشمل Carllm\n و)بوابة تأمين السيارات(Homellm و)بوابة تأمين المنازل (Rellm.)منصة إعادة التأمين للمؤسسات (\n بلغت 2020 وبحلول عامInsurellm. مكتباً في أنحاء الولايات المتحدة 12 موظف و200 ذروة نموها بـ\n بهدف التركيز على الربحية والنمو2023-2022 غير أن الشركة خضعت لإعادة هيكلة استراتيجية في \n وشملت هذه الخطوة دمج مواقع المكاتب وتطبيق استراتيجية العمل عن بُعد أولاً وتبسيط .المستدام\n، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_2",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5085068834580719,
+      "text": "تجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7 \nللمؤسسات\nحصلت Lifellm عملاء في التأمين على الحياة، من مزودين إقليميين صغار إلى شركات وطنية 6 لى ع\nكبرى\nفازت Healthllm عقود لخطط صحية تشمل شركات تأمين إقليمية وتحالفات رعاية صحية متعددة6 بـ\nالولايات\n(وبالإضافة إلى النمو المستمر في خطوط المنتجات الأصلية Carllm وHomellm وMarkellm وRellm،)\nتخدم Insurellm اليوم عملاء يتراوحون بين شركات التأمين الإقليمية وشركاء إعادة التأمين العالميين،\n.مما يبرهن على قدرة الشركة على المنافسة على امتداد سلسلة القيمة الكاملة للتأمين\n• \n• \n• \n• \n1"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/careers_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "company/overview_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_2"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 1.0
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 206.02969999890774,
+  "llm_latency_ms": 828.8353000007191,
+  "end_to_end_latency_ms": 1034.864999999627,
+  "ttft_ms": 768.2870999997249,
+  "generation_duration_ms": 60.54820000099426,
+  "input_tokens": 1831,
+  "output_tokens": 30,
+  "total_tokens": 1861,
+  "output_tokens_per_second": 495.47302809179087,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "6076",
+    "x-ratelimit-reset-tokens": "14.43s",
+    "x-request-id": "req_01m600j6ngevcad7kjes0ekgnr"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-28T01:03:44.002747+00:00"
+}
+{
+  "query_id": "q35",
+  "question": "What is Insurellm's mission statement?",
+  "query_language": "en",
+  "scenario": "en_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "Insurellm's mission is to empower insurance providers and consumers with advanced software solutions that streamline processes, improve the customer experience and build meaningful relationships in the insurance market. By combining deep industry expertise with technical innovation, it aims to build the future of insurance.",
+  "reference_citations": [
+    "company/culture_ar/page_1/chunk_0"
+  ],
+  "answer": "Insurellm's mission is to empower insurance providers and consumers with advanced software solutions that simplify processes, enhance the customer experience, and foster meaningful relationships in the insurance market. By combining deep industry expertise with technological innovation, the company aims to build the future of insurance.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_0",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.7348734996257209,
+      "text": "عنInsurellm\n أسسAvery Lancaster شركةInsurellm كشركة ناشئة في مجال تقنيات التأمين، بهدف 2015 عام\n وكان أول منتجاتها .إحداث تغيير جذري في قطاع يحتاج إلى منتجات مبتكرة Markellm، السوق الإلكتروني\n.الذي يربط المستهلكين بمقدمي خدمات التأمين\nشهدت الشركة نمواً سريعاً في سنواتها الخمس الأولى، إذ وسّعت محفظة منتجاتها لتشمل Carllm\n و)بوابة تأمين السيارات(Homellm و)بوابة تأمين المنازل (Rellm.)منصة إعادة التأمين للمؤسسات (\n بلغت 2020 وبحلول عامInsurellm. مكتباً في أنحاء الولايات المتحدة 12 موظف و200 ذروة نموها بـ\n بهدف التركيز على الربحية والنمو2023-2022 غير أن الشركة خضعت لإعادة هيكلة استراتيجية في \n وشملت هذه الخطوة دمج مواقع المكاتب وتطبيق استراتيجية العمل عن بُعد أولاً وتبسيط .المستدام\n، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من"
+    },
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.7315965994954904,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6892391385074046,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6808405436224703,
+      "text": "الوظائف في Insurellm\n لىلماذا تنضم إInsurellm؟\nفي Insurellm، تطورنا2015 فمنذ تأسيسنا عام. لا نكتفي ببناء البرمجيات، بل نحدث ثورة في قطاع كامل \n عقداً نشطاً32 موظفاً موهوباً يديرون32 من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تضم\n.عبر جميع خطوط منتجاتنا الثمانية\n للتركيز على النمو المستدام2023-2022 ، أعدنا الهيكلة استراتيجياً في 2020 موظف في 200 بعد أن بلغنا\n واليوم نحن فريق متماسك من.والتميز التشغيلي وبناء ثقافة عمل عن بُعد أولاً بمستوى عالمي \nالمحترفين المتميزين يحققون أثراً يفوق حجمهم بفضل الأتمتة والذكاء الاصطناعي والتركيز الاستراتيجي\nعلى عملاء المؤسسات ذوي القيمة العالية، من شركات التأمين الإقليمية إلى شركاء إعادة التأمين\n.العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:"
+    },
+    {
+      "chunk_id": "company/culture_ar/page_1/chunk_0",
+      "source": "data/company/culture_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6564948188062993,
+      "text": "ثقافةInsurellm\nالرؤية\n.إحداث ثورة في قطاع التأمين من خلال تقنيات مبتكرة تجعل التأمين متاحاً وشفافاً وسهلاً للجميع \nالرسالة\nنمكسّنن مقدمي خدمات التأمين والمستهلكين بحلول برمجية متطورة تبسسّنط الإجراءات وتحسّن تجربة \n ومن خلال الجمع بين الخبرة العميقة في القطاع .العملاء وتبني علاقات هادفة في سوق التأمين \n.والابتكار التقني، نبني مستقبل التأمين\nالقيم الأساسية\nالابتكار أولاً \n نشجع فريقنا على التجربة وخوض المخاطر.نتحدى الوضع القائم ونتبنى الحلول الإبداعية للمشكلات\n ونؤمن بأن الحلول الرائدة تنبع من الفضول والتعاون.المحسوبة ودفع حدود الممكن في تقنيات التأمين \n.والاستعداد للتعلم من النجاحات والإخفاقات على حد سواء\nهوس خدمة العميل\n كل قرار. نفهم احتياجات عملائنا فهماً عميقاً ونعمل بلا كلل لتجاوز توقعاتهم.نجاح عملائنا هو نجاحنا"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/about_ar/page_1/chunk_0",
+    "company/overview_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_0",
+    "company/culture_ar/page_1/chunk_0"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.8918918918918919
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 165.82949999974517,
+  "llm_latency_ms": 561.2571999990905,
+  "end_to_end_latency_ms": 727.0866999988357,
+  "ttft_ms": 458.9952999995148,
+  "generation_duration_ms": 102.26189999957569,
+  "input_tokens": 1867,
+  "output_tokens": 55,
+  "total_tokens": 1922,
+  "output_tokens_per_second": 537.8347165486678,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "998",
+    "x-ratelimit-reset-requests": "2m52.8s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "4264",
+    "x-ratelimit-reset-tokens": "28.02s",
+    "x-request-id": "req_01m600j79yeejbgpfvap30ttgz"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-28T01:03:44.731571+00:00"
+}
+{
+  "query_id": "q36",
+  "question": "How many active Healthllm contracts does Insurellm have?",
+  "query_language": "en",
+  "scenario": "en_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "Insurellm has 6 Healthllm contracts.",
+  "reference_citations": [
+    "company/overview_ar/page_2/chunk_1",
+    "company/about_ar/page_1/chunk_2"
+  ],
+  "answer": "Insurellm has 6 active Healthllm contracts.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_2",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6740127332398522,
+      "text": "تجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7 \nللمؤسسات\nحصلت Lifellm عملاء في التأمين على الحياة، من مزودين إقليميين صغار إلى شركات وطنية 6 لى ع\nكبرى\nفازت Healthllm عقود لخطط صحية تشمل شركات تأمين إقليمية وتحالفات رعاية صحية متعددة6 بـ\nالولايات\n(وبالإضافة إلى النمو المستمر في خطوط المنتجات الأصلية Carllm وHomellm وMarkellm وRellm،)\nتخدم Insurellm اليوم عملاء يتراوحون بين شركات التأمين الإقليمية وشركاء إعادة التأمين العالميين،\n.مما يبرهن على قدرة الشركة على المنافسة على امتداد سلسلة القيمة الكاملة للتأمين\n• \n• \n• \n• \n1"
+    },
+    {
+      "chunk_id": "contracts/Contract with WellCare Insurance Co. for Healthllm/chunk_1",
+      "source": "data/contracts/Contract with WellCare Insurance Co. for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6600709553454653,
+      "text": "4. **Member Coverage**: Essential Tier supports health insurance administration for up to 15,000 covered members. Current enrollment: 11,000 members.\n\n5. **Confidentiality:** Both parties agree to maintain strict confidentiality of proprietary information, protected health information (PHI), and member data in compliance with HIPAA regulations.\n\n6. **HIPAA Compliance:** Insurellm operates as a Business Associate and maintains full HIPAA compliance including Business Associate Agreement (BAA).\n\n7. **Liability:** Insurellm's liability is limited to direct damages not exceeding the total fees paid in the preceding 12 months.\n\n---\n\n## Renewal"
+    },
+    {
+      "chunk_id": "contracts/Contract with WellCare Insurance Co. for Healthllm/chunk_0",
+      "source": "data/contracts/Contract with WellCare Insurance Co. for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6491077692158643,
+      "text": "# Contract with WellCare Insurance Co. for Healthllm\n\n**Contract Date:** March 8, 2025\n**Contract Number:** HL-2025-0021\n**Parties:**\n- Insurellm, Inc.\n- WellCare Insurance Co.\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide WellCare Insurance Co. with access to the Healthllm platform, enabling comprehensive health insurance operations including plan design, eligibility verification, claims adjudication, and member engagement.\n\n2. **Duration:** This agreement is effective for a period of 12 months from the contract date, with automatic renewal unless terminated with 30-day written notice.\n\n3. **Payment:** WellCare Insurance Co. shall pay a monthly fee of $8,000, due by the 1st of every month for the Essential Tier package."
+    },
+    {
+      "chunk_id": "contracts/Contract with United Healthcare Alliance for Healthllm/chunk_0",
+      "source": "data/contracts/Contract with United Healthcare Alliance for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.643125182114181,
+      "text": "# Contract with United Healthcare Alliance for Healthllm\n\n**Contract Date:** May 15, 2025\n**Contract Number:** HL-2025-E-0156\n**Parties:**\n- Insurellm, Inc.\n- United Healthcare Alliance, LLC\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide United Healthcare Alliance with enterprise access to the Healthllm platform, including extensive customization, multi-state support, dedicated infrastructure, and premium support services for their nationwide health insurance operations covering 250,000+ members across 12 states.\n\n2. **Duration:** This agreement is effective for a period of 48 months from the contract date, representing Insurellm's most strategic long-term healthcare partnership."
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.6402105785889842,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/about_ar/page_1/chunk_2",
+    "contracts/Contract with WellCare Insurance Co. for Healthllm/chunk_1",
+    "contracts/Contract with WellCare Insurance Co. for Healthllm/chunk_0",
+    "contracts/Contract with United Healthcare Alliance for Healthllm/chunk_0",
+    "company/about_ar/page_1/chunk_1"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 1.0
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 189.7965000007389,
+  "llm_latency_ms": 441.1111000008532,
+  "end_to_end_latency_ms": 630.9076000015921,
+  "ttft_ms": 415.8664000005956,
+  "generation_duration_ms": 25.24470000025758,
+  "input_tokens": 1609,
+  "output_tokens": 14,
+  "total_tokens": 1623,
+  "output_tokens_per_second": 554.5718507194442,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "997",
+    "x-ratelimit-reset-requests": "4m19.2s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "2638",
+    "x-ratelimit-reset-tokens": "44.074s",
+    "x-request-id": "req_01m600j820e9zt8gh9d036pa6w"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-28T01:03:45.363035+00:00"
+}
+{
+  "query_id": "q37",
+  "question": "What email address can job applicants send their resumes to?",
+  "query_language": "en",
+  "scenario": "en_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "Job applicants can send their resumes to jobs@insurellm.com, and they should include the job title in the subject line.",
+  "reference_citations": [
+    "company/careers_ar/page_5/chunk_0"
+  ],
+  "answer": "Job applicants can send their resumes to **jobs@insurellm.com**.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/careers_ar/page_5/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.38604578026565606,
+      "text": "العمليات والدعم\n(أخصائي دعم فني Technical Support Specialist) عن بُعد| \nتقديم الدعم الفني من المستويين الثاني والثالث للعملاء\nاستكشاف أعطال المنصة وإصلاحها\nإعداد التوثيق ومقالات قاعدة المعرفة\nخبرة سنتين فأكثر في الدعم الفني \n(شريك أعمال الموارد البشرية HR Business Partner) | San Francisco, CA\nينالشراكة مع القيادة في استراتيجية الموظف \nدعم تطوير المواهب والاحتفاظ بها\nقيادة مبادرات الثقافة والتفاعل\n سنوات فأكثر في الموارد البشرية، ويُفضّل قطاع التقنية 4 خبرة\nكيفية التقديم\nزر بوابة الوظائف لدينا على careers.insurellm.com لى أو أرسل سيرتك الذاتية إjobs@insurellm.com.\n.يرجى ذكر المسمى الوظيفي في عنوان الرسالة \nInsurellm.ين نحتفي بالتنوع ونلتزم بخلق بيئة شاملة لجميع الموظف. صاحب عمل يوفر فرصاً متساوية\n• \n• \n• \n• \n• \n• \n• \n• \n5"
+    },
+    {
+      "chunk_id": "employees/10_Marketing_and_HR/page_1/row_10",
+      "source": "data/employees/10_Marketing_and_HR.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.34373579456744235,
+      "text": "name: Zara Reyes\ndate of birth: February 28, 1992\njob title: Recruiter\nlocation: Boston, Massachusetts\ncurrent salary: $88,000\njoined insurellm: January 2021\navg. performance (out of 5): 4.9 / 5\n2023 base salary: $88,000\n2023 bonus / commission: $14,500\n2022 base salary: $82,500\n2022 bonus / commission: $7,500"
+    },
+    {
+      "chunk_id": "employees/10_Marketing_and_HR/page_1/row_2",
+      "source": "data/employees/10_Marketing_and_HR.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.3259835396653008,
+      "text": "name: Elias Gomez\ndate of birth: May 26, 1984\njob title: Digital Marketing Analyst\nlocation: Remote (Austin, Texas)\ncurrent salary: $79,000\njoined insurellm: June 2020\navg. performance (out of 5): 3.4 / 5\n2023 base salary: $79,000\n2023 bonus / commission: $13,200\n2022 base salary: $73,500\n2022 bonus / commission: $4,700"
+    },
+    {
+      "chunk_id": "employees/08_Sales_Development/page_1/row_4",
+      "source": "data/employees/08_Sales_Development.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.3009353715893055,
+      "text": "name: Jennifer Adams\ndate of birth: July 7, 1997\njob title: Sales Development Representative\nlocation: Remote (Denver, Colorado)\ncurrent salary: $58,000\njoined insurellm: June 2022 (intern)\navg. performance (out of 5): 3.0 / 5\n2023 base salary: $58,000\n2023 bonus / commission: $4,200 (commission)\n2022 base salary: Intern, $22/hour\n2022 bonus / commission: N/A"
+    },
+    {
+      "chunk_id": "employees/02_Backend_Engineering/page_1/row_5",
+      "source": "data/employees/02_Backend_Engineering.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.29940578702720344,
+      "text": "name: Oliver Spencer\ndate of birth: May 14, 1990\njob title: Backend Software Engineer\nlocation: Austin, Texas\ncurrent salary: $125,000\njoined insurellm: March 2018\navg. performance (out of 5): 3.5 / 5\n2023 base salary: $125,000\n2023 bonus / commission: None recorded\n2022 base salary: $120,000\n2022 bonus / commission: None recorded"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/careers_ar/page_5/chunk_0",
+    "employees/10_Marketing_and_HR/page_1/row_10",
+    "employees/10_Marketing_and_HR/page_1/row_2",
+    "employees/08_Sales_Development/page_1/row_4",
+    "employees/02_Backend_Engineering/page_1/row_5"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.5263157894736842
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 199.01970000137226,
+  "llm_latency_ms": 604.9094999998488,
+  "end_to_end_latency_ms": 803.929200001221,
+  "ttft_ms": 573.6328000002686,
+  "generation_duration_ms": 31.27669999958016,
+  "input_tokens": 1433,
+  "output_tokens": 17,
+  "total_tokens": 1450,
+  "output_tokens_per_second": 543.5356031879386,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "1336",
+    "x-ratelimit-reset-tokens": "55.74s",
+    "x-request-id": "req_01m600j8nreh38ehb6bb2122r2"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-28T01:03:46.167071+00:00"
+}

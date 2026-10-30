@@ -1,0 +1,415 @@
+{
+  "query_id": "q9",
+  "question": "Claimllm وقّعت كام عقد؟",
+  "query_language": "ar",
+  "scenario": "ar_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "وقّعت Claimllm 7 عقود.",
+  "reference_citations": [
+    "company/about_ar/page_1/chunk_1",
+    "company/about_ar/page_1/chunk_2",
+    "company/overview_ar/page_2/chunk_0"
+  ],
+  "answer": "بناءً على المستندات المقدمة، وقّعت Insurellm **عقدين** متعلقين بمنصة Claimllm:\n\n1. عقد مع **Rapid Claims Associates, LLC** (تاريخ التوقيع: 1 مارس 2025).\n2. عقد مع **National Claims Network Corp.** (تاريخ العقد: 20 أبريل 2025).\n\nيوجد أيضاً ملف بعنوان \"Contract with Premier Adjusters Inc. for Claimllm\" في المستندات، ولكن المحتوى المقدم لهذا الملف فارغ ولا يحتوي على تفاصيل أو توقيعات تثبت إبرام العقد، لذا لا يمكن احتسابه كعقد موقّع بناءً على الأدلة المتوفرة فقط.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "contracts/Contract with Rapid Claims Associates for Claimllm/chunk_7",
+      "source": "data/contracts/Contract with Rapid Claims Associates for Claimllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6747613651366575,
+      "text": "---\n\n**Signatures:**\n\n_________________________________\n**Sarah Chen**\n**Title**: Vice President of Sales\n**Insurellm, Inc.**\n**Date**: March 1, 2025\n\n_________________________________\n**Marcus Johnson**\n**Title**: Chief Claims Officer\n**Rapid Claims Associates, LLC**\n**Date**: March 1, 2025\n\n---\n\nThis agreement represents the complete understanding between Insurellm and Rapid Claims Associates regarding the Claimllm platform and supersedes any prior communications or agreements."
+    },
+    {
+      "chunk_id": "contracts/Contract with National Claims Network for Claimllm/chunk_0",
+      "source": "data/contracts/Contract with National Claims Network for Claimllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6237404556850155,
+      "text": "# Contract with National Claims Network for Claimllm\n\n**Contract Date:** April 20, 2025\n**Contract Number:** CL-2025-E-0198\n**Parties:**\n- Insurellm, Inc.\n- National Claims Network Corp.\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide National Claims Network with enterprise access to the Claimllm platform, including white-label capabilities, unlimited claims capacity, advanced fraud analytics, and dedicated infrastructure to support their nationwide claims operations processing over 100,000 claims annually.\n\n2. **Duration:** This agreement is effective for a period of 36 months from the contract date, representing Insurellm's longest-term contract commitment to date."
+    },
+    {
+      "chunk_id": "contracts/Contract with Premier Adjusters Inc. for Claimllm/chunk_0",
+      "source": "data/contracts/Contract with Premier Adjusters Inc. for Claimllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6198468670178789,
+      "text": "# Contract with Premier Adjusters Inc. for Claimllm\n\n---\n\n## Terms"
+    },
+    {
+      "chunk_id": "contracts/Contract with Rapid Claims Associates for Claimllm/chunk_6",
+      "source": "data/contracts/Contract with Rapid Claims Associates for Claimllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6091348240453418,
+      "text": "3. **Platform Updates:**\n   - Quarterly feature releases with new capabilities\n   - Monthly security patches and bug fixes\n   - Release notes and changelog documentation\n   - Advance notice of breaking changes (minimum 30 days)\n\n4. **Account Management:**\n   - Named customer success manager\n   - Semi-annual business review meetings\n   - Usage analytics and optimization recommendations\n   - Assistance with tier upgrade evaluation when volume grows\n\n5. **Integration Support:** Technical assistance connecting Claimllm with:\n   - Existing claims management systems\n   - Policy administration platforms\n   - Vendor management networks (repair shops, medical providers)\n   - Payment processing systems\n\n---\n\n**Signatures:**"
+    },
+    {
+      "chunk_id": "contracts/Contract with National Claims Network for Claimllm/chunk_11",
+      "source": "data/contracts/Contract with National Claims Network for Claimllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6010209641667092,
+      "text": "_________________________________\n**Amanda Richardson**\n**Title**: President & Chief Operating Officer\n**National Claims Network Corp.**\n**Date**: April 20, 2025\n\n---\n\nThis agreement represents a strategic partnership between Insurellm and National Claims Network, establishing National Claims Network as Insurellm's flagship enterprise claims processing partner. This contract supersedes all prior agreements and communications."
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "contracts/Contract with Rapid Claims Associates for Claimllm/chunk_7",
+    "contracts/Contract with National Claims Network for Claimllm/chunk_0",
+    "contracts/Contract with Premier Adjusters Inc. for Claimllm/chunk_0",
+    "contracts/Contract with Rapid Claims Associates for Claimllm/chunk_6",
+    "contracts/Contract with National Claims Network for Claimllm/chunk_11"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.6
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 195.23240000125952,
+  "llm_latency_ms": 1125.8407999994233,
+  "end_to_end_latency_ms": 1321.0732000006828,
+  "ttft_ms": 790.7483999988472,
+  "generation_duration_ms": 335.09240000057616,
+  "input_tokens": 1072,
+  "output_tokens": 149,
+  "total_tokens": 1221,
+  "output_tokens_per_second": 444.6534746826362,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "6428",
+    "x-ratelimit-reset-tokens": "11.79s",
+    "x-request-id": "req_01m5xzyr8fe9gaqsn9kbmy44y2"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T06:14:39.859622+00:00"
+}
+{
+  "query_id": "q51",
+  "question": "الدفع في عقد Advantage Medical Coverage بيتم إمتى في الشهر وعن طريق إيه؟",
+  "query_language": "ar",
+  "scenario": "egyptian_arabic_question__en_contract",
+  "is_answerable": true,
+  "reference_answer": "بحسب عقد Advantage Medical Coverage، تُستحق الدفعة الشهرية البالغة 15,000 دولار في اليوم العاشر من كل شهر، وتُسدَّد عن طريق التحويل البنكي (wire transfer).",
+  "reference_citations": [
+    "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_0"
+  ],
+  "answer": "الدفع في عقد Advantage Medical Coverage يتم في اليوم العاشر من كل شهر، وذلك عن طريق التحويل البنكي (wire transfer).",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_0",
+      "source": "data/contracts/Contract with Advantage Medical Coverage for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.7509394340383941,
+      "text": "# Contract with Advantage Medical Coverage for Healthllm\n\n**Contract Date:** April 18, 2025\n**Contract Number:** HL-2025-0124\n\n---\n\n## Terms\n\n1. **Parties Involved**: This contract is entered into between Insurellm, Inc. (\"Provider\") and Advantage Medical Coverage (\"Client\").\n\n2. **License Grant**: Insurellm grants Advantage Medical Coverage a non-exclusive, non-transferable license to use the Healthllm Professional Tier platform.\n\n3. **Payment Terms**: Advantage Medical Coverage agrees to make monthly payments of $15,000 for the duration of this 18-month contract, totaling $270,000. Payments due on the 10th of each month via wire transfer.\n\n4. **Member Coverage**: Professional Tier supports up to 50,000 covered members. Advantage currently covers 32,000 members in 2 states."
+    },
+    {
+      "chunk_id": "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_5",
+      "source": "data/contracts/Contract with Advantage Medical Coverage for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6620852585777967,
+      "text": "3. **System Updates**: Monthly platform enhancements and bi-weekly security patches. Maintenance windows on Saturday 11 PM - Sunday 2 AM EST with 72-hour advance notice.\n\n4. **Account Management**: Named senior customer success manager with quarterly business reviews and annual strategic planning session.\n\n5. **Integration Support**: Technical assistance for integrating with:\n   - Advantage's HealthRules policy admin system\n   - Optum PBM\n   - Availity clearinghouse\n   - Provider credentialing platforms\n   - Member portal and mobile apps\n\n---\n\n**Signatures:**\n\n**Insurellm, Inc.**\nSarah Chen, VP of Sales\nDate: April 18, 2025\n\n**Advantage Medical Coverage**\nDr. Michael Ramirez, Chief Medical Officer\nDate: April 18, 2025\n\n---"
+    },
+    {
+      "chunk_id": "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_6",
+      "source": "data/contracts/Contract with Advantage Medical Coverage for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6559534112402612,
+      "text": "**Advantage Medical Coverage**\nDr. Michael Ramirez, Chief Medical Officer\nDate: April 18, 2025\n\n---\n\nThis contract enables Advantage Medical Coverage to leverage advanced AI and predictive analytics for improved member health outcomes and operational efficiency."
+    },
+    {
+      "chunk_id": "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_4",
+      "source": "data/contracts/Contract with Advantage Medical Coverage for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.5895485798716458,
+      "text": "## Support\n\n1. **Customer Support**: Insurellm will provide priority support to Advantage Medical Coverage:\n   - Dedicated support team Monday-Friday 6 AM - 9 PM EST\n   - Emergency support 24/7 for critical system issues\n   - Response time: 6 hours for critical, 12 hours for high priority, 24 hours for standard\n   - Private support portal with ticket tracking\n\n2. **Training**: Comprehensive training program:\n   - 5-week implementation with project manager\n   - Training for up to 30 staff members (45 hours total)\n   - Role-specific training tracks\n   - Quarterly webinars on new features\n   - Online training library with 75+ courses"
+    },
+    {
+      "chunk_id": "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_2",
+      "source": "data/contracts/Contract with Advantage Medical Coverage for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.5824057621548262,
+      "text": "## Features\n\n1. **Included Features**: Advantage Medical Coverage will have access to Healthllm Professional Tier features:\n   - Intelligent Plan Design with competitive benchmarking\n   - Real-Time Eligibility Verification with provider integration\n   - AI-Driven Claims Adjudication with auto-processing\n   - Predictive Healthcare Analytics for population health\n   - Provider Network Management with 8,000+ providers\n   - Member Engagement Platform with mobile app\n   - Advanced Medication Management with PBM integration\n   - Regulatory Compliance Engine (ACA, state mandates, HIPAA)\n   - Enhanced Analytics and predictive modeling\n   - Care management tools and workflows"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_0",
+    "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_5",
+    "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_6",
+    "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_4",
+    "contracts/Contract with Advantage Medical Coverage for Healthllm/chunk_2"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.5714285714285714
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 198.61540000056266,
+  "llm_latency_ms": 1660.6796000014583,
+  "end_to_end_latency_ms": 1859.295000002021,
+  "ttft_ms": 479.41070000160835,
+  "generation_duration_ms": 1181.26889999985,
+  "input_tokens": 1279,
+  "output_tokens": 29,
+  "total_tokens": 1308,
+  "output_tokens_per_second": 24.549871752319632,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "998",
+    "x-ratelimit-reset-requests": "2m52.8s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "5474",
+    "x-ratelimit-reset-tokens": "19.242s",
+    "x-request-id": "req_01m5xzys6hehfs5fdmnkr5r35p"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T06:14:41.720291+00:00"
+}
+{
+  "query_id": "q32",
+  "question": "Samuel Trenton انضم لـ Insurellm إمتى؟",
+  "query_language": "ar",
+  "scenario": "ar_question__en_document",
+  "is_answerable": true,
+  "reference_answer": "انضم Samuel Trenton إلى Insurellm في أغسطس 2016.",
+  "reference_citations": [
+    "employees/05_Data_Science/page_1/row_8"
+  ],
+  "answer": "انضم Samuel Trenton إلى Insurellm في أغسطس 2016.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "employees/05_Data_Science/page_1/row_8",
+      "source": "data/employees/05_Data_Science.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.5110331085360686,
+      "text": "name: Samuel Trenton\ndate of birth: April 12, 1989\njob title: Senior Data Scientist\nlocation: Austin, Texas\ncurrent salary: $115,000\njoined insurellm: August 2016\navg. performance (out of 5): 3.8 / 5\n2023 base salary: $115,000\n2023 bonus / commission: $15,000\n2022 base salary: $110,000\n2022 bonus / commission: $10,000"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4255837721526297,
+      "text": "الوظائف في Insurellm\n لىلماذا تنضم إInsurellm؟\nفي Insurellm، تطورنا2015 فمنذ تأسيسنا عام. لا نكتفي ببناء البرمجيات، بل نحدث ثورة في قطاع كامل \n عقداً نشطاً32 موظفاً موهوباً يديرون32 من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تضم\n.عبر جميع خطوط منتجاتنا الثمانية\n للتركيز على النمو المستدام2023-2022 ، أعدنا الهيكلة استراتيجياً في 2020 موظف في 200 بعد أن بلغنا\n واليوم نحن فريق متماسك من.والتميز التشغيلي وبناء ثقافة عمل عن بُعد أولاً بمستوى عالمي \nالمحترفين المتميزين يحققون أثراً يفوق حجمهم بفضل الأتمتة والذكاء الاصطناعي والتركيز الاستراتيجي\nعلى عملاء المؤسسات ذوي القيمة العالية، من شركات التأمين الإقليمية إلى شركاء إعادة التأمين\n.العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_0",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4198186771983766,
+      "text": "عنInsurellm\n أسسAvery Lancaster شركةInsurellm كشركة ناشئة في مجال تقنيات التأمين، بهدف 2015 عام\n وكان أول منتجاتها .إحداث تغيير جذري في قطاع يحتاج إلى منتجات مبتكرة Markellm، السوق الإلكتروني\n.الذي يربط المستهلكين بمقدمي خدمات التأمين\nشهدت الشركة نمواً سريعاً في سنواتها الخمس الأولى، إذ وسّعت محفظة منتجاتها لتشمل Carllm\n و)بوابة تأمين السيارات(Homellm و)بوابة تأمين المنازل (Rellm.)منصة إعادة التأمين للمؤسسات (\n بلغت 2020 وبحلول عامInsurellm. مكتباً في أنحاء الولايات المتحدة 12 موظف و200 ذروة نموها بـ\n بهدف التركيز على الربحية والنمو2023-2022 غير أن الشركة خضعت لإعادة هيكلة استراتيجية في \n وشملت هذه الخطوة دمج مواقع المكاتب وتطبيق استراتيجية العمل عن بُعد أولاً وتبسيط .المستدام\n، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4098250180070414,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.36530892968604883,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "employees/05_Data_Science/page_1/row_8",
+    "company/careers_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "company/overview_ar/page_1/chunk_0"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 1.0
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 372.7435000000696,
+  "llm_latency_ms": 2446.4517000014894,
+  "end_to_end_latency_ms": 2819.195200001559,
+  "ttft_ms": 2410.575099998823,
+  "generation_duration_ms": 35.87660000266624,
+  "input_tokens": 1647,
+  "output_tokens": 19,
+  "total_tokens": 1666,
+  "output_tokens_per_second": 529.5931052158783,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "997",
+    "x-ratelimit-reset-requests": "4m19.2s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "4336",
+    "x-ratelimit-reset-tokens": "29.331s",
+    "x-request-id": "req_01m5xzyx48eq1vpf1jeb4rjxcf"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T06:14:44.540193+00:00"
+}
+{
+  "query_id": "q78",
+  "question": "مين المدير المالي (CFO) في Insurellm؟",
+  "query_language": "ar",
+  "scenario": "egyptian_arabic_question__unanswerable_employee",
+  "is_answerable": false,
+  "reference_answer": "لم أجد في الوثائق المتاحة أي معلومات عن المدير المالي (CFO) في Insurellm، لذلك لا أستطيع تحديد من يشغل هذا المنصب.",
+  "reference_citations": [
+    "employees/01_Technology_Leadership",
+    "company/overview_ar"
+  ],
+  "answer": "لا تذكر المستندات المقدمة اسم المدير المالي (CFO) في Insurellm.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5864532601490156,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5688218609072049,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "contracts/Contract with GlobalRe Partners for Rellm/chunk_24",
+      "source": "data/contracts/Contract with GlobalRe Partners for Rellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.5558062684773177,
+      "text": "---\n\n**Signatures:**\n\n_________________________________\n**Jennifer Rodriguez**\n**Title**: Chief Executive Officer\n**Insurellm, Inc.**\n**Date**: April 28, 2025\n\n_________________________________\n**Sir Charles Pemberton**\n**Title**: Group Chief Executive Officer\n**GlobalRe Partners International, Ltd.**\n**Date**: April 28, 2025\n\n---\n\nThis agreement establishes GlobalRe Partners as Insurellm's flagship enterprise reinsurance partner, representing the most comprehensive and strategic partnership in Insurellm's history. This collaboration will drive innovation in reinsurance technology, catastrophe modeling, climate risk analytics, and AI-powered underwriting, setting new standards for the global reinsurance industry. This contract supersedes all prior agreements and communications."
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5478402215837137,
+      "text": "الوظائف في Insurellm\n لىلماذا تنضم إInsurellm؟\nفي Insurellm، تطورنا2015 فمنذ تأسيسنا عام. لا نكتفي ببناء البرمجيات، بل نحدث ثورة في قطاع كامل \n عقداً نشطاً32 موظفاً موهوباً يديرون32 من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تضم\n.عبر جميع خطوط منتجاتنا الثمانية\n للتركيز على النمو المستدام2023-2022 ، أعدنا الهيكلة استراتيجياً في 2020 موظف في 200 بعد أن بلغنا\n واليوم نحن فريق متماسك من.والتميز التشغيلي وبناء ثقافة عمل عن بُعد أولاً بمستوى عالمي \nالمحترفين المتميزين يحققون أثراً يفوق حجمهم بفضل الأتمتة والذكاء الاصطناعي والتركيز الاستراتيجي\nعلى عملاء المؤسسات ذوي القيمة العالية، من شركات التأمين الإقليمية إلى شركاء إعادة التأمين\n.العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_0",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5434917718098646,
+      "text": "عنInsurellm\n أسسAvery Lancaster شركةInsurellm كشركة ناشئة في مجال تقنيات التأمين، بهدف 2015 عام\n وكان أول منتجاتها .إحداث تغيير جذري في قطاع يحتاج إلى منتجات مبتكرة Markellm، السوق الإلكتروني\n.الذي يربط المستهلكين بمقدمي خدمات التأمين\nشهدت الشركة نمواً سريعاً في سنواتها الخمس الأولى، إذ وسّعت محفظة منتجاتها لتشمل Carllm\n و)بوابة تأمين السيارات(Homellm و)بوابة تأمين المنازل (Rellm.)منصة إعادة التأمين للمؤسسات (\n بلغت 2020 وبحلول عامInsurellm. مكتباً في أنحاء الولايات المتحدة 12 موظف و200 ذروة نموها بـ\n بهدف التركيز على الربحية والنمو2023-2022 غير أن الشركة خضعت لإعادة هيكلة استراتيجية في \n وشملت هذه الخطوة دمج مواقع المكاتب وتطبيق استراتيجية العمل عن بُعد أولاً وتبسيط .المستدام\n، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/overview_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "contracts/Contract with GlobalRe Partners for Rellm/chunk_24",
+    "company/careers_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_0"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": false,
+    "reference_lexical_overlap_diagnostic": null
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 305.2145000001474,
+  "llm_latency_ms": 410.26459999920917,
+  "end_to_end_latency_ms": 715.4790999993565,
+  "ttft_ms": 369.21040000015637,
+  "generation_duration_ms": 41.0541999990528,
+  "input_tokens": 1678,
+  "output_tokens": 19,
+  "total_tokens": 1697,
+  "output_tokens_per_second": 462.80283138968406,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "2624",
+    "x-ratelimit-reset-tokens": "43.054s",
+    "x-request-id": "req_01m5xzyxrzewhsbvnf2pz4s327"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T06:14:45.256819+00:00"
+}

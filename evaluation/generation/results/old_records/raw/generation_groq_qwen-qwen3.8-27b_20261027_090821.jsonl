@@ -1,0 +1,412 @@
+{
+  "query_id": "q60",
+  "question": "Which products does the company overview list under the core insurance portals?",
+  "query_language": "en",
+  "scenario": "en_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "The company overview lists five products as core insurance portals: Carllm for auto, Homellm for home, Lifellm for life, Healthllm for health, and Bizllm for commercial insurance.",
+  "reference_citations": [
+    "company/overview_ar/page_1/chunk_0"
+  ],
+  "answer": "Based on the company overview, the products listed under the core insurance portals are:\n\n*   **Carllm**: An auto insurance platform for insurance companies.\n*   **Homellm**: A home insurance platform for insurance companies.\n*   **Lifellm**: A life insurance platform with AI-supported underwriting.\n*   **Healthllm**: A comprehensive health insurance platform.\n*   **Bizllm**: A commercial insurance platform for business coverage.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/overview_ar/page_1/chunk_0",
+      "source": "data/company/overview_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5715820561177509,
+      "text": "لىنظرة عامة عInsurellm\nInsurellm موظفاً بشكل رئيسي عن بُعد في 32 شركة مبتكرة في مجال تقنيات التأمين، يعمل بها \nالولايات المتحدة، ولها مكاتب في San Francisco و)المقر الرئيسي (New York وAustin وChicago و\nDenver.\nلى، وتطورت من شركة ناشئة سريعة النمو إلى شركة رشيقة ومربحة تركز ع2015 تأسست الشركة عام\n.النمو المستدام والتميز التشغيلي\nالمنتجات\nتقدم Insurellm:ين منتجات برمجية للتأمين تغطي مجموعة من فروع التأم8 \nبوابات التأمين الأساسية\nCarllmين منصة تأمين السيارات لشركات التأم:\nHomellmين منصة تأمين المنازل لشركات التأم:\nLifellm منصة للتأمين على الحياة مع اكتتاب مدعوم بالذكاء الاصطناعي:\nHealthllm منصة شاملة للتأمين الصحي:\nBizllm منصة للتأمين التجاري لتغطية الأعمال:\nالسوق والبنية التحتية\nMarkellm)ليالمنتج الرئيسي الأص( سوق إلكتروني يربط المستهلكين بمقدمي خدمات التأمين :"
+    },
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_1",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.5601338367737305,
+      "text": "، تعمل 2025 وفي عام .العملياتInsurellm موظفاً بنوا محفظة من32 بفريق رشيق وعالي الكفاءة من\n وتحتفظ الشركة بمقرها الرئيسي في . عقداً نشطاً تغطي جميع خطوط المنتجات الثمانية32San\nFrancisco ، إلى جانب مكاتب فرعية صغيرة في أسواق رئيسية تشمل New York وAustin وChicago و\nDenver.\n ومنذ إعادة الهيكلة، واصلتInsurellm. الابتكار وتوسيع مجموعة منتجاتها إلى ثماني منصات شاملة\nفقد أضافت Lifellm و)التأمين على الحياة (Healthllm و)التأمين الصحي (Bizllm و)التأمين التجاري (\nClaimllm وقد حققت هذه الخطوة. لتلبية الطيف الكامل لاحتياجات التأمين)معالجة المطالبات (\n:الاستراتيجية نجاحاً كبيراً، مع اعتماد قوي عبر جميع المنتجات الجديدة\nاكتسبت Bizllm عقود للتأمين التجاري، تشمل شركات تأمين إقليمية ومجموعات7 زخماً سريعاً بـ\nتجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7"
+    },
+    {
+      "chunk_id": "contracts/Contract with Pinnacle Insurance Co. for Homellm/chunk_4",
+      "source": "data/contracts/Contract with Pinnacle Insurance Co. for Homellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.5412891950084475,
+      "text": "6. **Customer Portal**: A user-friendly interface allowing policy management, claims submission, and coverage updates at any time."
+    },
+    {
+      "chunk_id": "contracts/Contract with Evergreen Life Insurance for Lifellm/chunk_4",
+      "source": "data/contracts/Contract with Evergreen Life Insurance for Lifellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.5354880150180278,
+      "text": "5. **Customer Portal:** Policyholder self-service portal featuring:\n   - Policy document access\n   - Beneficiary updates\n   - Premium payment processing\n   - Coverage summary and statements\n   - Digital insurance cards\n\n6. **Regulatory Compliance:** Built-in compliance monitoring for:\n   - State insurance regulations\n   - NAIC model laws and regulations\n   - Anti-money laundering (AML) requirements\n   - Policy form approvals\n\n7. **Basic Analytics:** Standard dashboards tracking:\n   - Application submission and approval rates\n   - Average underwriting cycle time\n   - Policy persistency and lapse rates\n   - Face amount in force\n\n---\n\n## Support\n\nInsurellm commits to providing comprehensive support to Evergreen Life Insurance:"
+    },
+    {
+      "chunk_id": "products/insurellm_operations_platform_products/row_2",
+      "source": "data/products/insurellm_operations_platform_products.csv",
+      "doc_type": "products",
+      "language": "en",
+      "score": 0.5346246437027506,
+      "text": "product_name: Bizllm\nproduct_group: Insurance Operations Platforms\ninsurance_focus: Commercial insurance (general liability, professional liability, property, workers' comp, cyber)\ntarget_customers: Commercial insurers serving small businesses to large corporations\nsummary: Enterprise-grade commercial insurance platform for underwriting, policy administration and risk management across multiple commercial lines.\nkey_features: Multi-Line Underwriting Engine | Business Intelligence Integration | Cyber Risk Assessment | Workers' Compensation Optimization | Commercial Property Evaluation | Professional Liability Specialization | Portfolio Management Dashboard | Agent and Broker Portal | Claims Management Integration\nnum_features: 9\npricing_tiers: Business: $6,000/month (regional insurers, core underwriting and policy admin) | Professional: $12,000/month (multi-line carriers, cyber tools, advanced analytics) | Enterprise: custom (national and specialty insurers, API access, dedicated environments, white-label)\nstarting_price_usd_per_month: 6000\nhas_custom_enterprise_pricing: Yes\nroadmap: Q2 2025: v1.0 launch | Q4 2025: enhanced cyber capabilities | Q2 2026: embedded IoT integration | Q4 2026: parametric insurance module | Q2 2027: climate risk modeling | Q4 2027: international expansion"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/overview_ar/page_1/chunk_0",
+    "company/about_ar/page_1/chunk_1",
+    "contracts/Contract with Pinnacle Insurance Co. for Homellm/chunk_4",
+    "contracts/Contract with Evergreen Life Insurance for Lifellm/chunk_4",
+    "products/insurellm_operations_platform_products/row_2"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.8181818181818182
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 244.7085000021616,
+  "llm_latency_ms": 866.1480999980995,
+  "end_to_end_latency_ms": 1110.856600000261,
+  "ttft_ms": 667.9784000007203,
+  "generation_duration_ms": 198.1696999973792,
+  "input_tokens": 1488,
+  "output_tokens": 98,
+  "total_tokens": 1586,
+  "output_tokens_per_second": 494.52565150623957,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "6362",
+    "x-ratelimit-reset-tokens": "12.285s",
+    "x-request-id": "req_01m5xzk3ykeqmadyq9g7jrj0kr"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T06:08:18.481062+00:00"
+}
+{
+  "query_id": "q30",
+  "question": "مين الموظف اللي شغال Chief Technology Officer؟",
+  "query_language": "ar",
+  "scenario": "ar_question__en_document",
+  "is_answerable": true,
+  "reference_answer": "الموظف الذي يشغل منصب Chief Technology Officer هو James Wilson.",
+  "reference_citations": [
+    "employees/01_Technology_Leadership/page_1/row_4"
+  ],
+  "answer": "الموظف الذي يشغل منصب Chief Technology Officer (CTO) هو James Wilson.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "employees/01_Technology_Leadership/page_1/row_4",
+      "source": "data/employees/01_Technology_Leadership.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.5146843899484634,
+      "text": "name: James Wilson\ndate of birth: April 5, 1978\njob title: Chief Technology Officer (CTO)\nlocation: San Francisco, California\ncurrent salary: $285,000\njoined insurellm: January 2017\navg. performance (out of 5): 4.6 / 5\n2023 base salary: $285,000\n2023 bonus / commission: $125,000 plus equity refresh\n2022 base salary: $270,000\n2022 bonus / commission: $110,000 plus equity refresh"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_5/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.47818721466902453,
+      "text": "العمليات والدعم\n(أخصائي دعم فني Technical Support Specialist) عن بُعد| \nتقديم الدعم الفني من المستويين الثاني والثالث للعملاء\nاستكشاف أعطال المنصة وإصلاحها\nإعداد التوثيق ومقالات قاعدة المعرفة\nخبرة سنتين فأكثر في الدعم الفني \n(شريك أعمال الموارد البشرية HR Business Partner) | San Francisco, CA\nينالشراكة مع القيادة في استراتيجية الموظف \nدعم تطوير المواهب والاحتفاظ بها\nقيادة مبادرات الثقافة والتفاعل\n سنوات فأكثر في الموارد البشرية، ويُفضّل قطاع التقنية 4 خبرة\nكيفية التقديم\nزر بوابة الوظائف لدينا على careers.insurellm.com لى أو أرسل سيرتك الذاتية إjobs@insurellm.com.\n.يرجى ذكر المسمى الوظيفي في عنوان الرسالة \nInsurellm.ين نحتفي بالتنوع ونلتزم بخلق بيئة شاملة لجميع الموظف. صاحب عمل يوفر فرصاً متساوية\n• \n• \n• \n• \n• \n• \n• \n• \n5"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_2/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.46146939664851266,
+      "text": "الفرص الحالية\nالهندسة\n(مهندس برمجيات متكامل أول Senior Full Stack Engineer) | San Francisco, CA\nينقيادة تطوير ميزات الجيل القادم من منصة التأم\nالعمل مع React وNode.js وPython وتقنيات الحوسبة السحابية\nتوجيه المهندسين المبتدئين وقيادة القرارات التقنية\n سنوات فأكثر5 المطلوب خبرة\n(مهندس برمجيات للأنظمة الخلفية Backend Software Engineer) | San Francisco, CA / Austin, TX\nبناء خدمات مصغّرة وواجهات برمجية قابلة للتوسع \nتحسين أداء الأنظمة وموثوقيتها\nالتعاون مع فرق المنتج والتصميم\n سنوات فأكثر في 3 خبرةJava أوPython أوGo\n( مطور واجهات أماميةFrontend Developer) عن بُعد| \nإنشاء واجهات مستخدم بديهية لمنصات التأمين لدينا\n(العمل مع أطر حديثة React أوVue أوAngular)\nضمان إمكانية الوصول والتصميم المتجاوب\nالمطلوب خبرة سنتين فأكثر\nمهندس DevOps( DevOps Engineer) | New York, NY"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_2/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4495618170526259,
+      "text": "ضمان إمكانية الوصول والتصميم المتجاوب\nالمطلوب خبرة سنتين فأكثر\nمهندس DevOps( DevOps Engineer) | New York, NY\n( إدارة البنية التحتية السحابيةAWS/GCP)\n تنفيذ خطوطCI/CD والأتمتة\nمراقبة أداء الأنظمة وأمنها\n سنوات فأكثر في 3 خبرةDevOps/SRE\n مطور تطبيقات الجوالiOS/Android( Mobile Developer) | San Francisco, CA\nبناء تطبيقات جوال أصلية لسوقنا الإلكتروني\nإنشاء تجارب مستخدم سلسة\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n2"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_4/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4132399179867409,
+      "text": "التواصل مع العملاء المحتملين\nالبحث عن الحسابات المستهدفة وتحديدها\nيُفضّل خبرة سنة فأكثر كـ SDR/BDR\n( مدير نجاح العملاءCustomer Success Manager) | San Francisco, CA / New York, NY\nضمان رضا العملاء والاحتفاظ بهم\nدفع تبني المنتج والتوسع\nالعمل كمستشار موثوق للعملاء\nخبرة سنتين فأكثر في نجاح العملاء في مجال SaaS\n( مهندس حلولSolutions Engineer) عن بُعد| \nتقديم الخبرة التقنية أثناء عملية البيع\n(إجراء العروض التوضيحية للمنتج وإثباتات المفهوم POCs)\nدعم التنفيذ والتكامل\n سنوات فأكثر في الدعم التقني قبل البيع 3 خبرة\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n4"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "employees/01_Technology_Leadership/page_1/row_4",
+    "company/careers_ar/page_5/chunk_0",
+    "company/careers_ar/page_2/chunk_0",
+    "company/careers_ar/page_2/chunk_1",
+    "company/careers_ar/page_4/chunk_1"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 1.0
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 230.69960000066203,
+  "llm_latency_ms": 594.2047000025923,
+  "end_to_end_latency_ms": 824.9043000032543,
+  "ttft_ms": 546.2660000011965,
+  "generation_duration_ms": 47.93870000139577,
+  "input_tokens": 1457,
+  "output_tokens": 19,
+  "total_tokens": 1476,
+  "output_tokens_per_second": 396.33949188123165,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "998",
+    "x-ratelimit-reset-requests": "2m52.8s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "4881",
+    "x-ratelimit-reset-tokens": "23.392s",
+    "x-request-id": "req_01m5xzk4pked0tm0fk52a9d3w8"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T06:08:19.307347+00:00"
+}
+{
+  "query_id": "q31",
+  "question": "متوسط تقييم أداء Priya Sharma كام؟",
+  "query_language": "ar",
+  "scenario": "ar_question__en_document",
+  "is_answerable": true,
+  "reference_answer": "متوسط تقييم أداء Priya Sharma هو 4.5 من 5.",
+  "reference_citations": [
+    "employees/05_Data_Science/page_1/row_7"
+  ],
+  "answer": "متوسط تقييم أداء Priya Sharma هو 4.5 من 5.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "employees/05_Data_Science/page_1/row_7",
+      "source": "data/employees/05_Data_Science.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.42177832598459447,
+      "text": "name: Priya Sharma\ndate of birth: January 8, 1986\njob title: Senior Data Scientist\nlocation: San Francisco, California\ncurrent salary: $145,000\njoined insurellm: March 2018\navg. performance (out of 5): 4.5 / 5\n2023 base salary: $145,000\n2023 bonus / commission: $25,000\n2022 base salary: $138,000\n2022 bonus / commission: $22,000"
+    },
+    {
+      "chunk_id": "employees/10_Marketing_and_HR/page_1/row_8",
+      "source": "data/employees/10_Marketing_and_HR.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.2937039825970086,
+      "text": "name: Sofia Iyer\ndate of birth: July 9, 1980\njob title: Brand Manager\nlocation: Austin, Texas\ncurrent salary: $101,500\njoined insurellm: December 2019\navg. performance (out of 5): 4.2 / 5\n2023 base salary: $101,500\n2023 bonus / commission: $16,800\n2022 base salary: $95,500\n2022 bonus / commission: $6,000"
+    },
+    {
+      "chunk_id": "employees/03_Frontend_Engineering/page_1/row_2",
+      "source": "data/employees/03_Frontend_Engineering.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.28286506064584044,
+      "text": "name: Camila Ulrich\ndate of birth: November 17, 1983\njob title: Senior Frontend Engineer\nlocation: Boston, Massachusetts\ncurrent salary: $142,000\njoined insurellm: December 2022\navg. performance (out of 5): 3.5 / 5\n2023 base salary: $142,000\n2023 bonus / commission: $21,200\n2022 base salary: $132,000\n2022 bonus / commission: $9,800"
+    },
+    {
+      "chunk_id": "employees/02_Backend_Engineering/page_1/row_4",
+      "source": "data/employees/02_Backend_Engineering.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.27453631099835996,
+      "text": "name: Layla Nakamura\ndate of birth: June 20, 1988\njob title: QA Automation Engineer\nlocation: New York, New York\ncurrent salary: $92,500\njoined insurellm: November 2021\navg. performance (out of 5): 3.6 / 5\n2023 base salary: $92,500\n2023 bonus / commission: $7,100\n2022 base salary: $89,000\n2022 bonus / commission: $10,200"
+    },
+    {
+      "chunk_id": "employees/06_Analytics_and_Mobile/page_1/row_7",
+      "source": "data/employees/06_Analytics_and_Mobile.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.2735059536178194,
+      "text": "name: Nina Patel\ndate of birth: July 25, 1991\njob title: Business Intelligence Analyst\nlocation: Chicago, Illinois\ncurrent salary: $82,000\njoined insurellm: August 2019\navg. performance (out of 5): 3.7 / 5\n2023 base salary: $82,000\n2023 bonus / commission: $4,000\n2022 base salary: $78,000\n2022 bonus / commission: $2,000"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "employees/05_Data_Science/page_1/row_7",
+    "employees/10_Marketing_and_HR/page_1/row_8",
+    "employees/03_Frontend_Engineering/page_1/row_2",
+    "employees/02_Backend_Engineering/page_1/row_4",
+    "employees/06_Analytics_and_Mobile/page_1/row_7"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 1.0
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 185.88180000006105,
+  "llm_latency_ms": 1021.5361999980814,
+  "end_to_end_latency_ms": 1207.4179999981425,
+  "ttft_ms": 984.5677000012074,
+  "generation_duration_ms": 36.968499996874016,
+  "input_tokens": 1216,
+  "output_tokens": 17,
+  "total_tokens": 1233,
+  "output_tokens_per_second": 459.85095422961405,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "997",
+    "x-ratelimit-reset-requests": "4m19.2s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "3618",
+    "x-ratelimit-reset-tokens": "34.114s",
+    "x-request-id": "req_01m5xzk5fae4zb592sbkys196p"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T06:08:20.515228+00:00"
+}
+{
+  "query_id": "q22",
+  "question": "Atlantic Risk Solutions بتدفع كام كل شهر مقابل منصة Bizllm؟",
+  "query_language": "ar",
+  "scenario": "ar_question__en_document",
+  "is_answerable": true,
+  "reference_answer": "تدفع Atlantic Risk Solutions مبلغ 12,000 دولار شهرياً مقابل منصة Bizllm.",
+  "reference_citations": [
+    "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_1"
+  ],
+  "answer": "Atlantic Risk Solutions تدفع 12,000 دولار أمريكي شهريًا مقابل اشتراكها في منصة Bizllm.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_0",
+      "source": "data/contracts/Contract with Atlantic Risk Solutions for Bizllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6696688605867089,
+      "text": "# Contract with Atlantic Risk Solutions for Bizllm\n\n---\n\n## Terms"
+    },
+    {
+      "chunk_id": "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_1",
+      "source": "data/contracts/Contract with Atlantic Risk Solutions for Bizllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6585678961651779,
+      "text": "1. **Agreement Effective Date**: This contract is effective as of January 15, 2025.\n2. **Duration**: This agreement will remain in effect for a term of 12 months, concluding on January 14, 2026.\n3. **Subscription Type**: Atlantic Risk Solutions agrees to subscribe to the **Professional Tier** of Bizllm, at a cost of $12,000/month, totaling $144,000 for the duration of this contract.\n4. **Payment Terms**: Payments are due on the 10th of each month via ACH transfer. Late payments will incur a penalty of 1.5% per month and may result in service suspension after 15 days delinquency.\n5. **User Licenses**: Contract includes 35 named user licenses. Additional users may be added at $180/month per license."
+    },
+    {
+      "chunk_id": "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_7",
+      "source": "data/contracts/Contract with Atlantic Risk Solutions for Bizllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6174950015777119,
+      "text": "---\n\n## Support\n\n1. **Technical Support**: Atlantic Risk Solutions will receive priority technical support from Insurellm for any issues arising from the Bizllm product:\n   - Dedicated support phone line and email\n   - Response time: 4 hours for critical issues, 12 hours for standard requests\n   - Access to technical support Monday-Friday 7 AM - 8 PM EST\n\n2. **Training**: Insurellm will provide comprehensive training program:\n   - Initial onboarding for up to 15 staff members (20 hours total training)\n   - Bi-monthly webinars on platform updates and best practices\n   - Access to on-demand video library and knowledge base\n   - Annual refresher training session"
+    },
+    {
+      "chunk_id": "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_8",
+      "source": "data/contracts/Contract with Atlantic Risk Solutions for Bizllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.6162581596007205,
+      "text": "3. **Updates and Maintenance**:\n   - Quarterly platform updates with new features and security enhancements\n   - Monthly minor updates and bug fixes\n   - Maintenance windows: Sunday 1 AM - 5 AM EST\n   - 48-hour advance notice for all scheduled maintenance\n\n4. **Account Management**:\n   - Assigned account manager with quarterly business review meetings\n   - Annual strategic planning session to align platform usage with business goals\n   - Priority access to new beta features\n\n5. **Integration Support**: Technical assistance for integrating Bizllm with:\n   - Atlantic's existing agency management system (Applied Epic)\n   - Commercial lines rating platforms\n   - Third-party data providers (Dun & Bradstreet, Experian, Verisk)\n   - Email marketing platforms for agent communications\n\n---"
+    },
+    {
+      "chunk_id": "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_3",
+      "source": "data/contracts/Contract with Atlantic Risk Solutions for Bizllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.5967549164201068,
+      "text": "---\n\n## Renewal\n\n1. **Automatic Renewal**: This agreement will automatically renew for an additional 12-month term unless either party provides written notice of non-renewal at least 45 days before the expiration date.\n2. **Price Protection**: Pricing increases capped at 8% annually for the first two renewal periods, providing Atlantic Risk Solutions with budget predictability.\n3. **Volume Discounts**: If Atlantic Risk Solutions expands to Enterprise tier during renewal, they receive a 15% discount on the difference for the first renewal year.\n\n---\n\n## Features"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_0",
+    "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_1",
+    "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_7",
+    "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_8",
+    "contracts/Contract with Atlantic Risk Solutions for Bizllm/chunk_3"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.8333333333333334
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 207.81750000242027,
+  "llm_latency_ms": 448.6040999981924,
+  "end_to_end_latency_ms": 656.4216000006127,
+  "ttft_ms": 435.65269999817247,
+  "generation_duration_ms": 12.95140000001993,
+  "input_tokens": 1195,
+  "output_tokens": 28,
+  "total_tokens": 1223,
+  "output_tokens_per_second": 2161.9284401653035,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "2568",
+    "x-ratelimit-reset-tokens": "43.131s",
+    "x-request-id": "req_01m5xzk6p0er3v2xrxyrzay853"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T06:08:21.171088+00:00"
+}

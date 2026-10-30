@@ -1,0 +1,520 @@
+{
+  "query_id": "q75",
+  "question": "كمل لو سمحت",
+  "query_language": "en",
+  "scenario": "en_question__unanswerable_product",
+  "is_answerable": false,
+  "reference_answer": "The provided documents don't mention a monthly API call limit for the Healthllm Professional tier, so I can't tell you what it is.",
+  "reference_citations": [
+    "products/insurellm_insurance_lines_products",
+    "contracts/Contract with Advantage Medical Coverage for Healthllm"
+  ],
+  "answer": "عذراً، لا يمكن تحديد ما الذي تريد إكماله بدقة، حيث أن سؤالك \"كمل لو سمحت\" (أكمل لو سمحت) غير محدد ولا يشير إلى نص أو موضوع معين.\n\nإذا كنت تقصد إكمال معلومات حول أحد العقود المذكورة في السياق (مثل عقد Carllm مع DriveSmart أو Roadway أو Velocity)، أو معلومات عن الشركة، يرجى توضيح السؤال أو تحديد الجزء الذي تريد إكماله.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/about_ar/page_1/chunk_2",
+      "source": "data/company/about_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.23889783627815805,
+      "text": "تجارية وطنية\nوقّعت Claimllm عقود تتراوح بين شركات التسوية المستقلة وشبكات المطالبات الكبرى7 \nللمؤسسات\nحصلت Lifellm عملاء في التأمين على الحياة، من مزودين إقليميين صغار إلى شركات وطنية 6 لى ع\nكبرى\nفازت Healthllm عقود لخطط صحية تشمل شركات تأمين إقليمية وتحالفات رعاية صحية متعددة6 بـ\nالولايات\n(وبالإضافة إلى النمو المستمر في خطوط المنتجات الأصلية Carllm وHomellm وMarkellm وRellm،)\nتخدم Insurellm اليوم عملاء يتراوحون بين شركات التأمين الإقليمية وشركاء إعادة التأمين العالميين،\n.مما يبرهن على قدرة الشركة على المنافسة على امتداد سلسلة القيمة الكاملة للتأمين\n• \n• \n• \n• \n1"
+    },
+    {
+      "chunk_id": "contracts/Contract with Velocity Auto Solutions for Carllm/chunk_3",
+      "source": "data/contracts/Contract with Velocity Auto Solutions for Carllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.23809864347035256,
+      "text": "2. **Feature Enhancements**: Velocity Auto Solutions will receive updates to the Carllm product as outlined in the Insurellm 2025-2026 Roadmap, including mobile integration and telematics-based pricing enhancements.\n\n## Support\n\n1. **Customer Support**: Velocity Auto Solutions will have access to Insurellm’s customer support team via email or chatbot, available 24/7.\n2. **Technical Maintenance**: Regular maintenance and updates to the Carllm platform will be conducted by Insurellm, with any downtime communicated in advance.\n3. **Training & Resources**: Initial training sessions will be provided for Velocity Auto Solutions’ staff to ensure effective use of the Carllm suite. Regular resources and documentation will be made available online.\n\n---"
+    },
+    {
+      "chunk_id": "contracts/Contract with DriveSmart Insurance for Carllm/chunk_0",
+      "source": "data/contracts/Contract with DriveSmart Insurance for Carllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.21591085721472414,
+      "text": "# Contract with DriveSmart Insurance for Carllm\n\n**Contract Date:** March 20, 2025\n**Contract Number:** CR-2025-E-0078\n**Parties:**\n- Insurellm, Inc.\n- DriveSmart Insurance Corp.\n\n---\n\n## Terms\n\n1. **Coverage:** Insurellm agrees to provide DriveSmart Insurance with enterprise access to the Carllm platform, including white-label capabilities, unlimited user licenses, dedicated infrastructure, and full API access for their multi-state auto insurance operations.\n\n2. **Duration:** This agreement is effective for a period of 36 months from the contract date."
+    },
+    {
+      "chunk_id": "contracts/Contract with Rapid Claims Associates for Claimllm/chunk_6",
+      "source": "data/contracts/Contract with Rapid Claims Associates for Claimllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.21523369024897387,
+      "text": "3. **Platform Updates:**\n   - Quarterly feature releases with new capabilities\n   - Monthly security patches and bug fixes\n   - Release notes and changelog documentation\n   - Advance notice of breaking changes (minimum 30 days)\n\n4. **Account Management:**\n   - Named customer success manager\n   - Semi-annual business review meetings\n   - Usage analytics and optimization recommendations\n   - Assistance with tier upgrade evaluation when volume grows\n\n5. **Integration Support:** Technical assistance connecting Claimllm with:\n   - Existing claims management systems\n   - Policy administration platforms\n   - Vendor management networks (repair shops, medical providers)\n   - Payment processing systems\n\n---\n\n**Signatures:**"
+    },
+    {
+      "chunk_id": "contracts/Contract with Roadway Insurance Inc. for Carllm/chunk_2",
+      "source": "data/contracts/Contract with Roadway Insurance Inc. for Carllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.21113773450649614,
+      "text": "2. **Mobile Integration**: All features will be accessible through a mobile application that Insurellm will provide.\n3. **Customer Support**: Includes 24/7 automated customer support via AI chatbots and access to dedicated account management support during business hours.\n\n---\n\n## Support\n\n1. **Technical Support**: Roadway Insurance Inc. will receive priority technical support from Insurellm for any issues arising from the Carllm product.\n2. **Training**: Insurellm will provide up to 5 training sessions for Roadway Insurance Inc. staff on the effective use of the Carllm platform, scheduled at mutual convenience.\n3. **Updates and Maintenance**: Regular updates to the Carllm platform will be conducted quarterly, and any maintenance outages will be communicated at least 48 hours in advance."
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/about_ar/page_1/chunk_2",
+    "contracts/Contract with Velocity Auto Solutions for Carllm/chunk_3",
+    "contracts/Contract with DriveSmart Insurance for Carllm/chunk_0",
+    "contracts/Contract with Rapid Claims Associates for Claimllm/chunk_6",
+    "contracts/Contract with Roadway Insurance Inc. for Carllm/chunk_2"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": false,
+    "reference_lexical_overlap_diagnostic": null
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 161.22810000001664,
+  "llm_latency_ms": 1204.7950999999557,
+  "end_to_end_latency_ms": 1366.0231999999723,
+  "ttft_ms": 993.6928999998145,
+  "generation_duration_ms": 211.10220000014124,
+  "input_tokens": 1376,
+  "output_tokens": 91,
+  "total_tokens": 1467,
+  "output_tokens_per_second": 431.0708273051589,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "999",
+    "x-ratelimit-reset-requests": "1m26.4s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "6438",
+    "x-ratelimit-reset-tokens": "11.715s",
+    "x-request-id": "req_01m5ypsahde9xvnbfsavty09vw"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:53:37.959784+00:00"
+}
+{
+  "query_id": "q65",
+  "question": "الشركة بتوظف في إيه في قسم المبيعات ونجاح العملاء؟",
+  "query_language": "ar",
+  "scenario": "egyptian_arabic_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "تعلن الشركة عن أربع وظائف في قسم المبيعات ونجاح العملاء: مدير حسابات (Account Executive)، وممثل تطوير مبيعات (Sales Development Representative)، ومدير نجاح العملاء (Customer Success Manager)، ومهندس حلول (Solutions Engineer).",
+  "reference_citations": [
+    "company/careers_ar/page_4/chunk_0",
+    "company/careers_ar/page_4/chunk_1"
+  ],
+  "answer": "في قسم المبيعات ونجاح العملاء، توظف الشركة في الوظائف التالية:\n\n1. **مدير حسابات (Account Executive)**:\n   - الموقع: نيويورك / شيكاغو / أوستين.\n   - المسؤوليات: إدارة دورة مبيعات B2B للعملاء المؤسسيين (Enterprise)، بناء علاقات مع شركات التأمين (Insurance Carriers)، وتحقيق أهداف الإيرادات وتنمية النطاق المسؤول عنه.\n   - الخبرة المطلوبة: 3 سنوات فأكثر في مبيعات B2B، ويُفضّل في مجال SaaS.\n\n2. **ممثل تطوير مبيعات (Sales Development Representative)**:\n   - الموقع: أوستين (عن بُعد).\n   - المسؤوليات: توليد عملاء محتملين مؤهلين لفريق المبيعات، التواصل مع العملاء المحتملين، والبحث عن الحسابات المستهدفة وتحديدها.\n   - الخبرة المطلوبة: يُفضّل خبرة سنة فأكثر كـ SDR/BDR.\n\n3. **مدير نجاح العملاء (Customer Success Manager)**:\n   - الموقع: سان فرانسيسكو / نيويورك.\n   - المسؤوليات: ضمان رضا العملاء والاحتفاظ بهم، دفع تبني المنتج والتوسع، والعمل كمستشار موثوق للعملاء.\n   - الخبرة المطلوبة: سنتان فأكثر في نجاح العملاء في مجال SaaS.\n\n4. **مهندس حلول (Solutions Engineer)**:\n   - الموقع: عن بُعد.\n   - المسؤوليات: تقديم الخبرة التقنية أثناء عملية البيع (مثل إجراء العروض التوضيحية للمنتج وإثباتات المفهوم POCs)، ودعم التنفيذ والتكامل.\n   - الخبرة المطلوبة: 3 سنوات فأكثر في الدعم التقني قبل البيع.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/careers_ar/page_4/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.590549656440339,
+      "text": "التواصل مع العملاء المحتملين\nالبحث عن الحسابات المستهدفة وتحديدها\nيُفضّل خبرة سنة فأكثر كـ SDR/BDR\n( مدير نجاح العملاءCustomer Success Manager) | San Francisco, CA / New York, NY\nضمان رضا العملاء والاحتفاظ بهم\nدفع تبني المنتج والتوسع\nالعمل كمستشار موثوق للعملاء\nخبرة سنتين فأكثر في نجاح العملاء في مجال SaaS\n( مهندس حلولSolutions Engineer) عن بُعد| \nتقديم الخبرة التقنية أثناء عملية البيع\n(إجراء العروض التوضيحية للمنتج وإثباتات المفهوم POCs)\nدعم التنفيذ والتكامل\n سنوات فأكثر في الدعم التقني قبل البيع 3 خبرة\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n4"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_4/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4629378751856834,
+      "text": "( مصمم تجربة وواجهة المستخدمUX/UI Designer) عن بُعد| \nتصميم تجارب المستخدم لمنصات التأمين لدينا\nإجراء أبحاث المستخدمين واختبارات قابلية الاستخدام\nإنشاء أنظمة التصميم والنماذج الأولية\n سنوات فأكثر في التصميم، ويُفضّل مجال التأمين أو التقنية المالية 3 خبرة\nالمبيعات ونجاح العملاء\n(مدير حسابات Account Executive) | New York, NY / Chicago, IL / Austin, TX\n إدارة دورة مبيعاتB2B لعملاء المؤسسات\nبناء علاقات مع شركات التأمين\nتحقيق أهداف الإيرادات وتنمية النطاق المسؤول عنه\n سنوات فأكثر في مبيعات 3 خبرةB2B ، ويُفضّل SaaS\n( ممثل تطوير مبيعاتSales Development Representative) | Austin, TX عن بُعد /\nتوليد عملاء محتملين مؤهلين لفريق المبيعات\nالتواصل مع العملاء المحتملين\nالبحث عن الحسابات المستهدفة وتحديدها\nيُفضّل خبرة سنة فأكثر كـ SDR/BDR"
+    },
+    {
+      "chunk_id": "company/culture_ar/page_1/chunk_1",
+      "source": "data/company/culture_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.4470794198111609,
+      "text": "هوس خدمة العميل\n كل قرار. نفهم احتياجات عملائنا فهماً عميقاً ونعمل بلا كلل لتجاوز توقعاتهم.نجاح عملائنا هو نجاحنا\n.يخص المنتج وكل ميزة وكل تفاعل يسترشد بالالتزام بتقديم قيمة استثنائية وبناء شراكات دائمة\nالنزاهة والشفافية\n من منتجاتنا إلى عملياتنا الداخلية، نؤمن بأن الثقة تُكتسب.نعمل بصدق وانفتاح في كل ما نقوم به \n.بالسلوك الأخلاقي المتسق والتواصل الواضح والمساءلة على جميع مستويات المؤسسة \nالتميز التعاوني\n نعزز ثقافة تُقدَّر فيها وجهات النظر المتنوعة، وتُتبادل فيها المعرفة بحرية، ويتمكن.نحقق المزيد معاً\n نحتفل بالانتصارات الجماعية ونساند بعضنا في .فيها كل عضو في الفريق من تقديم مواهبه الفريدة \n.مواجهة التحديات\n1"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.44522513497593574,
+      "text": ".العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:\nهوس خدمة العميل عملية عميل نشطة تغطي سلسلة القيمة الكاملة32 عملك يؤثر مباشرة في :\nللتأمين\nالنزاهة والشفافية نبني الثقة بالسلوك الأخلاقي والتواصل المفتوح :\nالتميز التعاوني وجهات النظر المتنوعة والعمل الجماعي هما أساس نجاحنا:\nما نقدمه\nرواتب تنافسية مع مشاركة في الأسهم \nتأمين صحي وسني وبصري شامل\nترتيبات عمل مرنة وإجازات سخية\nبرامج للتطوير المهني والإرشاد\nمسارات واضحة للتقدم الوظيفي\nأحدث التقنيات والأدوات\nبيئة عمل شاملة ومتنوعة\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n1"
+    },
+    {
+      "chunk_id": "contracts/Contract with ConnectInsure Agency for Markellm/chunk_5",
+      "source": "data/contracts/Contract with ConnectInsure Agency for Markellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.3604758616002012,
+      "text": "4. **Lead Management Portal**: Comprehensive tools for:\n   - Real-time lead notifications (SMS, email, push)\n   - Lead routing to specific agents based on specialty\n   - Follow-up task management and CRM integration\n   - Lead status tracking (contacted, quoted, sold, declined)\n   - Performance analytics by agent and product line\n\n5. **Data Insights**: Analytics dashboard providing:\n   - Lead volume trends and forecasting\n   - Conversion rate analysis\n   - Cost per acquisition metrics\n   - Competitive benchmarking (anonymized)\n   - Consumer behavior insights\n   - Product mix recommendations"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/careers_ar/page_4/chunk_1",
+    "company/careers_ar/page_4/chunk_0",
+    "company/culture_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_1",
+    "contracts/Contract with ConnectInsure Agency for Markellm/chunk_5"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.7931034482758621
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 154.82649999989917,
+  "llm_latency_ms": 1081.3135999999304,
+  "end_to_end_latency_ms": 1236.1400999998295,
+  "ttft_ms": 350.2574999999979,
+  "generation_duration_ms": 731.0560999999325,
+  "input_tokens": 1486,
+  "output_tokens": 354,
+  "total_tokens": 1840,
+  "output_tokens_per_second": 484.2309639438515,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "998",
+    "x-ratelimit-reset-requests": "2m52.8s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "5083",
+    "x-ratelimit-reset-tokens": "21.877s",
+    "x-request-id": "req_01m5ypsbgaezvahe5qp7vakz5e"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:53:39.198715+00:00"
+}
+{
+  "query_id": "q13",
+  "question": "ممكن نعمل ايه في الموضوع ده?",
+  "query_language": "ar",
+  "scenario": "ar_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "صباح الخير! أنا بخير، شكراً. How can I assist you today?",
+  "reference_citations": [
+    "company/careers_ar/page_4/chunk_0",
+    "company/careers_ar/page_4/chunk_1"
+  ],
+  "answer": "يمكنك التقديم على الوظائف المتاحة من خلال زيارة بوابة الوظائف على careers.insurellm.com، أو إرسال سيرتك الذاتية إلى البريد الإلكتروني jobs@insurellm.com. عند إرسال البريد الإلكتروني، يرجى ذكر المسمى الوظيفي في عنوان الرسالة.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/careers_ar/page_1/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.2490984387099902,
+      "text": ".العالميين\nثقافتنا\n:نعيش قيمنا الأساسية كل يوم\nالابتكار أولاً نشجع التجربة والحلول الإبداعية للمشكلات:\nهوس خدمة العميل عملية عميل نشطة تغطي سلسلة القيمة الكاملة32 عملك يؤثر مباشرة في :\nللتأمين\nالنزاهة والشفافية نبني الثقة بالسلوك الأخلاقي والتواصل المفتوح :\nالتميز التعاوني وجهات النظر المتنوعة والعمل الجماعي هما أساس نجاحنا:\nما نقدمه\nرواتب تنافسية مع مشاركة في الأسهم \nتأمين صحي وسني وبصري شامل\nترتيبات عمل مرنة وإجازات سخية\nبرامج للتطوير المهني والإرشاد\nمسارات واضحة للتقدم الوظيفي\nأحدث التقنيات والأدوات\nبيئة عمل شاملة ومتنوعة\n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n• \n1"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_5/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.22943248787046694,
+      "text": "العمليات والدعم\n(أخصائي دعم فني Technical Support Specialist) عن بُعد| \nتقديم الدعم الفني من المستويين الثاني والثالث للعملاء\nاستكشاف أعطال المنصة وإصلاحها\nإعداد التوثيق ومقالات قاعدة المعرفة\nخبرة سنتين فأكثر في الدعم الفني \n(شريك أعمال الموارد البشرية HR Business Partner) | San Francisco, CA\nينالشراكة مع القيادة في استراتيجية الموظف \nدعم تطوير المواهب والاحتفاظ بها\nقيادة مبادرات الثقافة والتفاعل\n سنوات فأكثر في الموارد البشرية، ويُفضّل قطاع التقنية 4 خبرة\nكيفية التقديم\nزر بوابة الوظائف لدينا على careers.insurellm.com لى أو أرسل سيرتك الذاتية إjobs@insurellm.com.\n.يرجى ذكر المسمى الوظيفي في عنوان الرسالة \nInsurellm.ين نحتفي بالتنوع ونلتزم بخلق بيئة شاملة لجميع الموظف. صاحب عمل يوفر فرصاً متساوية\n• \n• \n• \n• \n• \n• \n• \n• \n5"
+    },
+    {
+      "chunk_id": "company/culture_ar/page_2/chunk_1",
+      "source": "data/company/culture_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.19148416682190594,
+      "text": "النمو والتطوير برامج شاملة للتطوير المهني وفرص للإرشاد ومسارات واضحة للتقدم الوظيفي:\nحرية الابتكار الوصول إلى أحدث التقنيات والاستقلالية لتجربة الأفكار الجديدة:\nتوازن العمل والحياة ترتيبات عمل مرنة وإجازات سخية وثقافة تحترم الوقت الشخصي:\nمكافآت تنافسية رواتب رائدة في السوق ومشاركة في الأسهم ومزايا شاملة وحوافز أداء :\nبيئة شاملة للجميع فريق متنوع يُسمع فيه كل صوت وتقود فيه وجهات النظر المختلفة إلى حلول:\nأفضل\nرسالة ذات هدف كن جزءاً من جعل التأمين أكثر إتاحة وإنصافاً للجميع:\n.انضم إلينا في إحداث تغيير جذري في القطاع وبناء تقنيات ذات قيمة حقيقية \n• \n• \n• \n• \n• \n• \n• \n2"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_3/chunk_1",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.1867367356446792,
+      "text": "دعم اتخاذ القرارات المبنية على البيانات\nخبرة سنتين فأكثر في أدوات BI مثل (Tableau وLooker)\nالمنتج والتصميم\n(مدير منتج Product Manager) | San Francisco, CA\nتحديد خارطة طريق المنتج واستراتيجيته\nالعمل عن قرب مع فرق الهندسة والتصميم\nجمع آراء العملاء وإجراء أبحاث السوق\n سنوات فأكثر في إدارة المنتجات في مجال 3 خبرةB2B SaaS\n •\n •\n •\n •\n •\n •\n •\n •\n •\n •\n •\n •\n •\n •\n •\n •\n •\n •\n3"
+    },
+    {
+      "chunk_id": "company/careers_ar/page_2/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.18226072125593115,
+      "text": "الفرص الحالية\nالهندسة\n(مهندس برمجيات متكامل أول Senior Full Stack Engineer) | San Francisco, CA\nينقيادة تطوير ميزات الجيل القادم من منصة التأم\nالعمل مع React وNode.js وPython وتقنيات الحوسبة السحابية\nتوجيه المهندسين المبتدئين وقيادة القرارات التقنية\n سنوات فأكثر5 المطلوب خبرة\n(مهندس برمجيات للأنظمة الخلفية Backend Software Engineer) | San Francisco, CA / Austin, TX\nبناء خدمات مصغّرة وواجهات برمجية قابلة للتوسع \nتحسين أداء الأنظمة وموثوقيتها\nالتعاون مع فرق المنتج والتصميم\n سنوات فأكثر في 3 خبرةJava أوPython أوGo\n( مطور واجهات أماميةFrontend Developer) عن بُعد| \nإنشاء واجهات مستخدم بديهية لمنصات التأمين لدينا\n(العمل مع أطر حديثة React أوVue أوAngular)\nضمان إمكانية الوصول والتصميم المتجاوب\nالمطلوب خبرة سنتين فأكثر\nمهندس DevOps( DevOps Engineer) | New York, NY"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/careers_ar/page_1/chunk_1",
+    "company/careers_ar/page_5/chunk_0",
+    "company/culture_ar/page_2/chunk_1",
+    "company/careers_ar/page_3/chunk_1",
+    "company/careers_ar/page_2/chunk_0"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.0
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 186.17529999983162,
+  "llm_latency_ms": 594.4580000000315,
+  "end_to_end_latency_ms": 780.6332999998631,
+  "ttft_ms": 494.50640000009116,
+  "generation_duration_ms": 99.9515999999403,
+  "input_tokens": 1498,
+  "output_tokens": 52,
+  "total_tokens": 1550,
+  "output_tokens_per_second": 520.2518018724169,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "997",
+    "x-ratelimit-reset-requests": "4m19.2s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "3400",
+    "x-ratelimit-reset-tokens": "35.117s",
+    "x-request-id": "req_01m5ypscrceytrt5n6jt0wg80m"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:53:39.979430+00:00"
+}
+{
+  "query_id": "q39",
+  "question": "hi, this is mona",
+  "query_language": "en",
+  "scenario": "en_question__ar_document",
+  "is_answerable": true,
+  "reference_answer": "Insurellm describes collaborative excellence as achieving more together. It fosters a culture that values diverse perspectives, shares knowledge freely and lets every team member contribute their unique talents, while celebrating collective wins and supporting one another through challenges.",
+  "reference_citations": [
+    "company/culture_ar/page_1/chunk_1",
+    "company/careers_ar/page_1/chunk_1"
+  ],
+  "answer": "Hi Mona! How can I help you today?",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "employees/01_Technology_Leadership/page_1/row_6",
+      "source": "data/employees/01_Technology_Leadership.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.2997928331252121,
+      "text": "name: Monica Nash\ndate of birth: July 3, 1987\njob title: Engineering Manager\nlocation: Austin, Texas\ncurrent salary: $172,500\njoined insurellm: June 2016\navg. performance (out of 5): 4.5 / 5\n2023 base salary: $172,500\n2023 bonus / commission: $27,500\n2022 base salary: $162,000\n2022 bonus / commission: $17,200"
+    },
+    {
+      "chunk_id": "employees/06_Analytics_and_Mobile/page_1/row_3",
+      "source": "data/employees/06_Analytics_and_Mobile.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.21207956660423025,
+      "text": "name: Hana Eaton\ndate of birth: March 17, 1999\njob title: Reporting Analyst\nlocation: New York, New York\ncurrent salary: $73,500\njoined insurellm: February 2022\navg. performance (out of 5): 3.9 / 5\n2023 base salary: $73,500\n2023 bonus / commission: $8,000\n2022 base salary: $70,500\n2022 bonus / commission: $8,100"
+    },
+    {
+      "chunk_id": "employees/09_Sales_and_Customer_Success/page_1/row_10",
+      "source": "data/employees/09_Sales_and_Customer_Success.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.20124393808809027,
+      "text": "name: Rania Fontaine\ndate of birth: December 2, 1992\njob title: Customer Success Manager\nlocation: Atlanta, Georgia\ncurrent salary: $96,000\njoined insurellm: September 2022\navg. performance (out of 5): 4.4 / 5\n2023 base salary: $96,000\n2023 bonus / commission: $15,000\n2022 base salary: $92,000\n2022 bonus / commission: $15,100"
+    },
+    {
+      "chunk_id": "employees/10_Marketing_and_HR/page_1/row_5",
+      "source": "data/employees/10_Marketing_and_HR.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.19737886458947518,
+      "text": "name: Mariam Tran\ndate of birth: July 20, 1986\njob title: Payroll Specialist\nlocation: Atlanta, Georgia\ncurrent salary: $75,500\njoined insurellm: July 2020\navg. performance (out of 5): 3.9 / 5\n2023 base salary: $75,500\n2023 bonus / commission: $3,900\n2022 base salary: $72,000\n2022 bonus / commission: $10,000"
+    },
+    {
+      "chunk_id": "employees/10_Marketing_and_HR/page_1/row_1",
+      "source": "data/employees/10_Marketing_and_HR.pdf",
+      "doc_type": "employees",
+      "language": "en",
+      "score": 0.19371438138828254,
+      "text": "name: Bianca Fischer\ndate of birth: July 21, 1988\njob title: Content Marketing Manager\nlocation: Minneapolis, Minnesota\ncurrent salary: $96,500\njoined insurellm: October 2016\navg. performance (out of 5): 4.8 / 5\n2023 base salary: $96,500\n2023 bonus / commission: $13,400\n2022 base salary: $90,000\n2022 bonus / commission: $6,500"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "employees/01_Technology_Leadership/page_1/row_6",
+    "employees/06_Analytics_and_Mobile/page_1/row_3",
+    "employees/09_Sales_and_Customer_Success/page_1/row_10",
+    "employees/10_Marketing_and_HR/page_1/row_5",
+    "employees/10_Marketing_and_HR/page_1/row_1"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": true,
+    "reference_lexical_overlap_diagnostic": 0.0
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 124.74969999993846,
+  "llm_latency_ms": 322.1842000000379,
+  "end_to_end_latency_ms": 446.93389999997635,
+  "ttft_ms": 300.2409999999145,
+  "generation_duration_ms": 21.943200000123397,
+  "input_tokens": 1266,
+  "output_tokens": 11,
+  "total_tokens": 1277,
+  "output_tokens_per_second": 501.29425060784854,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "996",
+    "x-ratelimit-reset-requests": "5m45.6s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "2177",
+    "x-ratelimit-reset-tokens": "43.672s",
+    "x-request-id": "req_01m5ypsde1e7kbvarqm4vgpd5s"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:53:40.427295+00:00"
+}
+{
+  "query_id": "q74",
+  "question": "hi how can you assist me?",
+  "query_language": "en",
+  "scenario": "en_question__unanswerable_company",
+  "is_answerable": false,
+  "reference_answer": "I couldn't find the street address of Insurellm's San Francisco headquarters in the provided documents, so I can't provide it.",
+  "reference_citations": [
+    "company/about_ar",
+    "company/overview_ar"
+  ],
+  "answer": "Hello! I am an Insurellm document-grounded assistant. I can help you by answering questions based on the specific information available in Insurellm's internal documents, such as:\n\n*   **Career Opportunities:** Details on job openings, such as the Technical Support Specialist (remote) or HR Business Partner roles, including responsibilities and application instructions.\n*   **Client Contracts and Support:** Information regarding service agreements with partners like WellCare Insurance Co., Guardian Life Partners, and Heritage Life Assurance. This includes details on technical support hours, response times, onboarding programs, training, and integration services.\n\nPlease let me know what specific information you are looking for, and I will provide an answer based on the available records.",
+  "generated_citations": [],
+  "retrieved_documents": [
+    {
+      "chunk_id": "company/careers_ar/page_5/chunk_0",
+      "source": "data/company/careers_ar.pdf",
+      "doc_type": "company",
+      "language": "ar",
+      "score": 0.29894023431252137,
+      "text": "العمليات والدعم\n(أخصائي دعم فني Technical Support Specialist) عن بُعد| \nتقديم الدعم الفني من المستويين الثاني والثالث للعملاء\nاستكشاف أعطال المنصة وإصلاحها\nإعداد التوثيق ومقالات قاعدة المعرفة\nخبرة سنتين فأكثر في الدعم الفني \n(شريك أعمال الموارد البشرية HR Business Partner) | San Francisco, CA\nينالشراكة مع القيادة في استراتيجية الموظف \nدعم تطوير المواهب والاحتفاظ بها\nقيادة مبادرات الثقافة والتفاعل\n سنوات فأكثر في الموارد البشرية، ويُفضّل قطاع التقنية 4 خبرة\nكيفية التقديم\nزر بوابة الوظائف لدينا على careers.insurellm.com لى أو أرسل سيرتك الذاتية إjobs@insurellm.com.\n.يرجى ذكر المسمى الوظيفي في عنوان الرسالة \nInsurellm.ين نحتفي بالتنوع ونلتزم بخلق بيئة شاملة لجميع الموظف. صاحب عمل يوفر فرصاً متساوية\n• \n• \n• \n• \n• \n• \n• \n• \n5"
+    },
+    {
+      "chunk_id": "contracts/Contract with WellCare Insurance Co. for Healthllm/chunk_8",
+      "source": "data/contracts/Contract with WellCare Insurance Co. for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.23196911325174918,
+      "text": "6. **Integration Support:** Technical assistance connecting Healthllm with:\n   - Existing policy administration systems\n   - Provider credentialing systems\n   - Pharmacy benefit managers (PBMs)\n   - Clearinghouses for EDI transactions\n   - Member portal and mobile apps\n\n---\n\n**Signatures:**\n\n_________________________________\n**Sarah Chen**\n**Title**: Vice President of Sales\n**Insurellm, Inc.**\n**Date**: March 8, 2025\n\n_________________________________\n**Dr. Raymond Foster**\n**Title**: Chief Medical Officer & COO\n**WellCare Insurance Co.**\n**Date**: March 8, 2025\n\n---\n\nThis agreement enables WellCare Insurance Co. to modernize their health insurance operations with AI-powered technology while ensuring regulatory compliance and improved member outcomes."
+    },
+    {
+      "chunk_id": "contracts/Contract with Guardian Life Partners for Lifellm/chunk_6",
+      "source": "data/contracts/Contract with Guardian Life Partners for Lifellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.21108428165484494,
+      "text": "4. **Agent Portal:**\n   - Agent-facing tools for 200+ independent agents\n   - Real-time application status tracking\n   - Commission calculation and reporting\n   - E-application with digital signature\n   - Marketing materials and quote tools\n\n---\n\n## Support\n\n1. **Technical Support**: Guardian Life Partners will receive enhanced support:\n   - Priority support line Monday-Friday 7 AM - 8 PM EST\n   - Email and chat support with 6-hour response time for critical issues\n   - Dedicated support engineer for complex integrations\n   - 24/7 emergency hotline for system outages"
+    },
+    {
+      "chunk_id": "contracts/Contract with WellCare Insurance Co. for Healthllm/chunk_6",
+      "source": "data/contracts/Contract with WellCare Insurance Co. for Healthllm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.2093479408179334,
+      "text": "---\n\n## Support\n\nInsurellm commits to providing comprehensive support to WellCare Insurance Co.:\n\n1. **Onboarding:** 4-week implementation program including:\n   - System configuration for WellCare's plan designs\n   - Training for up to 15 staff members (30 hours total)\n   - Integration with existing systems (policy admin, provider network)\n   - Data migration for current 11,000 members\n   - Provider network data import and validation\n\n2. **Technical Support:**\n   - Email and phone support Monday-Friday 7 AM - 7 PM EST\n   - Response time: 8 hours for critical issues, 24 hours for standard\n   - Online ticketing system with status tracking\n   - Knowledge base and FAQ library\n   - Video tutorials and user guides"
+    },
+    {
+      "chunk_id": "contracts/Contract with Heritage Life Assurance for Lifellm/chunk_3",
+      "source": "data/contracts/Contract with Heritage Life Assurance for Lifellm.md",
+      "doc_type": "contracts",
+      "language": "en",
+      "score": 0.2080848794092971,
+      "text": "5. **Customer Portal**: Policyholder self-service including:\n   - 24/7 policy access\n   - Digital insurance cards\n   - Claims submission\n   - Premium payment processing\n   - Coverage updates\n\n6. **Advanced Reporting**:\n   - Application conversion analytics\n   - Underwriting productivity metrics\n   - Policy persistency reporting\n   - Agent performance dashboards\n\n## Support\n\n1. **Technical Support**: Heritage will receive priority support:\n   - Monday-Friday 7 AM - 7 PM EST\n   - Email, phone, and chat support\n   - 8-hour response time for critical issues\n   - Online knowledge base\n\n2. **Training**: Training program includes:\n   - 3-week implementation\n   - Training for up to 15 staff members (25 hours)\n   - Quarterly webinars on platform updates\n   - Online training library access"
+    }
+  ],
+  "retrieved_chunk_ids": [
+    "company/careers_ar/page_5/chunk_0",
+    "contracts/Contract with WellCare Insurance Co. for Healthllm/chunk_8",
+    "contracts/Contract with Guardian Life Partners for Lifellm/chunk_6",
+    "contracts/Contract with WellCare Insurance Co. for Healthllm/chunk_6",
+    "contracts/Contract with Heritage Life Assurance for Lifellm/chunk_3"
+  ],
+  "diagnostics": {
+    "citation_precision": 0.0,
+    "citation_recall": 0.0,
+    "citation_f1": 0.0,
+    "citation_id_validity": null,
+    "appears_to_abstain": false,
+    "abstention_heuristic_match": false,
+    "reference_lexical_overlap_diagnostic": null
+  },
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "retrieval_latency_ms": 144.51250000001892,
+  "llm_latency_ms": 664.1071999999895,
+  "end_to_end_latency_ms": 808.6197000000084,
+  "ttft_ms": 362.6951999999619,
+  "generation_duration_ms": 301.41200000002755,
+  "input_tokens": 1466,
+  "output_tokens": 149,
+  "total_tokens": 1615,
+  "output_tokens_per_second": 494.3399731927939,
+  "finish_reason": "stop",
+  "http_status_code": 200,
+  "rate_limit_headers": {
+    "x-ratelimit-limit-requests": "1000",
+    "x-ratelimit-remaining-requests": "995",
+    "x-ratelimit-reset-requests": "7m12s",
+    "x-ratelimit-limit-tokens": "8000",
+    "x-ratelimit-remaining-tokens": "759",
+    "x-ratelimit-reset-tokens": "57.368s",
+    "x-request-id": "req_01m5ypsdx0ewethd5r82fpbgr5"
+  },
+  "error": null,
+  "human_review": {
+    "correctness_0_to_2": null,
+    "faithfulness_0_to_2": null,
+    "citation_semantic_support_0_to_2": null,
+    "language_quality_0_to_2": null,
+    "relevance_0_to_2": null,
+    "notes": null
+  },
+  "evaluated_at_utc": "2026-10-27T12:53:41.235763+00:00"
+}

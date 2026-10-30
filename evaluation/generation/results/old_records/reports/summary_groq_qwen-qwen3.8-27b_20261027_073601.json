@@ -1,0 +1,93 @@
+{
+  "num_questions": 3,
+  "successful_requests": 3,
+  "request_success_rate": 1.0,
+  "error_count": 0,
+  "end_to_end_latency_ms": {
+    "count": 3,
+    "mean": 789.4911000003049,
+    "median": 695.413199999166,
+    "p95": 1055.671500002063
+  },
+  "retrieval_latency_ms": {
+    "count": 3,
+    "mean": 250.94843333378472,
+    "median": 240.18950000026962,
+    "p95": 295.3826000011759
+  },
+  "llm_latency_ms": {
+    "count": 3,
+    "mean": 538.5426666665202,
+    "median": 455.22369999889634,
+    "p95": 760.2889000008872
+  },
+  "ttft_ms": {
+    "count": 3,
+    "mean": 459.3653999994179,
+    "median": 341.49389999947743,
+    "p95": 706.4353999994637
+  },
+  "generation_duration_ms": {
+    "count": 3,
+    "mean": 79.17726666710223,
+    "median": 58.62150000029942,
+    "p95": 125.05679999958375
+  },
+  "output_tokens_per_second": {
+    "count": 3,
+    "mean": 516.6467367293576,
+    "median": 519.7638193222308,
+    "p95": 528.8162193025026
+  },
+  "input_tokens": {
+    "count": 3,
+    "mean": 1490.6666666666667,
+    "median": 1490.0,
+    "p95": 1493.0
+  },
+  "output_tokens": {
+    "count": 3,
+    "mean": 41.0,
+    "median": 31.0,
+    "p95": 65.0
+  },
+  "total_tokens": {
+    "count": 3,
+    "mean": 1531.6666666666667,
+    "median": 1521.0,
+    "p95": 1554.0
+  },
+  "citation_precision": {
+    "count": 3,
+    "mean": 0.6666666666666666,
+    "median": 1.0,
+    "p95": 1.0
+  },
+  "citation_recall": {
+    "count": 3,
+    "mean": 0.4444444444444444,
+    "median": 0.3333333333333333,
+    "p95": 1.0
+  },
+  "citation_f1": {
+    "count": 3,
+    "mean": 0.5,
+    "median": 0.5,
+    "p95": 1.0
+  },
+  "citation_id_validity": {
+    "count": 3,
+    "mean": 1.0,
+    "median": 1.0,
+    "p95": 1.0
+  },
+  "abstention_heuristic_match_rate": 1.0,
+  "quality_note": "Correctness, faithfulness, semantic citation support, and language quality require human review or a separately validated judge.",
+  "provider": "groq",
+  "model": "qwen/qwen3.8-27b",
+  "dataset": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\generation_questions.jsonl",
+  "top_k": 5,
+  "streaming": true,
+  "raw_results_file": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\results\\raw\\generation_groq_qwen-qwen3.8-27b_20261027_073601.jsonl",
+  "generated_at_utc": "2026-10-27T04:36:01.553539+00:00"
+}

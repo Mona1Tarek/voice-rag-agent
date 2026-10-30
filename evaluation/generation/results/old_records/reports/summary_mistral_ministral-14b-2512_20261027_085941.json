@@ -1,0 +1,93 @@
+{
+  "num_questions": 78,
+  "successful_requests": 69,
+  "request_success_rate": 0.8846153846153846,
+  "error_count": 9,
+  "end_to_end_latency_ms": {
+    "count": 78,
+    "mean": 2028.8530576917065,
+    "median": 1483.2643500012637,
+    "p95": 4947.339999995165
+  },
+  "retrieval_latency_ms": {
+    "count": 78,
+    "mean": 267.5113769227886,
+    "median": 259.1395499985083,
+    "p95": 371.4008000024478
+  },
+  "llm_latency_ms": {
+    "count": 78,
+    "mean": 1761.341680768918,
+    "median": 1190.344800003004,
+    "p95": 4695.2692000013485
+  },
+  "ttft_ms": {
+    "count": 69,
+    "mean": 675.9137840579543,
+    "median": 572.4774000009347,
+    "p95": 1061.52529999963
+  },
+  "generation_duration_ms": {
+    "count": 69,
+    "mean": 1273.9897217388848,
+    "median": 714.1647000025841,
+    "p95": 4198.220099999162
+  },
+  "output_tokens_per_second": {
+    "count": 69,
+    "mean": 92.87392607981647,
+    "median": 95.81572719354318,
+    "p95": 147.40124692255708
+  },
+  "input_tokens": {
+    "count": 69,
+    "mean": 1395.0434782608695,
+    "median": 1383.0,
+    "p95": 1739.0
+  },
+  "output_tokens": {
+    "count": 69,
+    "mean": 89.08695652173913,
+    "median": 54.0,
+    "p95": 304.0
+  },
+  "total_tokens": {
+    "count": 69,
+    "mean": 1484.1304347826087,
+    "median": 1457.0,
+    "p95": 1974.0
+  },
+  "citation_precision": {
+    "count": 78,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "citation_recall": {
+    "count": 78,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "citation_f1": {
+    "count": 78,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "citation_id_validity": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "p95": null
+  },
+  "abstention_heuristic_match_rate": 0.8205128205128205,
+  "quality_note": "Correctness, faithfulness, semantic citation support, and language quality require human review or a separately validated judge.",
+  "provider": "mistral",
+  "model": "ministral-14b-2512",
+  "dataset": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\generation_questions.jsonl",
+  "top_k": 5,
+  "streaming": true,
+  "raw_results_file": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\results\\raw\\generation_mistral_ministral-14b-2512_20261027_085941.jsonl",
+  "generated_at_utc": "2026-10-27T05:59:42.014729+00:00"
+}

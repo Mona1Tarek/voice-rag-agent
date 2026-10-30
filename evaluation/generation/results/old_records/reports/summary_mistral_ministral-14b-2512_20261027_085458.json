@@ -1,0 +1,93 @@
+{
+  "num_questions": 4,
+  "successful_requests": 4,
+  "request_success_rate": 1.0,
+  "error_count": 0,
+  "end_to_end_latency_ms": {
+    "count": 4,
+    "mean": 3069.2664750013137,
+    "median": 3211.1461499989673,
+    "p95": 4667.086900004506
+  },
+  "retrieval_latency_ms": {
+    "count": 4,
+    "mean": 298.7260250010877,
+    "median": 283.8405500006047,
+    "p95": 417.7826000013738
+  },
+  "llm_latency_ms": {
+    "count": 4,
+    "mean": 2770.540450000226,
+    "median": 2985.864999998739,
+    "p95": 4340.527700001985
+  },
+  "ttft_ms": {
+    "count": 4,
+    "mean": 1299.0905249998832,
+    "median": 987.095300000874,
+    "p95": 2615.514899996924
+  },
+  "generation_duration_ms": {
+    "count": 4,
+    "mean": 1471.4499250003428,
+    "median": 1005.6746000009298,
+    "p95": 3728.735799999413
+  },
+  "output_tokens_per_second": {
+    "count": 4,
+    "mean": 101.93182888617102,
+    "median": 99.53735040858788,
+    "p95": 116.66633496818432
+  },
+  "input_tokens": {
+    "count": 4,
+    "mean": 1657.25,
+    "median": 1685.0,
+    "p95": 1688.0
+  },
+  "output_tokens": {
+    "count": 4,
+    "mean": 139.5,
+    "median": 93.5,
+    "p95": 354.0
+  },
+  "total_tokens": {
+    "count": 4,
+    "mean": 1796.75,
+    "median": 1723.0,
+    "p95": 2039.0
+  },
+  "citation_precision": {
+    "count": 4,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "citation_recall": {
+    "count": 4,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "citation_f1": {
+    "count": 4,
+    "mean": 0.0,
+    "median": 0.0,
+    "p95": 0.0
+  },
+  "citation_id_validity": {
+    "count": 0,
+    "mean": null,
+    "median": null,
+    "p95": null
+  },
+  "abstention_heuristic_match_rate": 1.0,
+  "quality_note": "Correctness, faithfulness, semantic citation support, and language quality require human review or a separately validated judge.",
+  "provider": "mistral",
+  "model": "ministral-14b-2512",
+  "dataset": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\generation_questions.jsonl",
+  "top_k": 5,
+  "streaming": true,
+  "raw_results_file": "D:\\AI\\Projects\\voice-rag-agent\\evaluation\\generation\\results\\raw\\generation_mistral_ministral-14b-2512_20261027_085458.jsonl",
+  "generated_at_utc": "2026-10-27T05:54:58.924762+00:00"
+}
