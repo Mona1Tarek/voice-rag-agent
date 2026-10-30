@@ -508,13 +508,6 @@ uv run python -m evaluation.generation.run_generation_evaluation
 
 The generation evaluation script also supports options such as `--top-k`, `--limit`, and `--no-stream`.
 
-### 7. Run tests
-
-```bash
-uv run pytest
-```
-
-This runs the project's automated tests, including ingestion tests and the PDF extraction test.
 
 ## 12. PDF Extraction Test
 
