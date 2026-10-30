@@ -541,8 +541,3 @@ They include retrieval metrics, generation metrics, and detailed per-question re
 
 Langfuse provides trace-level evidence for inspecting individual voice and RAG requests.
 
-## 15. Project Status
-
-The project implements a bilingual voice-based RAG workflow over a multi-format knowledge base, with retrieval and generation evaluation and Langfuse observability.
-
-The current results establish an initial performance baseline. Further work is focused on improving Arabic retrieval, reducing end-to-end voice latency, smoothing speech output, and expanding generation evaluation coverage.
