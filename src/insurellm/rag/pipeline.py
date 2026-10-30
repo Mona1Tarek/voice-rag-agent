@@ -80,12 +80,18 @@ def generate_answer(
             "text": doc.page_content,
         })
 
+    citation_pattern = r"\[CHUNK_ID:\s*([^\]]+)\]"
+
     citations = list(dict.fromkeys(
-        re.findall(r"\[([^\[\]]+)\]", result.text)
+        cid.strip()
+        for cid in re.findall(citation_pattern, result.text)
     ))
 
+    answer = re.sub(citation_pattern, "", result.text)
+    answer = re.sub(r"\n{3,}", "\n\n", answer).strip()
+
     return {
-        "answer": result.text,
+        "answer": answer,
         "generated_citations": citations,
         "retrieved_documents": docs,
         "retrieval_latency_ms": retrieval_ms,
