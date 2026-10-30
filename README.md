@@ -30,7 +30,7 @@ The knowledge base includes:
 
 The ingestion pipeline processes these formats and converts their content into searchable document chunks while preserving relevant metadata.
 
-Employee PDFs are particularly important because they contain tabular information. The ingestion process must preserve the relationships between table fields so that questions about employee records can be answered from the extracted content.
+Employee PDFs contain tabular information. The ingestion process must preserve the relationships between table fields so that questions about employee records can be answered from the extracted content.
 
 ## 3. Architecture
 
@@ -335,7 +335,6 @@ This makes it possible to inspect how a user request moves through the system an
 **Shared Langfuse trace:**  
 [Open project trace](https://us.cloud.langfuse.com/project/cmvh4olvs01wpad0jy0g2dbq8/traces/b3ad950f7714de500cbae03252c77d49?observation=dc3c3212e9ca7894)
 
-Access may require the reviewer to be invited to the Langfuse project or granted appropriate sharing permissions.
 
 ## 9. Known Limitations and Future Improvements
 
