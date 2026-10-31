@@ -367,15 +367,18 @@ The current implementation demonstrates the complete ingestion, retrieval, gener
 - The generation dataset contains 78 questions, including 10 unanswerable questions, but the reported generation metrics currently represent one four-question batch.
 - More batches and human-reviewed examples are needed before drawing broader conclusions about generation quality.
 
-### Future work
 
-1. Experiment with a reranker and compare retrieval metrics against the current baseline.
-2. Evaluate hybrid search for queries involving exact names, product terminology, and structured fields.
-3. Improve Arabic product retrieval.
-4. Investigate speech streaming and TTS behavior to reduce choppiness.
-5. Continue reducing latency across the voice and RAG stages.
-6. Run the full generation evaluation dataset in controlled batches and aggregate the results.
-7. Expand human evaluation of answer correctness, groundedness, and citation support.
+### Future Work
+
+1. **Experiment with a reranker** and compare retrieval metrics against the current baseline.
+2. **Evaluate hybrid search** for queries involving exact names, product terminology, and structured fields.
+3. **Improve Arabic product retrieval** through targeted retrieval experiments and optimization.
+4. **Investigate speech streaming and TTS behavior** to reduce choppiness and improve audio continuity.
+5. **Continue optimizing latency** across the voice and RAG pipelines.
+6. **Run the full generation evaluation dataset** in controlled batches and aggregate the results.
+7. **Conduct a dedicated STT evaluation** using Word Error Rate (WER) and Character Error Rate (CER), with a focus on Arabic and mixed Arabic-English speech.
+8. **Expand LLM response evaluation** using an LLM-as-a-Judge approach to assess correctness, faithfulness, and output format compliance.
+
 
 ## 10. Repository Structure
 
