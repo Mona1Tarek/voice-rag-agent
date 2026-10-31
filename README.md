@@ -90,25 +90,51 @@ Employee PDFs contain tabular information. The ingestion process must preserve t
 
 Each pipeline stage has different requirements. Models and configurations were selected through experimentation, considering language support, response quality, latency, and suitability for the stage.
 
-### 4.1 Speech-to-Text
+### 4.1 Embedding Model
+
+**Selected model:** `jinaai/jina-embeddings-v5-text-nano`
+
+Jina Embeddings v5 Text Nano was selected as the embedding model because it offered a strong balance between multilingual retrieval quality, model size, embedding dimensionality, and inference efficiency.
+
+The model performs competitively on multilingual embedding benchmarks. Jina reports a 65.5 average score on MMTEB, compared with 71.0 on English MTEB v2. Its reported retrieval scores include 63.26 on MTEB Multilingual, 64.08 on RTEB, and 56.06 on BEIR. These results demonstrate that the model is not limited to English retrieval and provides a strong multilingual baseline despite its relatively small parameter count.
+
+Another important consideration was storage efficiency. The selected model produces 768-dimensional vectors, compared with 1,024 dimensions for BAAI/bge-m3. This reduces the raw vector storage requirement by 25% per chunk, assuming the same numeric precision and number of indexed chunks. The selected model is also considerably smaller, with 239M parameters compared with 568M for BGE-M3.
+
+The selection was further validated using the project's own retrieval evaluation criteria. Jina achieved a mean retrieval latency of 181.42 ms, compared with 306.02 ms for BGE-M3, representing approximately 40.7% lower latency in the measured evaluation runs. Although BGE-M3 achieved higher retrieval accuracy in the experiments, Jina offered a better overall trade-off between retrieval quality, latency, and storage efficiency for this bilingual voice RAG application.
+
+Model reference: [Jina Embeddings v5 Text Nano](https://jina.ai/en-US/models/jina-embeddings-v5-text-nano/).
+
+### 4.2 RAG LLM
+
+**Selected model:** `qwen/qwen3.8-27b` via Groq
+
+Qwen3.8-27B was selected for the RAG generation pipeline based on its performance in the project's comparative experiments. In testing, it produced more accurate and relevant answers than `openai/gpt-oss-20b` through Groq, while also providing lower observed response latency.
+
+Groq also advertises inference speeds of approximately 450+ tokens per second for this model. These capabilities make it suitable for generating grounded responses from retrieved context while supporting structured output requirements, including the separation of answers and citation IDs.
+
+The choice was validated using the project's generation evaluation. Across three measured runs, Qwen achieved a mean LLM latency of **538.54 ms**, compared with **863.95 ms** for GPT-OSS 20B, approximately **37.7% lower latency**. Combined with its stronger observed answer quality, this made Qwen the preferred model for the RAG generation pipeline.
+
+### 4.3 Speech-to-Text
 
 **Selected model:** `munsit-en-ar`
 
 Arabic transcription quality was a key consideration because the assistant must understand both Arabic and English, including mixed-language speech.
 
-Munsit was compared with `google/gemini-3.5-transcribe-live`. In the project's tests, Munsit produced fewer Arabic transcription errors while maintaining responsive transcription, making it the preferred option.
+The model was compared with `google/gemini-3.5-transcribe-live`, accessed through LiveKit Inference. In the project's practical tests, Munsit produced fewer Arabic transcription errors while maintaining responsive transcription, making it the preferred option.
+
+Munsit's published Arabic benchmark reports an average Word Error Rate (WER) of 18% across six Arabic benchmarks, including SADA, Common Voice 18.0, MASC (clean and noisy), MGB-2, and Casablanca. Munsit also reports an aggregate accuracy score of 82.00% in its comparison with other speech recognition systems.
 
 References:
 - [Munsit Speech-to-Text](https://docs.munsit.com/speech-to-text/get-started)
 - [Munsit Streaming](https://docs.munsit.com/speech-to-text/streaming)
 
-### 4.2 Voice Agent LLM
+### 4.4 Voice Agent LLM
 
 **Selected model:** `google/gemma-4-31b-it`
 
 This model is responsible for conversational orchestration and tool interaction in the LiveKit agent.
 
-The selection was informed by LiveKit's published inference benchmark. In its optimized serving setup, Gemma 4 31B achieved approximately **192 ms time to first token**, while models including Gemini 2.5 Flash, GPT-5.5, GPT-4.1, and Gemini 3 Flash were reported at approximately 900–1,100 ms.
+The selection was informed by LiveKit's published inference benchmark. In its optimized serving setup, Gemma 4 31B achieved approximately **192 ms time to first token (TTFT)**, while models including Gemini 2.5 Flash, GPT-5.5, GPT-4.1, and Gemini 3 Flash were reported at approximately 900–1,100 ms.
 
 These are external benchmark results, not latency measurements from this project. Actual performance depends on the serving configuration and runtime conditions.
 
@@ -116,33 +142,16 @@ LiveKit's serving setup also provides automatic prompt caching for repeated prom
 
 Benchmark reference: [LiveKit — Latency-Optimized Inference with Gemma 4](https://livekit.com/blog/latency-optimized-inference-gemma-4-on-livekit).
 
-### 4.3 RAG LLM
 
-**Selected model:** `qwen/qwen3.8-27b` via Groq
-
-This model generates answers from the retrieved document context and returns citation identifiers separately from the answer text.
-
-It was compared with `openai/gpt-oss-20b`, also tested through Groq. In the project's experiments, Qwen provided a better balance of answer quality and observed latency, so it was selected for the RAG generation stage.
-
-This comparison reflects the project's tested setup rather than a general benchmark of the two models.
-
-### 4.4 Text-to-Speech
+### 4.5 Text-to-Speech
 
 **Selected model:** `xai/tts-1`, voice `eve`
 
 TTS selection focused on naturalness, speech quality, and the Arabic user experience.
 
-After listening to and comparing available options, the xAI voice was preferred because it sounded smoother and more natural, particularly for Arabic responses. Although other options could be faster, the overall listening experience was the deciding factor.
+After listening and comparing available options, the xAI voice was preferred because it sounded smoother and more natural, particularly for Arabic responses. Although other options could be faster, the overall listening experience was the deciding factor.
 
-### 4.5 Embedding Model
-
-**Selected model:** `jinaai/jina-embeddings-v5-text-nano`
-
-The embedding model was selected as a trade-off between retrieval quality and latency.
-
-In the project's comparison, `BAAI/bge-m3` achieved better retrieval accuracy but introduced substantially higher latency. Jina's `jina-embeddings-v5-text-nano` offered a more suitable latency/quality balance for this voice application.
-
-Model reference: [Jina Embeddings v5 Text Nano](https://jina.ai/en-US/models/jina-embeddings-v5-text-nano/).
+Based on the TTFB observations recorded in Langfuse during the project's practical tests, xAI TTS response times ranged from approximately 681 ms to 1,853 ms across the observed runs. These measurements provide an indication of its time-to-first-audio-chunk performance within the project's LiveKit setup.
 
 ### 4.6 Vector Store and Supporting Technologies
 
