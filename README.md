@@ -112,7 +112,7 @@ Qwen3.8-27B was selected for the RAG generation pipeline based on its performanc
 
 Groq also advertises inference speeds of approximately 450+ tokens per second for this model. These capabilities make it suitable for generating grounded responses from retrieved context while supporting structured output requirements, including the separation of answers and citation IDs.
 
-I validated the choice using the project's generation evaluation. Across three measured runs, Qwen achieved a mean LLM latency of **538.54 ms**, compared with **863.95 ms** for GPT-OSS 20B, approximately **37.7% lower latency**. Combined with its stronger observed answer quality, this made Qwen the preferred model for the RAG generation pipeline.
+I validated the choice using the project's generation evaluation. Across multiple measured runs, Qwen achieved a mean LLM latency of **538.54 ms**, compared with **863.95 ms** for GPT-OSS 20B, approximately **37.7% lower latency**. Combined with its stronger observed answer quality, this made Qwen the preferred model for the RAG generation pipeline.
 
 ### 4.3 Speech-to-Text
 
