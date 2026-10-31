@@ -96,11 +96,11 @@ Each pipeline stage has different requirements. Models and configurations were s
 
 Jina Embeddings v5 Text Nano was selected as the embedding model because it offered a strong balance between multilingual retrieval quality, model size, embedding dimensionality, and inference efficiency.
 
-The model performs competitively on multilingual embedding benchmarks. Jina reports a 65.5 average score on MMTEB, compared with 71.0 on English MTEB v2. Its reported retrieval scores include 63.26 on MTEB Multilingual, 64.08 on RTEB, and 56.06 on BEIR. These results demonstrate that the model is not limited to English retrieval and provides a strong multilingual baseline despite its relatively small parameter count.
+The model performs competitively on multilingual embedding benchmarks. Jina reports a **65.5** average score on **MMTEB**, compared with **71.0** on **English MTEB v2**. Its reported retrieval scores include **63.26** on **MTEB Multilingual**, **64.08** on **RTEB**, and **56.06** on **BEIR**. These results demonstrate that the model is not limited to English retrieval and provides a strong multilingual baseline despite its relatively small parameter count.
 
-Another important consideration was storage efficiency. The selected model produces 768-dimensional vectors, compared with 1,024 dimensions for BAAI/bge-m3. This reduces the raw vector storage requirement by 25% per chunk, assuming the same numeric precision and number of indexed chunks. The selected model is also considerably smaller, with 239M parameters compared with 568M for BGE-M3.
+The selection was further validated using the project's own retrieval evaluation criteria. Jina achieved a mean retrieval latency of **181.42 ms**, compared with **306.02 ms** for BGE-M3, representing approximately **40.7%** lower latency in the measured evaluation runs. Although BGE-M3 achieved higher retrieval accuracy in the experiments, Jina offered a better overall trade-off between retrieval quality, latency, and storage efficiency for this bilingual voice RAG application.
 
-The selection was further validated using the project's own retrieval evaluation criteria. Jina achieved a mean retrieval latency of 181.42 ms, compared with 306.02 ms for BGE-M3, representing approximately 40.7% lower latency in the measured evaluation runs. Although BGE-M3 achieved higher retrieval accuracy in the experiments, Jina offered a better overall trade-off between retrieval quality, latency, and storage efficiency for this bilingual voice RAG application.
+Another important consideration was storage efficiency. The selected model produces **768-dimensional vectors**, compared with **1,024 dimensions** for `BAAI/bge-m3`. This reduces the raw vector storage requirement by **25%** per chunk, assuming the same numeric precision and number of indexed chunks.
 
 Model reference: [Jina Embeddings v5 Text Nano](https://jina.ai/en-US/models/jina-embeddings-v5-text-nano/).
 
@@ -112,17 +112,17 @@ Qwen3.8-27B was selected for the RAG generation pipeline based on its performanc
 
 Groq also advertises inference speeds of approximately 450+ tokens per second for this model. These capabilities make it suitable for generating grounded responses from retrieved context while supporting structured output requirements, including the separation of answers and citation IDs.
 
-The choice was validated using the project's generation evaluation. Across three measured runs, Qwen achieved a mean LLM latency of **538.54 ms**, compared with **863.95 ms** for GPT-OSS 20B, approximately **37.7% lower latency**. Combined with its stronger observed answer quality, this made Qwen the preferred model for the RAG generation pipeline.
+I validated the choice using the project's generation evaluation. Across three measured runs, Qwen achieved a mean LLM latency of **538.54 ms**, compared with **863.95 ms** for GPT-OSS 20B, approximately **37.7% lower latency**. Combined with its stronger observed answer quality, this made Qwen the preferred model for the RAG generation pipeline.
 
 ### 4.3 Speech-to-Text
 
 **Selected model:** `munsit-en-ar`
 
-Arabic transcription quality was a key consideration because the assistant must understand both Arabic and English, including mixed-language speech.
+Arabic transcription quality was a key consideration because the assistant must understand both Arabic and English, including cross-lingual speech.
 
 The model was compared with `google/gemini-3.5-transcribe-live`, accessed through LiveKit Inference. In the project's practical tests, Munsit produced fewer Arabic transcription errors while maintaining responsive transcription, making it the preferred option.
 
-Munsit's published Arabic benchmark reports an average Word Error Rate (WER) of 18% across six Arabic benchmarks, including SADA, Common Voice 18.0, MASC (clean and noisy), MGB-2, and Casablanca. Munsit also reports an aggregate accuracy score of 82.00% in its comparison with other speech recognition systems.
+Munsit's published Arabic benchmark reports an average **Word Error Rate (WER)** of **18%** across six Arabic benchmarks, including SADA, Common Voice 18.0, MASC (clean and noisy), MGB-2, and Casablanca. Munsit also reports an aggregate accuracy score of **82.00%** in its comparison with other speech recognition systems.
 
 References:
 - [Munsit Speech-to-Text](https://docs.munsit.com/speech-to-text/get-started)
@@ -138,7 +138,7 @@ The selection was informed by LiveKit's published inference benchmark. In its op
 
 These are external benchmark results, not latency measurements from this project. Actual performance depends on the serving configuration and runtime conditions.
 
-LiveKit's serving setup also provides automatic prompt caching for repeated prompt content. Cache usage can be inspected through Langfuse traces, where cached input tokens are visible.
+LiveKit's serving setup also provides automatic **prompt-caching** for repeated prompt content. Cache usage can be inspected through Langfuse traces, where cached input tokens are visible.
 
 Benchmark reference: [LiveKit — Latency-Optimized Inference with Gemma 4](https://livekit.com/blog/latency-optimized-inference-gemma-4-on-livekit).
 
