@@ -2,16 +2,13 @@
 import math
 import statistics
 
-
 def summarize(rows: list[dict]) -> dict:
     def stats(key):
         values = []
 
         for row in rows:
             value = row.get(key)
-
-            # Timing/token metrics are stored at the top level.
-            # Quality diagnostics are stored inside row["diagnostics"].
+            
             if value is None:
                 value = (row.get("diagnostics") or {}).get(key)
 
@@ -32,8 +29,6 @@ def summarize(rows: list[dict]) -> dict:
             "count": len(values),
             "mean": statistics.fmean(values),
             "median": statistics.median(values),
-            # Nearest-rank percentile: the 95th percentile is
-            # the smallest value covering at least 95% of observations.
             "p95": sorted(values)[math.ceil(0.95 * len(values)) - 1],
         }
 
