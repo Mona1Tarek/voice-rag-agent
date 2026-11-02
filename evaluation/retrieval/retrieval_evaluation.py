@@ -61,19 +61,16 @@ def main():
     model_name = args.model or get_embedding_model_name()
     model = get_embeddings_model(model_name)
 
-    # Embed each document once.
-    # document_vectors = embed_documents(model, [doc.page_content for doc in documents])
     document_vectors = embed_documents(model, [build_embedding_text(doc) for doc in documents])
 
-    qrels_data = {}
-    run_data = {}
-    details = []
+    qrels_data = {}     # ground truth for each question
+    run_data = {}       # retrieved chunks and their scores
+    details = []        # detailed results for each question, to be saved to a JSONL file
 
     for question in questions:
         query_id = question["query_id"]
         query_vector = embed_query(model, question["question"])
 
-        # Rank documents by cosine similarity.
         scores = cos_sim(query_vector, document_vectors)[0].tolist()
         ranked = sorted(
             zip(document_ids, scores, strict=True),
