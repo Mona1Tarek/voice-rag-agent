@@ -3,8 +3,8 @@ import os
 from contextlib import contextmanager
 from typing import Any
 
-from opentelemetry.sdk.trace import TracerProvider
-from livekit.agents.telemetry import set_tracer_provider
+from opentelemetry.sdk.trace import TracerProvider  
+from livekit.agents.telemetry import set_tracer_provider   
 from langfuse import Langfuse, get_client
 
 
@@ -16,7 +16,10 @@ def setup_langfuse(metadata=None):
     if not public_key or not secret_key or not base_url:
         raise ValueError("Missing Langfuse configuration")
 
+    # responsible for providing the tracing infrastructure that we will use to create and record spans
     provider = TracerProvider()
+    # livekit can use this Tracer Provider in the telemetry system
+    # This allows us to integrate the tracing for the Voice Agent with the same observability system we are already using
     set_tracer_provider(provider, metadata=metadata)
 
     Langfuse(
@@ -29,6 +32,8 @@ def setup_langfuse(metadata=None):
     return provider
 
 
+# It helps us manage resources 
+# We use it around code whose execution we want to monitor, we start recording before the operation begins and end it once the operation is complete
 @contextmanager
 def observation(
     *,
@@ -40,6 +45,7 @@ def observation(
 ):
     langfuse = get_client()
 
+    # creating the observation
     with langfuse.start_as_current_observation(
         as_type=as_type,
         name=name,
@@ -54,6 +60,7 @@ def observation(
             raise
 
 
+# We use it to record an event we already have the data (completed), for example: metrics received from LiveKit
 def record_observation(
     *,
     name: str,
@@ -66,6 +73,7 @@ def record_observation(
     """Record a completed event as a standalone Langfuse span."""
     langfuse = get_client()
 
+    # create the observation of type span
     with langfuse.start_as_current_observation(
         name=name,
         as_type="span",
