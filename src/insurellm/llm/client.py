@@ -120,7 +120,7 @@ class LLMClient:
 
                 raw = (
                     self.client.chat.completions
-                    .with_raw_response.create(**params)
+                    .with_raw_response.create(**params) # this allows us to obtain the raw HTTP response including the headers before converting it into a parsed object
                 )
 
                 headers = _headers(raw.headers)
